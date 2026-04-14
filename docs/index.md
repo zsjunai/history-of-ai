@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "AI 史记"
   text: "人工智能的前世今生"
-  tagline: 一本开源的 AI 历史书籍，以史记五体记录 AI 从 1943 年到 2026 年的关键事件、人物与机构
+  tagline: 一本开源的 AI 历史书籍，以史记五体记录 AI 从 1943 年到 2026 年的关键事件、人物与机构——一场改变人类命运的智能革命
   actions:
     - theme: brand
       text: 开始阅读
