@@ -160,9 +160,11 @@ onMounted(() => {
   setTimeout(syncWidth, 100)
   window.addEventListener('resize', syncWidth)
 
+  let hasPlayed = false
   observer = new IntersectionObserver(
     (entries) => {
-      if (entries[0].isIntersecting) {
+      if (entries[0].isIntersecting && !hasPlayed) {
+        hasPlayed = true
         startAnimation()
       }
     },
