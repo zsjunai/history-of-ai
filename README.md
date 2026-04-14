@@ -1,61 +1,137 @@
 # AI 史记 | History of AI
 
-> 一本开源的人工智能历史书籍，以《史记》体例记录 AI 从诞生到现在的关键事件与人物。
+> 一本开源的人工智能历史书籍，以《史记》五体记录 AI 从 1943 年到 2026 年的关键事件、人物与机构。
 >
-> An open-source book on the history of Artificial Intelligence, structured in the style of *Records of the Grand Historian* (Shiji), chronicling key events and figures from AI's birth to the present.
-
-## 体例 Structure
-
-本书借鉴司马迁《史记》的体例，分为四大部分：
-
-| 部分 | 英文 | 内容 |
-|------|------|------|
-| **本纪** | Annals | 九篇编年史，按时代记录 AI 的发展历程 |
-| **列传** | Biographies | 十余篇人物传记，记录关键人物的生平与贡献 |
-| **书** | Treatises | 六篇专题论述，深入各技术领域的发展脉络 |
-| **表** | Timeline | 大事年表，AI 重大事件一览 |
-
-## 本纪 Annals
-
-1. 黎明期 The Dawn of AI（1943-1956）
-2. 黄金时代 The Golden Age（1956-1974）
-3. 第一次寒冬 The First AI Winter（1974-1980）
-4. 专家系统时代 The Expert Systems Era（1980-1987）
-5. 第二次寒冬 The Second AI Winter（1987-1993）
-6. 静默前行 Quiet Progress（1993-2012）
-7. 深度学习革命 The Deep Learning Revolution（2012-2017）
-8. Transformer 纪元 The Transformer Era（2017-2022）
-9. 生成式 AI 浪潮 The Generative AI Wave（2022-2026）
+> An open-source book on the history of Artificial Intelligence, structured in the style of *Records of the Grand Historian* (Shiji), chronicling 83 years of key events, figures, and institutions.
 
 ## 在线阅读 Read Online
 
-<!-- 部署后更新链接 -->
-即将上线。
+🔗 **https://t-7788.github.io/history-of-ai/**
 
-## 本地运行 Local Development
+## 项目规模
+
+| 体例 | 数量 | 说明 |
+|------|------|------|
+| 本纪 | 9 篇 | 编年史，按时代记录 AI 发展的核心辩论与转折 |
+| 世家 | 14 篇 | 机构史，从 MIT AI 实验室到 OpenAI 到清华 |
+| 列传 | 23 篇 | 人物传记，从图灵、香农到辛顿、奥特曼 |
+| 书 | 25 篇 | 技术专题 + 国别史，覆盖神经网络到 AGI |
+| 表 | 1 篇 | 大事年表，AI 83 年关键事件一览 |
+| **合计** | **72 篇** | |
+
+## 五体结构
+
+### 本纪 Annals
+
+以思想冲突为主线的九篇编年史：
+
+| # | 篇名 | 时期 |
+|---|------|------|
+| 1 | 黎明期 | 1943-1956 |
+| 2 | 黄金时代 | 1956-1973 |
+| 3 | 第一次寒冬 | 1973-1980 |
+| 4 | 专家系统时代 | 1980-1987 |
+| 5 | 第二次寒冬 | 1987-1993 |
+| 6 | 静默前行 | 1993-2012 |
+| 7 | 深度学习革命 | 2012-2017 |
+| 8 | Transformer 纪元 | 2017-2022 |
+| 9 | 生成式 AI 浪潮 | 2022-2026 |
+
+### 世家 Houses
+
+塑造 AI 历史的 14 家关键机构：
+
+MIT AI 实验室 · CMU · 斯坦福 AI 实验室 · Bell Labs · IBM 研究院 · MILA · DeepMind · OpenAI · Google Brain · Anthropic · Meta AI (FAIR) · xAI · 百度 AI · 清华大学 AI
+
+### 列传 Biographies
+
+23 位关键人物，按时代分组：
+
+**奠基者**：图灵 · 香农 · 维纳 · 麦卡锡 · 明斯基 · 西蒙 · 纽厄尔 · 罗森布拉特 · 珀尔
+
+**深度学习先驱**：霍普菲尔德 · 辛顿 · 施密德胡贝 · 杨立昆 · 本吉奥
+
+**当代风云**：李飞飞 · 吴恩达 · 苏茨克维 · 哈萨比斯 · 奥特曼 · 卡帕西 · 马斯克
+
+**中国人物**：李开复 · 周志华
+
+### 书 Treatises
+
+25 篇专题论述，分为六组：
+
+**技术脉络**：神经网络 · 知识表示与推理 · NLP · 计算机视觉 · 强化学习 · 大语言模型 · 世界模型 · AGI 与 ASI
+
+**基础设施**：AI 硬件与算力 · AI 与开源运动
+
+**应用领域**：AI 与游戏 · AI 与生物医疗 · AI 与创意艺术 · 具身智能与机器人 · 自动驾驶 · AI Agent
+
+**社会影响**：AI 伦理 · AI 安全与对齐 · AI 政策与监管 · AI 与 Web3
+
+**国别史**：美国 · 中国 · 欧洲 · 加拿大 · 日本
+
+### 表 Timeline
+
+从 1943 到 2026 的 AI 大事年表，每条事件可跳转到对应章节。
+
+## 特色
+
+- 📜 **史记体例**：本纪/世家/列传/书/表五体，多维度记录 AI 历史
+- 💬 **太史公曰**：每篇末尾的作者主观短评，不假装客观
+- 🎙️ **亲历者说**：每篇预留社区口述史板块，邀请亲历者贡献
+- 🔗 **开源协作**：GitHub 协作，Issue 纠错，PR 贡献
+- 🌐 **中英双语**：中文为主，关键术语保留英文原文
+
+## 技术栈
+
+- [VitePress](https://vitepress.dev/) 静态站点生成
+- 自定义科技风主题（青蓝 + 紫色渐变）
+- 粒子神经网络背景动画
+- 历史加载终端动画（打字机效果）
+- AI 机器人互动动画
+- GitHub Actions 自动部署 GitHub Pages
+- 共享时间线数据源（`timeline.ts`）
+
+## 本地开发
 
 ```bash
+# 克隆仓库
+git clone https://github.com/T-7788/history-of-ai.git
+cd history-of-ai
+
 # 安装依赖
 npm install
 
-# 启动本地预览
+# 启动本地预览（支持热更新）
 npm run docs:dev
 
 # 构建
 npm run docs:build
+
+# 预览构建结果
+npm run docs:preview
 ```
 
-## 参与贡献 Contributing
+## 参与贡献
 
-我们欢迎所有形式的贡献，包括但不限于：
+我们欢迎所有形式的贡献：
 
-- 纠正事实错误或补充遗漏
-- 改进文字表达
-- 添加新的人物传记或专题
-- 翻译为其他语言
+| 贡献方式 | 说明 |
+|----------|------|
+| 🐛 **纠错** | 发现事实错误？提交 [Issue](https://github.com/T-7788/history-of-ai/issues/new?template=correction.md) |
+| 💡 **建议** | 想添加新内容？提交 [Issue](https://github.com/T-7788/history-of-ai/issues/new?template=suggestion.md) |
+| ✍️ **撰写** | 认领占位章节，撰写完整内容 |
+| 🖼️ **图片** | 补充人物照片和历史事件图片（需符合版权要求） |
+| 🎙️ **口述史** | 如果你是 AI 领域的亲历者，欢迎在"亲历者说"板块分享 |
+| 🌍 **翻译** | 将内容翻译为其他语言 |
 
-请阅读 [贡献指南](CONTRIBUTING.md) 了解详情。
+详见 [贡献指南](CONTRIBUTING.md)。
 
-## 许可证 License
+## 许可证
 
-本书内容基于 [CC-BY-SA 4.0](LICENSE) 许可发布。你可以自由分享和改编，但需注明出处并以相同方式共享。
+本书内容基于 [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans) 许可发布。
+
+你可以自由分享和改编，但需注明出处并以相同方式共享。
+
+---
+
+**AI 史记开源社区** · [在线阅读](https://t-7788.github.io/history-of-ai/) · [参与贡献](CONTRIBUTING.md) · [提交 Issue](https://github.com/T-7788/history-of-ai/issues)
