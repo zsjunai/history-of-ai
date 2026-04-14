@@ -9,7 +9,7 @@
   <div class="history-loader" ref="container" v-show="!hidden">
     <div class="terminal" :class="{ 'dark-mode': isDark }">
       <div class="terminal-header">
-        <span class="terminal-title">&gt; history --all</span>
+        <span class="terminal-title">&gt; ai-history --all</span>
         <div class="header-actions">
           <button class="header-btn" v-if="!loading" @click="replay" title="重新播放">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
