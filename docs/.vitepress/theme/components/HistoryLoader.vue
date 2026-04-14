@@ -27,6 +27,8 @@
       <div class="terminal-body" ref="terminalBody">
         <!-- Completed lines -->
         <div v-for="(item, i) in completedItems" :key="'done-'+i" class="log-line">
+          <span class="index">{{ String(i + 1).padStart(2, '0') }}</span>
+          <span class="separator">│</span>
           <span class="year">{{ item.year }}</span>
           <span class="separator">│</span>
           <a v-if="item.link" :href="item.link" class="event event-link">{{ item.event }}</a>
@@ -34,6 +36,8 @@
         </div>
         <!-- Currently typing line -->
         <div v-if="typingLine" class="log-line">
+          <span class="index">{{ String(completedItems.length + 1).padStart(2, '0') }}</span>
+          <span class="separator">│</span>
           <span class="year">{{ typingLine.year }}</span>
           <span class="separator">│</span>
           <span class="event">{{ typingText }}<span class="cursor">█</span></span>
@@ -303,6 +307,14 @@ onUnmounted(() => {
   display: flex;
   gap: 0;
   animation: lineIn 0.3s ease-out both;
+}
+
+.index {
+  color: var(--t-muted);
+  font-size: 0.85em;
+  min-width: 2.2em;
+  flex-shrink: 0;
+  opacity: 0.5;
 }
 
 @keyframes lineIn {
