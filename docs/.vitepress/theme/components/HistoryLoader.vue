@@ -331,13 +331,12 @@ onUnmounted(() => {
 .year {
   color: #0ea5e9;
   font-weight: 700;
-  min-width: 4.5em;
   flex-shrink: 0;
 }
 
 .separator {
   color: var(--t-separator);
-  margin: 0 0.6em;
+  margin: 0 0.4em;
   flex-shrink: 0;
 }
 
