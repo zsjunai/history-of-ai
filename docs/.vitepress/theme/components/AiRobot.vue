@@ -65,7 +65,7 @@ import { ref, reactive, onMounted, onUnmounted, nextTick } from 'vue'
 const wrapper = ref<HTMLElement>()
 const facingLeft = ref(false)
 const paused = ref(false)
-const action = ref<'walk' | 'run' | 'jump' | 'flip' | 'wave' | 'idle'>('walk')
+const action = ref<'walk' | 'run' | 'jump' | 'flip' | 'spin' | 'wave' | 'idle'>('walk')
 
 const pos = reactive({ x: 0, y: 0 })
 let vx = 0.5
@@ -85,14 +85,14 @@ function updateStyle() {
 }
 
 function pickNextAction() {
-  const all: Array<typeof action.value> = ['walk', 'walk', 'run', 'jump', 'flip', 'wave', 'idle']
+  const all: Array<typeof action.value> = ['walk', 'walk', 'run', 'jump', 'flip', 'spin', 'wave', 'idle']
   const next = all[Math.floor(Math.random() * all.length)]
   action.value = next
 
   const dir = vx >= 0 ? 1 : -1
   if (next === 'run') vx = dir * 1.5
   else if (next === 'walk') vx = dir * 0.5
-  else if (next === 'idle' || next === 'wave') vx = 0
+  else if (next === 'idle' || next === 'wave' || next === 'spin') vx = 0
   else if (next === 'jump') {
     vx = dir * 0.3
     jumpVy = -4.5
@@ -105,7 +105,7 @@ function pickNextAction() {
     groundY = pos.y
   }
 
-  const dur = next === 'jump' ? 900 : next === 'flip' ? 1000 : next === 'wave' ? 2500 : next === 'idle' ? 2000 : 2000 + Math.random() * 3000
+  const dur = next === 'jump' ? 900 : next === 'flip' ? 1000 : next === 'spin' ? 1200 : next === 'wave' ? 2500 : next === 'idle' ? 2000 : 2000 + Math.random() * 3000
   actionTimer = setTimeout(pickNextAction, dur)
 }
 
@@ -285,6 +285,29 @@ onUnmounted(() => {
 
 .flip .shadow { animation: sFlip 0.8s ease-in-out; }
 @keyframes sFlip { 0%{opacity:0.1} 30%{opacity:0.02} 70%{opacity:0.02} 100%{opacity:0.1} }
+
+/* ===== SPIN ===== */
+.spin .robot { animation: spinTwirl 1.2s ease-in-out; }
+@keyframes spinTwirl {
+  0% { transform: rotateY(0deg) scale(1); }
+  25% { transform: rotateY(180deg) scale(0.9); }
+  50% { transform: rotateY(360deg) scale(1); }
+  75% { transform: rotateY(540deg) scale(0.9); }
+  100% { transform: rotateY(720deg) scale(1); }
+}
+.spin .robot.facing-left { animation: spinTwirlL 1.2s ease-in-out; }
+@keyframes spinTwirlL {
+  0% { transform: scaleX(-1) rotateY(0deg); }
+  25% { transform: scaleX(-1) rotateY(180deg) scale(0.9); }
+  50% { transform: scaleX(-1) rotateY(360deg); }
+  75% { transform: scaleX(-1) rotateY(540deg) scale(0.9); }
+  100% { transform: scaleX(-1) rotateY(720deg); }
+}
+.spin .left-arm-group, .spin .right-arm-group { animation: spinArm 1.2s ease-in-out; }
+@keyframes spinArm { 0%{transform:rotate(0)} 25%{transform:rotate(-20deg)} 50%{transform:rotate(0)} 75%{transform:rotate(-20deg)} 100%{transform:rotate(0)} }
+
+.spin .shadow { animation: sSpin 1.2s ease-in-out; }
+@keyframes sSpin { 0%,50%,100%{opacity:0.1; transform:scaleX(1)} 25%,75%{opacity:0.04; transform:scaleX(0.3)} }
 
 /* ===== WAVE ===== */
 .wave .right-arm-group { animation: waveH 0.35s ease-in-out infinite alternate; }
