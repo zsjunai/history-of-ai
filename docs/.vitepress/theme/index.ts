@@ -5,7 +5,7 @@ import './styles/vars.css'
 import './styles/custom.css'
 
 const navTooltips: Record<string, string> = {
-  '本纪': '按时代划分的九篇编年史，记录 AI 发展的核心辩论与转折',
+  '本纪': '按时代划分的编年史，记录 AI 发展的核心辩论与转折',
   '世家': '塑造 AI 历史的关键机构与实验室',
   '列传': '关键人物的传记，记录他们的命运与抉择',
   '书': '按主题深入的技术专题与社会议题论述',
