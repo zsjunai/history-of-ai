@@ -1,3 +1,5 @@
+中文 | [English](CONTRIBUTING.en.md)
+
 # 贡献指南 Contributing Guide
 
 感谢你对 AI 史记项目的关注！以下是参与贡献的完整指南。
