@@ -65,11 +65,8 @@ npm run docs:preview  # 预览构建结果
 
 ## Git 配置
 
-- SSH：使用 `~/.ssh/id_ed25519_t7788` 密钥
-- SSH Host：`github-t7788`（配置在 `~/.ssh/config`）
-- Remote：`git@github-t7788:zsjunai/history-of-ai.git`
-- 用户名：`zsjun`
-- 邮箱：`zsjun@zsjun.com`
+- 部署方式：GitHub Actions 自动部署
+- 推送到 `main` 分支即触发构建
 
 ## 注意事项
 
