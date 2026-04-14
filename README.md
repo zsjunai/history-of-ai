@@ -132,6 +132,13 @@ npm run docs:preview
 
 你可以自由分享和改编，但需注明出处并以相同方式共享。
 
+## 联系方式
+
+如有任何问题、建议或合作意向，欢迎联系：
+
+- 邮箱：987835330@qq.com
+- GitHub：[@zsjunai](https://github.com/zsjunai)
+
 ---
 
 **AI 史记开源社区** · [在线阅读](https://zsjunai.github.io/history-of-ai/) · [参与贡献](CONTRIBUTING.md) · [提交 Issue](https://github.com/zsjunai/history-of-ai/issues)
