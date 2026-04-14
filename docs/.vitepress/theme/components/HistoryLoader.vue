@@ -295,6 +295,8 @@ onUnmounted(() => {
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: 13px;
   line-height: 1.9;
+  height: 420px;
+  overflow-y: auto;
 }
 
 .log-line {
