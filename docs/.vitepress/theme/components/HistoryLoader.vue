@@ -129,7 +129,7 @@ function startAnimation() {
         typingText.value = fullText.slice(0, charIndex + 1)
         charIndex++
         scrollToBottom()
-        const charDelay = lineIndex < 3 ? 25 : lineIndex < 8 ? 18 : 12
+        const charDelay = lineIndex < 3 ? 15 : lineIndex < 8 ? 10 : 6
         timer = setTimeout(typeChar, charDelay)
       } else {
         // Line done, move to completed
@@ -138,7 +138,7 @@ function startAnimation() {
         typingText.value = ''
         lineIndex++
         scrollToBottom()
-        const lineDelay = lineIndex < 4 ? 120 : lineIndex < 10 ? 80 : 50
+        const lineDelay = lineIndex < 4 ? 60 : lineIndex < 10 ? 40 : 20
         timer = setTimeout(typeLine, lineDelay)
       }
     }
