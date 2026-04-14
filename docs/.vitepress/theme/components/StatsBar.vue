@@ -1,11 +1,11 @@
 <template>
   <div class="stats-bar">
     <div class="stats-container">
-      <div class="stat-item" v-for="(stat, i) in stats" :key="i">
+      <a class="stat-item" v-for="(stat, i) in stats" :key="i" :href="stat.link">
         <span class="stat-number" :ref="el => numberRefs[i] = el as HTMLElement">0</span>
         <span class="stat-unit" v-if="stat.unit">{{ stat.unit }}</span>
         <span class="stat-label">{{ stat.label }}</span>
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -14,11 +14,11 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const stats = [
-  { number: 83, unit: '年', label: '历史跨度' },
-  { number: 9, unit: '个', label: '时代' },
-  { number: 23, unit: '位', label: '关键人物' },
-  { number: 14, unit: '家', label: '机构' },
-  { number: 25, unit: '篇', label: '专题' },
+  { number: 83, unit: '年', label: '历史跨度', link: '/history-of-ai/timeline/' },
+  { number: 9, unit: '个', label: '时代', link: '/history-of-ai/annals/01-dawn' },
+  { number: 23, unit: '位', label: '关键人物', link: '/history-of-ai/biographies/turing' },
+  { number: 14, unit: '家', label: '机构', link: '/history-of-ai/houses/mit-ai-lab' },
+  { number: 25, unit: '篇', label: '专题', link: '/history-of-ai/treatises/neural-networks' },
 ]
 
 const numberRefs = ref<(HTMLElement | null)[]>([])
@@ -31,7 +31,7 @@ function animateNumber(el: HTMLElement, target: number) {
 
   function tick(now: number) {
     const progress = Math.min((now - start) / duration, 1)
-    const eased = 1 - Math.pow(1 - progress, 3) // easeOutCubic
+    const eased = 1 - Math.pow(1 - progress, 3)
     el.textContent = Math.round(eased * target).toString()
     if (progress < 1) requestAnimationFrame(tick)
   }
@@ -85,6 +85,18 @@ onUnmounted(() => {
   flex-direction: column;
   align-items: center;
   min-width: 80px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.stat-item:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  transform: translateY(-2px);
 }
 
 .stat-number {
@@ -111,9 +123,13 @@ onUnmounted(() => {
   letter-spacing: 0.05em;
 }
 
+.stat-item:hover .stat-label {
+  color: var(--vp-c-brand-1);
+}
+
 @media (max-width: 640px) {
   .stats-container {
-    gap: 16px;
+    gap: 12px;
   }
 
   .stat-number {
@@ -122,6 +138,7 @@ onUnmounted(() => {
 
   .stat-item {
     min-width: 60px;
+    padding: 8px 10px;
   }
 }
 </style>
