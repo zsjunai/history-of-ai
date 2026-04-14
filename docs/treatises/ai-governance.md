@@ -3,7 +3,7 @@
 > 当 AI 从实验室走进社会，各国政府开始了一场史无前例的监管竞赛——每个国家都在寻找创新与安全之间的平衡点。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

@@ -25,13 +25,13 @@
 
 ## 写作规范
 
-请参阅项目根目录的 [CONTRIBUTING.md](https://github.com/T-7788/history-of-ai/blob/main/CONTRIBUTING.md) 了解详细的写作规范。
+请参阅项目根目录的 [CONTRIBUTING.md](https://github.com/zsjunai/history-of-ai/blob/main/CONTRIBUTING.md) 了解详细的写作规范。
 
 ## 本地开发
 
 ```bash
 # 克隆仓库
-git clone https://github.com/T-7788/history-of-ai.git
+git clone https://github.com/zsjunai/history-of-ai.git
 cd history-of-ai
 
 # 安装依赖

@@ -3,7 +3,7 @@
 > 如果 AI 只存在于屏幕之后，它永远无法真正理解这个世界。具身智能的追求是让 AI 拥有身体，在物理世界中感知、行动和学习。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

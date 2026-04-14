@@ -3,7 +3,7 @@
 > "深度学习之父"，在神经网络最不被看好的年代里坚持信念，最终改变了世界。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

@@ -189,11 +189,11 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/T-7788/history-of-ai' },
+      { icon: 'github', link: 'https://github.com/zsjunai/history-of-ai' },
     ],
 
     editLink: {
-      pattern: 'https://github.com/T-7788/history-of-ai/edit/main/docs/:path',
+      pattern: 'https://github.com/zsjunai/history-of-ai/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页',
     },
 

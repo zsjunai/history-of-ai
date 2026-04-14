@@ -3,7 +3,7 @@
 > 与 MIT 并肩的 AI 摇篮，符号主义的另一座圣殿，全球排名第一的 AI 项目诞生于此。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
@@ -25,7 +25,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你曾在 CMU 学习或工作，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你曾在 CMU 学习或工作，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

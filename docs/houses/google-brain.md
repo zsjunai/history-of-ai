@@ -3,7 +3,7 @@
 > Transformer 诞生于此。一个企业内部研究团队，写出了改变 AI 历史走向的论文。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
@@ -25,7 +25,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你曾在 Google Brain 工作，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你曾在 Google Brain 工作，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

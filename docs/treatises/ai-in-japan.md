@@ -3,7 +3,7 @@
 > 第五代计算机计划的雄心与失败，是 AI 历史中最昂贵的教训之一。但日本在机器人领域的积累，至今仍是全球领先。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

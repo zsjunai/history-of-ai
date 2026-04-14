@@ -3,7 +3,7 @@
 > 贝叶斯网络与因果推理的奠基人——当所有人都在教机器识别相关性时，他坚持追问"为什么"。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
@@ -20,7 +20,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你了解珀尔的第一手资料或相关回忆，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你了解珀尔的第一手资料或相关回忆，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

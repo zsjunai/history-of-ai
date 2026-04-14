@@ -3,7 +3,7 @@
 > AI 领域的先驱与争议人物，既推动了神经网络的诞生，也亲手将其推入寒冬。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

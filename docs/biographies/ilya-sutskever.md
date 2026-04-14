@@ -3,7 +3,7 @@
 > 从 AlexNet 到 OpenAI，再到追寻安全超级智能，他始终站在 AI 前沿的风暴中心。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

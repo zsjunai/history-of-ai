@@ -3,7 +3,7 @@
 > 从"机器能否思考"到"机器何时超越人类"——AGI 和 ASI 是 AI 领域最宏大也最具争议的命题，它既是技术目标，也是哲学困境，更是关乎人类命运的赌局。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

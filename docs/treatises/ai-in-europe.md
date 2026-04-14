@@ -3,7 +3,7 @@
 > 图灵的故乡，LSTM 的诞生地，全球第一部 AI 法律的制定者——欧洲在 AI 历史中的角色，是先驱的荣耀、错失的遗憾与规则制定者的野心的交织。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

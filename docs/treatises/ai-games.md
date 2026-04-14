@@ -3,7 +3,7 @@
 > 从跳棋到国际象棋到围棋到星际争霸——游戏是 AI 能力最直观的试金石，也是里程碑最密集的竞技场。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

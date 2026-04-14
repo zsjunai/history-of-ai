@@ -6,7 +6,7 @@
 
 ## 在线阅读 Read Online
 
-🔗 **https://t-7788.github.io/history-of-ai/**
+🔗 **https://zsjunai.github.io/history-of-ai/**
 
 ## 项目规模
 
@@ -95,7 +95,7 @@ MIT AI 实验室 · CMU · 斯坦福 AI 实验室 · Bell Labs · IBM 研究院 
 
 ```bash
 # 克隆仓库
-git clone https://github.com/T-7788/history-of-ai.git
+git clone https://github.com/zsjunai/history-of-ai.git
 cd history-of-ai
 
 # 安装依赖
@@ -117,8 +117,8 @@ npm run docs:preview
 
 | 贡献方式 | 说明 |
 |----------|------|
-| 🐛 **纠错** | 发现事实错误？提交 [Issue](https://github.com/T-7788/history-of-ai/issues/new?template=correction.md) |
-| 💡 **建议** | 想添加新内容？提交 [Issue](https://github.com/T-7788/history-of-ai/issues/new?template=suggestion.md) |
+| 🐛 **纠错** | 发现事实错误？提交 [Issue](https://github.com/zsjunai/history-of-ai/issues/new?template=correction.md) |
+| 💡 **建议** | 想添加新内容？提交 [Issue](https://github.com/zsjunai/history-of-ai/issues/new?template=suggestion.md) |
 | ✍️ **撰写** | 认领占位章节，撰写完整内容 |
 | 🖼️ **图片** | 补充人物照片和历史事件图片（需符合版权要求） |
 | 🎙️ **口述史** | 如果你是 AI 领域的亲历者，欢迎在"亲历者说"板块分享 |
@@ -134,4 +134,4 @@ npm run docs:preview
 
 ---
 
-**AI 史记开源社区** · [在线阅读](https://t-7788.github.io/history-of-ai/) · [参与贡献](CONTRIBUTING.md) · [提交 Issue](https://github.com/T-7788/history-of-ai/issues)
+**AI 史记开源社区** · [在线阅读](https://zsjunai.github.io/history-of-ai/) · [参与贡献](CONTRIBUTING.md) · [提交 Issue](https://github.com/zsjunai/history-of-ai/issues)

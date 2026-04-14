@@ -3,7 +3,7 @@
 > 专家系统的商业化浪潮让 AI 重新成为焦点，但繁荣的背后埋藏着新的危机。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

@@ -3,7 +3,7 @@
 > AI 的第一个寒冬，过高的期望撞上了现实的墙壁，资金枯竭，信心崩塌。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

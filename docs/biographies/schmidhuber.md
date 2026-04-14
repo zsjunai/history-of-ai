@@ -3,7 +3,7 @@
 > LSTM 的发明者，20 世纪被引用最多的 AI 论文作者——也是 AI 领域最执着于争夺发明权的人。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
@@ -19,7 +19,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你了解施密德胡贝的第一手资料或相关回忆，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你了解施密德胡贝的第一手资料或相关回忆，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

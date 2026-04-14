@@ -3,7 +3,7 @@
 > 将 AI 从实验室推向大众的商业领袖，也是这个时代最具争议的科技人物之一。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

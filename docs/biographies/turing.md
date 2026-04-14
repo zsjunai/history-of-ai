@@ -82,7 +82,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你了解图灵的第一手资料或相关回忆，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你了解图灵的第一手资料或相关回忆，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

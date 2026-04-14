@@ -3,7 +3,7 @@
 > ChatGPT 的发布将 AI 从实验室推向了每个人的日常生活，开启了人类历史的新篇章。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

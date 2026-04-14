@@ -3,7 +3,7 @@
 > 没有硬件的进化，就没有深度学习的革命。从芯片到数据中心到全球算力竞争，算力是 AI 进步最容易被忽视的关键变量。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

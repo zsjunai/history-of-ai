@@ -3,7 +3,7 @@
 > 信息论诞生于此，晶体管发明于此。这座工业研究实验室证明了：基础研究可以改变世界。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
@@ -23,7 +23,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你曾在 Bell Labs 工作，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你曾在 Bell Labs 工作，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

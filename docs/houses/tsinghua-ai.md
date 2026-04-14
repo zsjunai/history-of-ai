@@ -3,7 +3,7 @@
 > 中国 AI 学术研究的最高学府，从图灵奖得主姚期智到 GLM 大模型，清华定义了中国 AI 的学术高度。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
@@ -26,7 +26,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你曾在清华 AI 相关院系学习或工作，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你曾在清华 AI 相关院系学习或工作，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

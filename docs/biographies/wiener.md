@@ -3,7 +3,7 @@
 > 控制论的创始人，最早预见人工智能的社会风险，却在 AI 诞生之前就被边缘化。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
@@ -19,7 +19,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你了解维纳的第一手资料或相关回忆，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你了解维纳的第一手资料或相关回忆，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

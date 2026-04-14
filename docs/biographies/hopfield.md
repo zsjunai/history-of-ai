@@ -3,7 +3,7 @@
 > 用物理学家的眼光看神经网络，发明了以自己名字命名的网络模型——六十年后，这份贡献为他赢得了诺贝尔物理学奖。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
@@ -19,7 +19,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你了解霍普菲尔德的第一手资料或相关回忆，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你了解霍普菲尔德的第一手资料或相关回忆，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

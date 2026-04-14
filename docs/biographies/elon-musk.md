@@ -3,7 +3,7 @@
 > 他联合创立了 OpenAI，然后与之决裂并起诉它；他警告 AI 是"人类文明最大的威胁"，然后创办了自己的 AI 公司——在 AI 历史中，没有比马斯克更矛盾的角色。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
@@ -30,7 +30,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你了解马斯克在 AI 领域的第一手经历，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你了解马斯克在 AI 领域的第一手经历，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

@@ -3,7 +3,7 @@
 > 深度学习的三位奠基人中有两位在加拿大——辛顿在多伦多，本吉奥在蒙特利尔。这个国家以极小的体量，撬动了 AI 最重要的一次范式革命。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

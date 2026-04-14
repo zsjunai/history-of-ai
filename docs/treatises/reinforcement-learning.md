@@ -3,7 +3,7 @@
 > 从动物行为实验到 AlphaGo，让机器通过试错学习的艺术。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

@@ -3,7 +3,7 @@
 > 从对话到行动——当 AI 不再只是回答问题，而是能自主规划、使用工具、完成任务时，一个新的计算范式正在诞生。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

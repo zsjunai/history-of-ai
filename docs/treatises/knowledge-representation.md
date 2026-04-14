@@ -3,7 +3,7 @@
 > 符号主义的核心追问：如何让机器"知道"世界？从专家系统的 if-then 规则到知识图谱再到神经符号融合，这条路走了七十年。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

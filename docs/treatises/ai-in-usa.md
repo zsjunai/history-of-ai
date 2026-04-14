@@ -3,7 +3,7 @@
 > AI 诞生于美国，成长于美国，至今美国仍是全球 AI 研究和产业的绝对中心。这既是先发优势的结果，也是制度、资本和人才共同作用的产物。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

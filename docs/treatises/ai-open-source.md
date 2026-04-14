@@ -3,7 +3,7 @@
 > 从 TensorFlow 的发布到 LLaMA 的泄露，开源改变了 AI 的权力格局——它既是技术民主化的力量，也是地缘政治的武器。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 一、学术开源时代（2010-2015）

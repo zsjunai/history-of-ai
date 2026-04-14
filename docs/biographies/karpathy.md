@@ -3,7 +3,7 @@
 > 从斯坦福博士生到 Tesla AI 总监再到 AI 教育布道者，他让深度学习变得人人可学。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
@@ -21,7 +21,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你了解 Karpathy 的工作或相关经历，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你了解 Karpathy 的工作或相关经历，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

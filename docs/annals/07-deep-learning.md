@@ -3,7 +3,7 @@
 > AlexNet 在 ImageNet 竞赛上的惊人表现，点燃了深度学习的燎原之火。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

@@ -3,7 +3,7 @@
 > 人工智能的第一个黄金时代，乐观主义弥漫，研究者相信通用人工智能指日可待。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

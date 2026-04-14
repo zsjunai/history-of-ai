@@ -3,7 +3,7 @@
 > 一家以"解决智能，然后用智能解决一切"为使命的公司，用 AlphaGo 震惊世界，用 AlphaFold 造福科学。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
@@ -23,7 +23,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你曾在 DeepMind 工作，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你曾在 DeepMind 工作，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

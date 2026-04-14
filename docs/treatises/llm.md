@@ -3,7 +3,7 @@
 > 从 GPT-1 的 1.17 亿参数到 GPT-4 的万亿级参数，大语言模型在五年内从实验室的好奇心变成了改变世界的力量。这是 AI 历史上最快的范式革命。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

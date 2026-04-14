@@ -3,7 +3,7 @@
 > 横跨中美两大 AI 强国的桥梁人物——他共同创立了 Google Brain，领导了百度 AI，又用在线教育让全世界学会了深度学习。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
@@ -22,7 +22,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你了解吴恩达的工作或相关经历，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你了解吴恩达的工作或相关经历，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

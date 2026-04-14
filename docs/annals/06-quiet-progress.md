@@ -3,7 +3,7 @@
 > 在公众视野之外，AI 研究者默默积累，统计方法和机器学习为下一次爆发奠定基础。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

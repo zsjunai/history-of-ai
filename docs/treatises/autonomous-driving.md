@@ -3,7 +3,7 @@
 > 自动驾驶是 AI 最早的商业化"圣杯"之一——它的故事充满了过度承诺、技术瓶颈、致命事故和永远推迟的时间表。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

@@ -14,7 +14,7 @@ hero:
       link: /timeline/
     - theme: alt
       text: GitHub
-      link: https://github.com/T-7788/history-of-ai
+      link: https://github.com/zsjunai/history-of-ai
 
 features:
   - icon:

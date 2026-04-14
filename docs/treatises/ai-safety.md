@@ -3,7 +3,7 @@
 > 当 AI 系统越来越强大，一个根本性的问题浮出水面：我们如何确保 AI 做我们希望它做的事，而不是它"认为"应该做的事？
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

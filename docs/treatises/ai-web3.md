@@ -3,7 +3,7 @@
 > 当去中心化遇上人工智能——这是一场真正的技术融合，还是又一轮裹着 AI 外衣的加密炒作？历史会给出答案，但记录者不应回避。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

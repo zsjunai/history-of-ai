@@ -3,7 +3,7 @@
 > AlphaFold 解决了困扰生物学界五十年的蛋白质折叠问题，获得了诺贝尔化学奖——AI 第一次在基础科学中做出了诺奖级贡献。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

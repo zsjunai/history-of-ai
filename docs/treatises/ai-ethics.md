@@ -3,7 +3,7 @@
 > 当机器开始做出影响人类命运的决策，我们不得不面对前所未有的伦理困境。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

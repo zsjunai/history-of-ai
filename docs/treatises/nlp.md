@@ -3,7 +3,7 @@
 > 从 ELIZA 的简单模式匹配到 GPT 的涌现能力，人类教机器理解语言的漫长旅程。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲

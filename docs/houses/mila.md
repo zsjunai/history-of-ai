@@ -3,7 +3,7 @@
 > 深度学习三大重镇之一，本吉奥在此坚守三十年，把蒙特利尔变成了全球 AI 高地。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
@@ -24,7 +24,7 @@
 ## 亲历者说
 
 ::: info 征集中
-如果你曾在 MILA 学习或工作，欢迎[提交贡献](https://github.com/T-7788/history-of-ai)。
+如果你曾在 MILA 学习或工作，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 参考资料

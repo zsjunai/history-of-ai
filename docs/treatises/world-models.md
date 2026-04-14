@@ -3,7 +3,7 @@
 > 杨立昆说："大语言模型永远不可能达到人类智能，因为它们只学会了语言，没有学会世界。"世界模型是对 LLM 路线最根本的挑战。
 
 ::: warning 待完善
-本章节尚待撰写，欢迎[参与贡献](https://github.com/T-7788/history-of-ai)。
+本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。
 :::
 
 ## 大纲
