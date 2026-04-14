@@ -24,7 +24,9 @@ export default {
         document.querySelectorAll('.VPNavBarMenuLink, .VPNavScreenMenuLink').forEach((el) => {
           const text = el.textContent?.trim()
           if (text && navTooltips[text]) {
-            el.setAttribute('title', navTooltips[text])
+            el.removeAttribute('title')
+            el.setAttribute('data-tooltip', navTooltips[text])
+            el.classList.add('has-tooltip')
           }
         })
       }
