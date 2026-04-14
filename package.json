@@ -1,0 +1,17 @@
+{
+  "name": "history-of-ai",
+  "version": "0.1.0",
+  "description": "AI 史记 - 一本开源的人工智能历史书籍 | An open-source book on the history of Artificial Intelligence",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": ["ai", "history", "book", "open-source"],
+  "author": "",
+  "license": "CC-BY-SA-4.0",
+  "type": "module",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

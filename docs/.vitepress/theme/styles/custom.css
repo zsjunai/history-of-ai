@@ -1,0 +1,245 @@
+/* ===== Typography ===== */
+
+:root {
+  --vp-font-family-base: 'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+}
+
+.vp-doc {
+  line-height: 1.85;
+}
+
+/* Chapter titles */
+.vp-doc h1 {
+  background: linear-gradient(135deg, var(--vp-c-brand-1), #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.dark .vp-doc h1 {
+  background: linear-gradient(135deg, #38bdf8, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Section titles - left accent bar */
+.vp-doc h2 {
+  padding-left: 0.75em;
+  border-left: 3px solid var(--vp-c-brand-1);
+  margin-top: 2.5em;
+}
+
+/* ===== Hero ===== */
+
+.VPHero {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.VPHero .name {
+  font-weight: 900 !important;
+  letter-spacing: 0.02em;
+  position: relative;
+  z-index: 2;
+}
+
+.VPHero .text,
+.VPHero .tagline,
+.VPHero .actions {
+  position: relative;
+  z-index: 2;
+}
+
+.VPHero .tagline {
+  letter-spacing: 0.01em;
+  max-width: 100% !important;
+}
+
+.VPHero .image-container,
+.VPHero .image-bg {
+  position: relative !important;
+  overflow: visible !important;
+  min-height: 280px;
+}
+
+/* ===== Feature Cards ===== */
+
+/* Entrance animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.VPFeatures .VPFeature {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.VPFeatures .item:nth-child(1) .VPFeature { animation-delay: 0.1s; }
+.VPFeatures .item:nth-child(2) .VPFeature { animation-delay: 0.2s; }
+.VPFeatures .item:nth-child(3) .VPFeature { animation-delay: 0.3s; }
+.VPFeatures .item:nth-child(4) .VPFeature { animation-delay: 0.4s; }
+.VPFeatures .item:nth-child(5) .VPFeature { animation-delay: 0.5s; }
+.VPFeatures .item:nth-child(6) .VPFeature { animation-delay: 0.6s; }
+
+.VPFeature {
+  border: 1px solid var(--vp-c-divider) !important;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transform: translateY(0);
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-1) !important;
+  box-shadow: 0 8px 30px rgba(14, 165, 233, 0.12) !important;
+  transform: translateY(-4px) !important;
+}
+
+.dark .VPFeature:hover {
+  box-shadow: 0 8px 30px rgba(56, 189, 248, 0.1),
+              0 0 0 1px rgba(56, 189, 248, 0.15) !important;
+}
+
+/* Icon glow on hover */
+.VPFeature:hover .VPImage {
+  filter: drop-shadow(0 0 8px rgba(14, 165, 233, 0.4));
+  transition: filter 0.35s ease;
+}
+
+.dark .VPFeature:hover .VPImage {
+  filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.5));
+}
+
+/* ===== 太史公曰 Callout ===== */
+
+.vp-doc .custom-block.tip {
+  border-left: 3px solid var(--vp-c-brand-1);
+  background: linear-gradient(135deg, var(--vp-c-tip-soft), transparent);
+  border-radius: 8px;
+  padding: 1.2em 1.5em;
+}
+
+.vp-doc .custom-block.tip .custom-block-title {
+  font-weight: 700;
+  font-size: 1.05em;
+  letter-spacing: 0.05em;
+  color: var(--vp-c-brand-1);
+}
+
+.vp-doc .custom-block.tip .custom-block-title::before {
+  content: '>';
+  display: inline-block;
+  margin-right: 0.4em;
+  font-family: var(--vp-font-family-mono);
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+/* ===== 亲历者说 / 征集中 Callout ===== */
+
+.vp-doc .custom-block.info {
+  border: 1px dashed var(--vp-c-text-3);
+  background: var(--vp-c-bg-soft);
+  border-radius: 8px;
+}
+
+/* ===== 待完善 Warning ===== */
+
+.vp-doc .custom-block.warning {
+  border-radius: 8px;
+}
+
+/* ===== Blockquote (chapter epigraphs) ===== */
+
+.vp-doc blockquote {
+  border-left: 2px solid var(--vp-c-brand-1);
+  color: var(--vp-c-text-2);
+  font-style: normal;
+  padding: 0.5em 1.2em;
+  background: var(--vp-c-bg-soft);
+  border-radius: 0 6px 6px 0;
+}
+
+/* ===== Tables ===== */
+
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.vp-doc table th {
+  background: var(--vp-c-bg-mute);
+  font-weight: 700;
+  text-align: left;
+}
+
+.vp-doc table tr:nth-child(even) {
+  background: var(--vp-c-bg-soft);
+}
+
+/* ===== Sidebar active indicator ===== */
+
+.VPSidebarItem.is-active > .item > .indicator {
+  background-color: var(--vp-c-brand-1) !important;
+}
+
+/* ===== Scrollbar (dark mode) ===== */
+
+.dark ::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: var(--vp-c-bg);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--vp-c-bg-mute);
+  border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-3);
+}
+
+/* ===== Code blocks ===== */
+
+.vp-doc div[class*='language-'] {
+  border-radius: 8px;
+}
+
+/* ===== Footer ===== */
+
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider) !important;
+}
+
+/* ===== Images ===== */
+
+.vp-doc img {
+  border-radius: 6px;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+  .vp-doc {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .vp-doc img[style*="float"] {
+    float: none !important;
+    display: block;
+    margin: 1em auto !important;
+  }
+}
