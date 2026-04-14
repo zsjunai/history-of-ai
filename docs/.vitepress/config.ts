@@ -7,12 +7,78 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
 
+  sitemap: {
+    hostname: 'https://zsjunai.github.io/history-of-ai/',
+  },
+
   head: [
     ['meta', { name: 'theme-color', content: '#0ea5e9' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+SC:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap', rel: 'stylesheet' }],
+
+    // SEO Meta
+    ['meta', { name: 'keywords', content: 'AI历史,人工智能历史,AI史记,History of AI,AI Timeline,人工智能发展史,深度学习,机器学习,图灵,神经网络,大语言模型,ChatGPT,Transformer,AGI,AI人物传记,Turing,Hinton,OpenAI,DeepMind' }],
+    ['meta', { name: 'author', content: 'AI 史记开源社区' }],
+    ['meta', { name: 'robots', content: 'index, follow' }],
+
+    // Open Graph
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'AI 史记' }],
+    ['meta', { property: 'og:title', content: 'AI 史记 — 人工智能的前世今生' }],
+    ['meta', { property: 'og:description', content: '一本开源的 AI 历史书籍，以史记五体记录 AI 从 1943 年到 2026 年的关键事件、人物与机构——一场改变人类命运的智能革命。涵盖图灵、辛顿、OpenAI、深度学习、大语言模型等。' }],
+    ['meta', { property: 'og:url', content: 'https://zsjunai.github.io/history-of-ai/' }],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
+    ['meta', { property: 'og:locale:alternate', content: 'en_US' }],
+
+    // Twitter Card
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'AI 史记 — 人工智能的前世今生' }],
+    ['meta', { name: 'twitter:description', content: '以史记五体记录 AI 从 1943 到 2026 年的关键事件、人物与机构。开源共建，社区协作。' }],
+
+    // JSON-LD Structured Data
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'AI 史记',
+      alternateName: 'History of AI',
+      url: 'https://zsjunai.github.io/history-of-ai/',
+      description: '一本开源的 AI 历史书籍，以史记五体记录 AI 从 1943 年到 2026 年的关键事件、人物与机构——一场改变人类命运的智能革命。',
+      inLanguage: ['zh-CN', 'en'],
+      isAccessibleForFree: true,
+      license: 'https://creativecommons.org/licenses/by-sa/4.0/',
+      publisher: {
+        '@type': 'Organization',
+        name: 'AI 史记开源社区',
+        url: 'https://github.com/zsjunai/history-of-ai',
+      },
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: 'https://zsjunai.github.io/history-of-ai/?q={search_term_string}',
+        'query-input': 'required name=search_term_string',
+      },
+    })],
+
+    // JSON-LD Book
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: 'AI 史记',
+      alternateName: 'History of AI — Records of Artificial Intelligence',
+      url: 'https://zsjunai.github.io/history-of-ai/',
+      inLanguage: ['zh-CN', 'en'],
+      about: [
+        { '@type': 'Thing', name: 'Artificial Intelligence' },
+        { '@type': 'Thing', name: 'History of Computing' },
+        { '@type': 'Thing', name: 'Deep Learning' },
+        { '@type': 'Thing', name: 'Machine Learning' },
+      ],
+      genre: ['History', 'Technology', 'Science'],
+      isAccessibleForFree: true,
+      license: 'https://creativecommons.org/licenses/by-sa/4.0/',
+      copyrightYear: 2026,
+    })],
   ],
 
   locales: {
