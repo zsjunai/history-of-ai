@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'AI 史记',
   description: '一本开源的人工智能历史书籍，记录 AI 从诞生到现在的关键事件与人物',
   lang: 'zh-CN',
+  base: '/history-of-ai/',
   lastUpdated: true,
   cleanUrls: true,
 
