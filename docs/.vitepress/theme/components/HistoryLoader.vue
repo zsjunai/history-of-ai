@@ -219,11 +219,14 @@ onUnmounted(() => {
 
 .history-loader {
   margin: 0;
-  padding: 0 0 30px;
+  padding: 0 24px 30px;
+  box-sizing: border-box;
 }
 
 .terminal {
   margin: 0 auto;
+  max-width: 1100px;
+  overflow: hidden;
 }
 
 .terminal {
