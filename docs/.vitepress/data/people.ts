@@ -575,10 +575,10 @@ export const people: Record<string, Person> = {
     id: 'he',
     name: '何恺明',
     englishName: 'Kaiming He',
-    nationality: '华裔美国',
+    nationality: '中国',
     field: '计算机科学家',
     born: '1984',
-    bio: '提出残差网络（ResNet）和 Mask R-CNN，曾任微软亚洲研究院研究员，现任 MIT 教授。',
+    bio: '清华大学毕业，在微软亚洲研究院提出残差网络（ResNet）和 Mask R-CNN，现任 MIT 教授。',
   },
 
   // Transformer 纪元与生成式 AI 人物
