@@ -75,3 +75,9 @@ npm run docs:preview  # 预览构建结果
 - 新增时间线事件需更新 `timeline.ts`，首页动画和年表自动同步
 - 图片需符合版权要求（Public Domain 或 CC 许可），放在 `docs/public/images/`
 - GitHub Pages 部署地址带 `/history-of-ai/` 子路径，StatsBar 等组件的链接需包含此前缀
+- **篇数同步**：新增或删除文章后，必须同步更新以下所有记录篇数的位置：
+  1. `CLAUDE.md` — 五体结构表格
+  2. `README.md` — 五体结构表格及合计数
+  3. `docs/guide/introduction.md` — 前言中的篇数描述
+  4. `docs/index.md` — 首页 features 中的篇数描述
+  5. `docs/.vitepress/theme/components/StatsBar.vue` — 统计数字栏的 number 值
