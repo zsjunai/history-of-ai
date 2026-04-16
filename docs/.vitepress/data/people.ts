@@ -50,7 +50,7 @@ export const people: Record<string, Person> = {
     field: '数学家、逻辑学家',
     born: '1923',
     died: '1969',
-    bio: '自学成才的天才少年，18 岁与麦卡洛克合作提出神经元逻辑模型。',
+    bio: '自学成才的天才少年，20 岁与麦卡洛克合作发表神经元逻辑模型论文。',
   },
   wiener: {
     id: 'wiener',
@@ -575,7 +575,7 @@ export const people: Record<string, Person> = {
     id: 'he',
     name: '何恺明',
     englishName: 'Kaiming He',
-    nationality: '中国',
+    nationality: '华裔美国',
     field: '计算机科学家',
     born: '1984',
     bio: '提出残差网络（ResNet）和 Mask R-CNN，曾任微软亚洲研究院研究员，现任 MIT 教授。',
