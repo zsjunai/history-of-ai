@@ -302,6 +302,26 @@ export const people: Record<string, Person> = {
     bio: '与瓦普尼克共同提出软间隔 SVM，曾任谷歌研究院负责人。',
   },
 
+  // 深度学习前夜人物
+  ng: {
+    id: 'ng',
+    name: '吴恩达',
+    englishName: 'Andrew Ng',
+    nationality: '英国出生、华裔美国',
+    field: '计算机科学家',
+    born: '1976',
+    bio: '斯坦福大学教授，谷歌大脑联合创始人，Coursera 联合创始人，推动深度学习的教育普及。',
+  },
+  huang: {
+    id: 'huang',
+    name: '黄仁勋',
+    englishName: 'Jensen Huang',
+    nationality: '美籍华人（台湾出生）',
+    field: '企业家、电气工程师',
+    born: '1963',
+    bio: 'NVIDIA 联合创始人兼 CEO，推动 GPU 从游戏显卡转型为 AI 计算核心，CUDA 平台缔造者。',
+  },
+
   winograd: {
     id: 'winograd',
     name: '维诺格拉德',
@@ -339,6 +359,44 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1964',
     bio: '深度学习三巨头之一，注意力机制先驱，MILA 创始人。',
+  },
+
+  // 视觉革命时代人物
+  krizhevsky: {
+    id: 'krizhevsky',
+    name: '克里热夫斯基',
+    englishName: 'Alex Krizhevsky',
+    nationality: '乌克兰裔加拿大',
+    field: '计算机科学家',
+    born: '1986',
+    bio: '辛顿的学生，AlexNet 主要开发者，用 GPU 训练深度 CNN 赢得 ILSVRC 2012。',
+  },
+  silver: {
+    id: 'silver',
+    name: '西尔弗',
+    englishName: 'David Silver',
+    nationality: '英国',
+    field: '计算机科学家',
+    born: '1976',
+    bio: 'DeepMind 首席研究员，AlphaGo 项目负责人，深度强化学习领域核心人物。',
+  },
+  sedol: {
+    id: 'sedol',
+    name: '李世石',
+    englishName: 'Lee Sedol',
+    nationality: '韩国',
+    field: '围棋九段',
+    born: '1983',
+    bio: '韩国传奇围棋手，2016 年与 AlphaGo 的对弈成为 AI 历史标志性事件。',
+  },
+  batchnorm_ioffe: {
+    id: 'batchnorm_ioffe',
+    name: '约费',
+    englishName: 'Sergey Ioffe',
+    nationality: '俄裔美国',
+    field: '计算机科学家',
+    born: '1968',
+    bio: '与塞格迪共同提出批归一化（Batch Normalization），大幅加速深度网络训练。',
   },
 
   // 当代关键人物
