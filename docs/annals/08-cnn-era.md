@@ -38,7 +38,7 @@ AlexNet 证明了深度网络的威力，但八层还远远不是极限。此后
 
 2014 年，牛津大学的 VGGNet 用 16-19 层展示了"更深更好"的规律。同年，谷歌的 GoogLeNet（Inception）以 22 层和精巧的"Inception 模块"赢得了 ILSVRC 2014。
 
-2015 年，微软亚洲研究院的何恺明（Kaiming He）等人提出了残差网络（ResNet），将深度推到了 152 层——比 AlexNet 深了将近 20 倍。ResNet 的关键创新是"跳跃连接"（Skip Connection）：让每一层的输入可以直接"跳过"若干层传递到后面，使得梯度可以通过这些捷径更顺畅地流动。这个简单的设计彻底解决了深层网络的训练困难，开启了"深度无极限"的时代。
+2015 年，微软亚洲研究院的<Person id="he" />等人提出了残差网络（ResNet），将深度推到了 152 层——比 AlexNet 深了将近 20 倍。ResNet 的关键创新是"跳跃连接"（Skip Connection）：让每一层的输入可以直接"跳过"若干层传递到后面，使得梯度可以通过这些捷径更顺畅地流动。这个简单的设计彻底解决了深层网络的训练困难，开启了"深度无极限"的时代。
 
 ### 批归一化
 
@@ -120,7 +120,7 @@ AlexNet 的成功引发了科技巨头对 AI 人才的疯狂争夺。
 | 2014 | DeepMind 被谷歌以约 5 亿美元收购 | <Person id="hassabis" /> |
 | 2014 | 古德费洛提出生成对抗网络（GAN） | <Person id="goodfellow" /> |
 | 2014 | 本吉奥团队提出注意力机制用于机器翻译 | <Person id="bengio" /> |
-| 2015 | ResNet 提出跳跃连接，网络深度突破百层 | 何恺明（Kaiming He） |
+| 2015 | ResNet 提出跳跃连接，网络深度突破百层 | <Person id="he" /> |
 | 2015 | 批归一化提出，加速深度网络训练 | <Person id="batchnorm_ioffe" /> |
 | 2015 | 谷歌开源 TensorFlow | — |
 | 2016 | AlphaGo 以 4:1 击败围棋世界冠军李世石 | <Person id="silver" />、<Person id="sedol" /> |

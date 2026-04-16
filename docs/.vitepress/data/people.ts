@@ -436,6 +436,16 @@ export const people: Record<string, Person> = {
     born: '1986',
     bio: '辛顿的学生，AlexNet 合作者，OpenAI 联合创始人兼前首席科学家。',
   },
+  he: {
+    id: 'he',
+    name: '何恺明',
+    englishName: 'Kaiming He',
+    nationality: '中国',
+    field: '计算机科学家',
+    born: '1984',
+    bio: '提出残差网络（ResNet）和 Mask R-CNN，曾任微软亚洲研究院研究员，现任 MIT 教授。',
+  },
+
   // Transformer 纪元与生成式 AI 人物
   vaswani: {
     id: 'vaswani',
