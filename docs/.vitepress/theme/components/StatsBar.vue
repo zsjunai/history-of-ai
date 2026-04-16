@@ -15,7 +15,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 const stats = [
   { number: 83, unit: '年', label: '历史跨度', link: '/history-of-ai/timeline/' },
-  { number: 9, unit: '个', label: '时代', link: '/history-of-ai/annals/01-dawn' },
+  { number: 10, unit: '个', label: '时代', link: '/history-of-ai/annals/01-dawn' },
   { number: 23, unit: '位', label: '关键人物', link: '/history-of-ai/biographies/turing' },
   { number: 14, unit: '家', label: '机构', link: '/history-of-ai/houses/mit-ai-lab' },
   { number: 25, unit: '篇', label: '专题', link: '/history-of-ai/treatises/neural-networks' },

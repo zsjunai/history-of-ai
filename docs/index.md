@@ -27,7 +27,7 @@ features:
   - icon:
       src: /icons/annals.svg
     title: 本纪
-    details: 九篇编年史，以思想冲突为主线，记录 AI 九个时代的核心辩论与转折。
+    details: 十篇编年史，以思想冲突为主线，记录 AI 十个时代的核心辩论与转折。
     link: /annals/01-dawn
   - icon:
       src: /icons/houses.svg

@@ -67,22 +67,29 @@ export const timeline: TimelineEra[] = [
     ],
   },
   {
-    name: '静默前行',
-    period: '1993-2012',
-    link: '/annals/06-quiet-progress',
+    name: '统计学习崛起',
+    period: '1993-2006',
+    link: '/annals/06-statistical-learning',
     events: [
       { year: '1997', event: 'IBM Deep Blue 击败国际象棋世界冠军卡斯帕罗夫（Kasparov），全球震动，登上各大报纸头版', link: '/treatises/ai-games' },
+    ],
+  },
+  {
+    name: '深度学习前夜',
+    period: '2006-2012',
+    link: '/annals/07-prelude-to-deep-learning',
+    events: [
       { year: '2006', event: '辛顿（Hinton）提出深度信念网络，证明深层神经网络可以有效训练，深度学习复兴的号角', link: '/biographies/hinton' },
       { year: '2009', event: '李飞飞（Fei-Fei Li）团队发布 ImageNet 数据集，1400 万张手工标注图片，为深度学习革命埋下种子', link: '/biographies/fei-fei-li' },
       { year: '2011', event: 'IBM Watson 在 Jeopardy! 中击败人类冠军；苹果发布 Siri，AI 走进大众消费者生活', link: '/houses/ibm-research' },
     ],
   },
   {
-    name: '深度学习革命',
+    name: '视觉革命',
     period: '2012-2017',
-    link: '/annals/07-deep-learning',
+    link: '/annals/08-cnn-era',
     events: [
-      { year: '2012', event: 'AlexNet 赢得 ImageNet 竞赛，错误率骤降 10 个百分点，人们以为是 bug——深度学习革命爆发', link: '/annals/07-deep-learning' },
+      { year: '2012', event: 'AlexNet 赢得 ImageNet 竞赛，错误率骤降 10 个百分点，人们以为是 bug——深度学习革命爆发', link: '/annals/08-cnn-era' },
       { year: '2014', event: '古德费洛（Goodfellow）在蒙特利尔一个酒吧的灵感中发明生成对抗网络（GAN），开创生成式 AI', link: '/houses/mila' },
       { year: '2015', event: 'ResNet 突破 100 层深度网络；Google 开源 TensorFlow，深度学习工具民主化', link: '/treatises/ai-open-source' },
       { year: '2016', event: 'AlphaGo 以 4:1 击败围棋世界冠军李世石（Lee Sedol），AI 攻克人类最复杂的棋类游戏', link: '/houses/deepmind' },
@@ -91,7 +98,7 @@ export const timeline: TimelineEra[] = [
   {
     name: 'Transformer 纪元',
     period: '2017-2022',
-    link: '/annals/08-transformer',
+    link: '/annals/09-transformer',
     events: [
       { year: '2017', event: '八位 Google 研究员发表"Attention Is All You Need"，Transformer 架构诞生，改变一切', link: '/houses/google-brain' },
       { year: '2018', event: 'Google 发布 BERT，双向预训练成为 NLP 标配；OpenAI 发布 GPT-1，生成式预训练路线开启', link: '/treatises/llm' },
@@ -104,7 +111,7 @@ export const timeline: TimelineEra[] = [
   {
     name: '生成式 AI 浪潮',
     period: '2022-2026',
-    link: '/annals/09-generative-ai',
+    link: '/annals/10-generative-ai',
     events: [
       { year: '2023', event: 'GPT-4 发布，多模态能力震撼业界；Meta 开源 LLaMA 引爆开源大模型运动；辛顿（Hinton）离开 Google 公开警告 AI 风险', link: '/treatises/ai-open-source' },
       { year: '2024', event: 'OpenAI 发布 Sora 视频生成模型；Anthropic 发布 Claude 3；辛顿（Hinton）获诺贝尔物理学奖，哈萨比斯（Hassabis）获诺贝尔化学奖——AI 研究者首次获诺奖', link: '/treatises/ai-art' },

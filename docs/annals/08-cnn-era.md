@@ -1,6 +1,6 @@
-# 深度学习革命（2012-2017）
+# 本纪第八 · 视觉革命（2012—2017）
 
-> AlexNet 在 ImageNet 竞赛上的惊人表现，点燃了深度学习的燎原之火。
+> AlexNet 在 ImageNet 竞赛上的惊人表现，点燃了深度学习的燎原之火。CNN 席卷计算机视觉，科技巨头纷纷入局。
 
 ::: warning 待完善
 本章节尚待撰写，欢迎[参与贡献](https://github.com/zsjunai/history-of-ai)。

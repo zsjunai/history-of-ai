@@ -1,4 +1,4 @@
-# Transformer 纪元（2017-2022）
+# 本纪第九 · Transformer 纪元（2017—2022）
 
 > 一篇名为"Attention Is All You Need"的论文，彻底改变了 AI 的面貌。
 

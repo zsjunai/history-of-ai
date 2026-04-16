@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import CustomLayout from './components/CustomLayout.vue'
 import TimelinePage from './components/TimelinePage.vue'
+import PersonTooltip from './components/PersonTooltip.vue'
 import './styles/vars.css'
 import './styles/custom.css'
 
@@ -18,6 +19,7 @@ export default {
   Layout: CustomLayout,
   enhanceApp({ app, router }) {
     app.component('TimelinePage', TimelinePage)
+    app.component('Person', PersonTooltip)
 
     if (typeof window !== 'undefined') {
       const addTooltips = () => {
