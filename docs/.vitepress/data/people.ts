@@ -255,6 +255,53 @@ export const people: Record<string, Person> = {
     bio: '与明斯基合著《感知机》，创造 Logo 编程语言，建构主义学习理论先驱。',
   },
 
+  // 统计学习时代人物
+  vapnik: {
+    id: 'vapnik',
+    name: '瓦普尼克',
+    englishName: 'Vladimir Vapnik',
+    nationality: '苏联裔美国',
+    field: '数学家、统计学家',
+    born: '1936',
+    bio: '统计学习理论奠基人，发明支持向量机（SVM），提出 VC 维理论。',
+  },
+  jordan: {
+    id: 'jordan',
+    name: '乔丹',
+    englishName: 'Michael I. Jordan',
+    nationality: '美国',
+    field: '计算机科学家、统计学家',
+    born: '1956',
+    bio: '机器学习领域的核心人物，推动概率图模型和贝叶斯方法在 AI 中的应用，培养了吴恩达、本吉奥等众多学生。',
+  },
+  pearl: {
+    id: 'pearl',
+    name: '珀尔',
+    englishName: 'Judea Pearl',
+    nationality: '以色列裔美国',
+    field: '计算机科学家、哲学家',
+    born: '1936',
+    bio: '贝叶斯网络之父，提出因果推理的数学框架，2011 年获图灵奖。',
+  },
+  kasparov: {
+    id: 'kasparov',
+    name: '卡斯帕罗夫',
+    englishName: 'Garry Kasparov',
+    nationality: '俄罗斯（苏联出生）',
+    field: '国际象棋世界冠军',
+    born: '1963',
+    bio: '1997 年被 IBM 深蓝击败，成为第一位在标准赛制下输给计算机的国际象棋世界冠军。',
+  },
+  cortes: {
+    id: 'cortes',
+    name: '科尔特斯',
+    englishName: 'Corinna Cortes',
+    nationality: '丹麦裔美国',
+    field: '计算机科学家',
+    born: '1961',
+    bio: '与瓦普尼克共同提出软间隔 SVM，曾任谷歌研究院负责人。',
+  },
+
   winograd: {
     id: 'winograd',
     name: '维诺格拉德',
