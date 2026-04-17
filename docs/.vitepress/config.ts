@@ -1,14 +1,20 @@
 import { defineConfig } from 'vitepress'
 
+// 部署目标：
+//   默认（GitHub Pages）：base=/history-of-ai/
+//   ECS（ai.puliot.com）：VITEPRESS_BASE=/ 时 base=/
+const base = process.env.VITEPRESS_BASE ?? '/history-of-ai/'
+const siteHostname = process.env.VITEPRESS_HOSTNAME ?? 'https://zsjunai.github.io/history-of-ai/'
+
 export default defineConfig({
   title: 'AI 史记',
   description: '一本开源的人工智能历史书籍，记录 AI 从诞生到现在的关键事件与人物',
-  base: '/history-of-ai/',
+  base,
   lastUpdated: true,
   cleanUrls: true,
 
   sitemap: {
-    hostname: 'https://zsjunai.github.io/history-of-ai/',
+    hostname: siteHostname,
   },
 
   head: [

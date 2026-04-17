@@ -12,13 +12,14 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
+import { withBase } from 'vitepress'
 
 const stats = [
-  { number: 83, unit: '年', label: '历史跨度', link: '/history-of-ai/timeline/' },
-  { number: 10, unit: '纪', label: '本纪', link: '/history-of-ai/annals/01-dawn' },
-  { number: 31, unit: '家', label: '世家', link: '/history-of-ai/houses/mit-ai-lab' },
-  { number: 23, unit: '传', label: '列传', link: '/history-of-ai/biographies/turing' },
-  { number: 25, unit: '卷', label: '书', link: '/history-of-ai/treatises/neural-networks' },
+  { number: 83, unit: '年', label: '历史跨度', link: withBase('/timeline/') },
+  { number: 10, unit: '纪', label: '本纪', link: withBase('/annals/01-dawn') },
+  { number: 31, unit: '家', label: '世家', link: withBase('/houses/mit-ai-lab') },
+  { number: 23, unit: '传', label: '列传', link: withBase('/biographies/turing') },
+  { number: 25, unit: '卷', label: '书', link: withBase('/treatises/neural-networks') },
 ]
 
 const numberRefs = ref<(HTMLElement | null)[]>([])
