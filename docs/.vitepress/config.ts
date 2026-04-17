@@ -37,7 +37,7 @@ export default defineConfig({
     ['meta', { property: 'og:site_name', content: 'AI 史记' }],
     ['meta', { property: 'og:title', content: 'AI 史记 — 人工智能的前世今生' }],
     ['meta', { property: 'og:description', content: '一本开源的 AI 历史书籍，以史记五体记录 AI 从 1943 年到 2026 年的关键事件、人物与机构——一场改变人类命运的智能革命。涵盖图灵、辛顿、OpenAI、深度学习、大语言模型等。' }],
-    ['meta', { property: 'og:url', content: 'https://zsjunai.github.io/history-of-ai/' }],
+    ['meta', { property: 'og:url', content: 'https://ai.puliot.com/' }],
     ['meta', { property: 'og:locale', content: 'zh_CN' }],
     ['meta', { property: 'og:locale:alternate', content: 'en_US' }],
 
@@ -52,7 +52,7 @@ export default defineConfig({
       '@type': 'WebSite',
       name: 'AI 史记',
       alternateName: 'History of AI',
-      url: 'https://zsjunai.github.io/history-of-ai/',
+      url: 'https://ai.puliot.com/',
       description: '一本开源的 AI 历史书籍，以史记五体记录 AI 从 1943 年到 2026 年的关键事件、人物与机构——一场改变人类命运的智能革命。',
       inLanguage: ['zh-CN', 'en'],
       isAccessibleForFree: true,
@@ -64,7 +64,7 @@ export default defineConfig({
       },
       potentialAction: {
         '@type': 'SearchAction',
-        target: 'https://zsjunai.github.io/history-of-ai/?q={search_term_string}',
+        target: 'https://ai.puliot.com/?q={search_term_string}',
         'query-input': 'required name=search_term_string',
       },
     })],
@@ -75,7 +75,7 @@ export default defineConfig({
       '@type': 'Book',
       name: 'AI 史记',
       alternateName: 'History of AI — Records of Artificial Intelligence',
-      url: 'https://zsjunai.github.io/history-of-ai/',
+      url: 'https://ai.puliot.com/',
       inLanguage: ['zh-CN', 'en'],
       about: [
         { '@type': 'Thing', name: 'Artificial Intelligence' },

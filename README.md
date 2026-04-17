@@ -8,7 +8,7 @@
 
 ## 在线阅读 Read Online
 
-🔗 **https://zsjunai.github.io/history-of-ai/**
+🔗 **https://ai.puliot.com/**
 
 ## 项目规模
 
@@ -155,4 +155,4 @@ npm run docs:preview
 
 ---
 
-**AI 史记开源社区** · [在线阅读](https://zsjunai.github.io/history-of-ai/) · [参与贡献](CONTRIBUTING.md) · [提交 Issue](https://github.com/zsjunai/history-of-ai/issues)
+**AI 史记开源社区** · [在线阅读](https://ai.puliot.com/) · [参与贡献](CONTRIBUTING.md) · [提交 Issue](https://github.com/zsjunai/history-of-ai/issues)

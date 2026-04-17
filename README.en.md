@@ -6,7 +6,7 @@ English | [中文](README.md)
 
 ## Read Online
 
-🔗 **https://zsjunai.github.io/history-of-ai/**
+🔗 **https://ai.puliot.com/**
 
 ## Project Scope
 
@@ -141,4 +141,4 @@ For any questions, suggestions, or collaboration inquiries, feel free to reach o
 
 ---
 
-**History of AI Open Source Community** · [Read Online](https://zsjunai.github.io/history-of-ai/) · [Contribute](CONTRIBUTING.md) · [Submit an Issue](https://github.com/zsjunai/history-of-ai/issues)
+**History of AI Open Source Community** · [Read Online](https://ai.puliot.com/) · [Contribute](CONTRIBUTING.md) · [Submit an Issue](https://github.com/zsjunai/history-of-ai/issues)

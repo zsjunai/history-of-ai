@@ -5,7 +5,7 @@
 AI 史记——一本开源的人工智能历史书籍，以司马迁《史记》五体结构记录 AI 从 1943 年到 2026 年的历史。
 
 - 仓库：https://github.com/zsjunai/history-of-ai
-- 在线地址：https://zsjunai.github.io/history-of-ai/
+- 在线地址：https://ai.puliot.com/
 - 技术栈：VitePress 1.6.4 + Vue 3 + TypeScript
 - 许可证：CC-BY-SA 4.0
 
