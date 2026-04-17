@@ -2,10 +2,11 @@
   <div class="home-footer">
     <div class="quote">
       <span class="quote-mark">"</span>
-      <span class="quote-text">The best way to predict the future is to invent it.</span>
+      <span class="quote-text">We can only see a short distance ahead, but we can see plenty there that needs to be done.</span>
       <span class="quote-mark">"</span>
     </div>
-    <div class="quote-author">— Alan Kay, 1971</div>
+    <div class="quote-translation">我们只能看清前方一小段距离，但在那里已经有大量工作等着我们去做。</div>
+    <div class="quote-author">— Alan Turing, 《计算机器与智能》, 1950</div>
     <div class="badges">
       <a href="https://github.com/zsjunai/history-of-ai" class="badge">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -16,7 +17,7 @@
       <span class="separator">·</span>
       <span class="license">CC-BY-SA 4.0</span>
       <span class="separator">·</span>
-      <span class="license">开源共建</span>
+      <span class="license">历史由所有人共同书写</span>
     </div>
   </div>
 </template>
@@ -40,6 +41,13 @@
   color: var(--vp-c-brand-1);
   opacity: 0.5;
   vertical-align: -0.1em;
+}
+
+.quote-translation {
+  font-size: 0.95em;
+  color: var(--vp-c-text-2);
+  margin-top: 6px;
+  font-style: normal;
 }
 
 .quote-author {

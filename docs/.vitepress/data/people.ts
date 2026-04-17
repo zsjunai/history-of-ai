@@ -20,7 +20,7 @@ export const people: Record<string, Person> = {
     field: '数学家、逻辑学家',
     born: '1912',
     died: '1954',
-    bio: '提出图灵机模型和图灵测试，被誉为"计算机科学与人工智能之父"。',
+    bio: '24 岁时提出图灵机模型，奠定可计算性理论基础。二战期间在布莱切利园领导团队破解德军 Enigma 密码。1950 年发表《计算机器与智能》提出图灵测试，被誉为"计算机科学与人工智能之父"。',
   },
   church: {
     id: 'church',
@@ -30,7 +30,7 @@ export const people: Record<string, Person> = {
     field: '数学家、逻辑学家',
     born: '1903',
     died: '1995',
-    bio: '发明 lambda 演算，与图灵独立定义了可计算性边界，提出邱奇-图灵论题。',
+    bio: '普林斯顿大学教授，1936 年发明 lambda 演算，与图灵独立定义了可计算性边界，共同提出"邱奇-图灵论题"。培养了图灵、克林、罗瑟等一批奠基性逻辑学家。',
   },
   mcculloch: {
     id: 'mcculloch',
@@ -40,7 +40,7 @@ export const people: Record<string, Person> = {
     field: '神经生理学家',
     born: '1898',
     died: '1969',
-    bio: '与皮茨合作发表第一个神经元数学模型，开创计算神经科学。',
+    bio: '兼具诗人气质的神经生理学家。1943 年与皮茨合作发表《神经活动中内在观念的逻辑演算》，提出第一个神经元数学模型，开创计算神经科学。后领导 MIT 电子学研究实验室，深度参与梅西控制论会议。',
   },
   pitts: {
     id: 'pitts',
@@ -50,7 +50,7 @@ export const people: Record<string, Person> = {
     field: '数学家、逻辑学家',
     born: '1923',
     died: '1969',
-    bio: '自学成才的天才少年，20 岁与麦卡洛克合作发表神经元逻辑模型论文。',
+    bio: '自学成才的天才少年，少年时期在芝加哥大学图书馆流浪自学。20 岁与麦卡洛克合作发表神经元逻辑模型论文，被视为连接主义源头。后因学术挫折酗酒，46 岁英年早逝。',
   },
   wiener: {
     id: 'wiener',
@@ -60,7 +60,7 @@ export const people: Record<string, Person> = {
     field: '数学家',
     born: '1894',
     died: '1964',
-    bio: '控制论创始人，提出智能行为的反馈调节理论，连接生物与机器。',
+    bio: '11 岁上大学、18 岁取得哈佛博士学位的神童。二战研究防空火控反馈系统，1948 年出版《控制论》，建立生物与机器的统一行为框架。发起梅西会议，与麦卡洛克并肩推动跨学科运动。',
   },
   shannon: {
     id: 'shannon',
@@ -70,7 +70,7 @@ export const people: Record<string, Person> = {
     field: '数学家、电气工程师',
     born: '1916',
     died: '2001',
-    bio: '信息论创始人，定义"比特"概念，达特茅斯会议四位发起人之一。',
+    bio: '贝尔实验室研究员，1948 年发表《通信的数学理论》创立信息论，定义"比特"概念。达特茅斯会议四位发起人之一，1950 年发表计算机下棋论文，制造会走迷宫的电子鼠"忒修斯"。喜欢独轮车和杂耍。',
   },
   vonneumann: {
     id: 'vonneumann',
@@ -80,7 +80,7 @@ export const people: Record<string, Person> = {
     field: '数学家',
     born: '1903',
     died: '1957',
-    bio: '确立存储程序计算机体系结构，晚年深入研究大脑与计算机的类比。',
+    bio: '被誉为 20 世纪最聪明的头脑之一，参与曼哈顿计划。1945 年起草 EDVAC 报告，确立存储程序计算机体系结构，几乎所有现代计算机都是"冯·诺伊曼机器"。晚年专注大脑与计算机的类比，遗著《计算机与大脑》身后出版。',
   },
   hebb: {
     id: 'hebb',
@@ -90,7 +90,7 @@ export const people: Record<string, Person> = {
     field: '心理学家',
     born: '1904',
     died: '1985',
-    bio: '提出赫布学习规则——"一起激活的神经元会连接在一起"，奠定连接主义基础。',
+    bio: '麦吉尔大学心理学教授。1949 年在《行为的组织》中提出赫布学习规则——"一起激活的神经元会连接在一起"，奠定连接主义和神经网络学习算法的生物学基础。',
   },
   mccarthy: {
     id: 'mccarthy',
@@ -100,7 +100,7 @@ export const people: Record<string, Person> = {
     field: '数学家、计算机科学家',
     born: '1927',
     died: '2011',
-    bio: '创造"人工智能"一词，组织达特茅斯会议，发明 LISP 语言。',
+    bio: '1956 年在达特茅斯会议上创造"人工智能"一词，定义了整个领域。1958 年发明 LISP 语言，此后统治 AI 研究三十年。共同创建 MIT 和斯坦福 AI 实验室，1971 年获图灵奖。',
   },
   minsky: {
     id: 'minsky',
@@ -110,7 +110,7 @@ export const people: Record<string, Person> = {
     field: '数学家、认知科学家',
     born: '1927',
     died: '2016',
-    bio: '建造第一台神经网络计算机 SNARC，共同创建 MIT AI 实验室。',
+    bio: '1951 年与埃德蒙兹建造第一台神经网络计算机 SNARC。1959 年与麦卡锡共同创建 MIT AI 实验室，提出"框架"理论。1969 年与帕珀特合著《感知机》，间接导致神经网络研究进入寒冬。1969 年获图灵奖。',
   },
   newell: {
     id: 'newell',
@@ -120,7 +120,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1927',
     died: '1992',
-    bio: '与西蒙共同开发"逻辑理论家"——人工智能史上第一个 AI 程序。',
+    bio: '与西蒙、肖合作开发"逻辑理论家"——人工智能史上第一个 AI 程序。后共同提出"物理符号系统假说"，长期任教 CMU，奠定符号主义 AI 研究范式。1975 年与西蒙共获图灵奖。',
   },
   simon: {
     id: 'simon',
@@ -130,7 +130,7 @@ export const people: Record<string, Person> = {
     field: '认知科学家、经济学家',
     born: '1916',
     died: '2001',
-    bio: '与纽厄尔合作开创符号 AI，提出"有限理性"理论，获诺贝尔经济学奖。',
+    bio: '跨越多个学科的思想家。与纽厄尔合作开创符号 AI，提出"有限理性"理论。1978 年获诺贝尔经济学奖，1975 年与纽厄尔共获图灵奖——史上罕见的同获两大奖者。',
   },
   samuel: {
     id: 'samuel',
@@ -140,7 +140,7 @@ export const people: Record<string, Person> = {
     field: '工程师、计算机科学家',
     born: '1901',
     died: '1990',
-    bio: '开发会自我提升的跳棋程序，创造"机器学习"一词。',
+    bio: 'IBM 工程师。1952 年开始开发可自我学习的跳棋程序，程序最终棋力超过他本人。1959 年在论文中首次使用"机器学习"一词，定义了一整个子领域。',
   },
   russell: {
     id: 'russell',
@@ -150,7 +150,7 @@ export const people: Record<string, Person> = {
     field: '哲学家、数学家',
     born: '1872',
     died: '1970',
-    bio: '与怀特海合著《数学原理》，对数理逻辑和分析哲学产生深远影响。',
+    bio: '20 世纪最重要的哲学家之一。与怀特海合著《数学原理》（1910-1913），对数理逻辑和分析哲学产生深远影响。1950 年获诺贝尔文学奖，终生投身反战与社会运动。',
   },
   rochester: {
     id: 'rochester',
@@ -160,7 +160,7 @@ export const people: Record<string, Person> = {
     field: '工程师',
     born: '1919',
     died: '2001',
-    bio: 'IBM 工程师，达特茅斯会议四位发起人之一，设计了 IBM 701 计算机。',
+    bio: 'IBM 701 计算机首席架构师——这是 IBM 第一款商用科学计算机。达特茅斯会议四位发起人之一，在 IBM 内部最早推动机器学习和神经网络模拟研究。',
   },
 
   whitehead: {
@@ -171,7 +171,7 @@ export const people: Record<string, Person> = {
     field: '数学家、哲学家',
     born: '1861',
     died: '1947',
-    bio: '与罗素合著《数学原理》，对数理逻辑和过程哲学产生深远影响。',
+    bio: '曾任剑桥大学和哈佛大学教授。与学生罗素合著《数学原理》，晚年转向形而上学研究，创立"过程哲学"，对 20 世纪逻辑学、数学基础和哲学产生深远影响。',
   },
   edmonds: {
     id: 'edmonds',
@@ -181,7 +181,7 @@ export const people: Record<string, Person> = {
     field: '工程师',
     born: '1924',
     died: '2009',
-    bio: '与明斯基合作建造世界上第一台硬件神经网络计算机 SNARC。',
+    bio: '普林斯顿大学物理专业学生。1951 年与明斯基合作，用真空管和战争剩余零件建造世界上第一台硬件神经网络计算机 SNARC，模拟 40 个神经元的学习过程。',
   },
   shaw: {
     id: 'shaw',
@@ -191,7 +191,7 @@ export const people: Record<string, Person> = {
     field: '程序员',
     born: '1922',
     died: '1991',
-    bio: '与纽厄尔、西蒙合作开发"逻辑理论家"和 IPL 语言。',
+    bio: 'RAND 公司资深程序员，与纽厄尔、西蒙合作开发"逻辑理论家"。设计 IPL（Information Processing Language），是最早的表处理语言之一，直接启发了 LISP 的诞生。',
   },
 
   // 黄金时代人物
@@ -203,7 +203,7 @@ export const people: Record<string, Person> = {
     field: '心理学家',
     born: '1928',
     died: '1971',
-    bio: '发明感知机（Perceptron），首次实现可学习的硬件神经网络，43 岁因划船事故溺亡。',
+    bio: '康奈尔大学心理学教授。1957 年发明感知机（Perceptron），次年实现 Mark I 硬件版本，是首个可学习的神经网络。1969 年被明斯基与帕珀特的《感知机》一书重创研究前景，43 岁生日当天因划船事故溺亡于切萨皮克湾。',
   },
   weizenbaum: {
     id: 'weizenbaum',
@@ -213,7 +213,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1923',
     died: '2008',
-    bio: '创造 ELIZA 聊天程序，后成为 AI 最著名的批评者之一。',
+    bio: 'MIT 教授，犹太裔难民，青少年随家人逃离纳粹德国。1966 年创造 ELIZA 聊天程序，目睹人们对简单程序投射真实情感后震惊。1976 年出版《计算机的力量与人类的理性》，成为 AI 最著名的批评者之一。',
   },
   nilsson: {
     id: 'nilsson',
@@ -223,7 +223,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1933',
     died: '2019',
-    bio: '领导 Shakey 机器人项目，A* 搜索算法共同发明者，AI 史学家。',
+    bio: '斯坦福研究院（SRI）研究员、后任斯坦福大学教授。1966 年起领导 Shakey 机器人项目，1968 年共同提出 A* 搜索算法，至今仍是路径规划标准。著有《人工智能探索》等权威 AI 史著作。',
   },
   feigenbaum: {
     id: 'feigenbaum',
@@ -232,7 +232,7 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '计算机科学家',
     born: '1936',
-    bio: '被誉为"专家系统之父"，开发 DENDRAL 系统，赫伯特·西蒙的学生。',
+    bio: '西蒙的学生，斯坦福大学教授。1965 年启动 DENDRAL 项目，被誉为"专家系统之父"。1977 年提出"知识工程"概念，将 AI 研究方向从通用推理转向特定领域知识。1994 年获图灵奖。',
   },
   lighthill: {
     id: 'lighthill',
@@ -242,7 +242,7 @@ export const people: Record<string, Person> = {
     field: '数学家',
     born: '1924',
     died: '1998',
-    bio: '1973 年发表莱特希尔报告，严厉批评 AI 研究进展，直接导致英国大幅削减 AI 资助。',
+    bio: '杰出的应用数学家和流体力学专家，在 AI 领域无直接研究经验。1973 年受英国科学研究委员会委托撰写莱特希尔报告，严厉批评 AI "组合爆炸"问题，直接导致英国大幅削减 AI 资助，触发第一次 AI 寒冬。',
   },
   papert: {
     id: 'papert',
@@ -252,7 +252,7 @@ export const people: Record<string, Person> = {
     field: '数学家、教育家',
     born: '1928',
     died: '2016',
-    bio: '与明斯基合著《感知机》，创造 Logo 编程语言，建构主义学习理论先驱。',
+    bio: '南非出身，曾与皮亚杰在日内瓦合作研究儿童认知。1969 年与明斯基合著《感知机》，严格论证单层感知机的局限。创造 Logo 编程语言让儿童学编程，成为建构主义学习理论的先驱。',
   },
 
   // 统计学习时代人物
@@ -265,7 +265,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1923',
     died: '2007',
-    bio: '爱丁堡大学 AI 先驱，在莱特希尔报告辩论中捍卫 AI 研究，二战期间曾在布莱切利园与图灵共事。',
+    bio: '二战期间在布莱切利园与图灵、古德共事，破解德军密码。战后创立爱丁堡大学机器智能系，是英国 AI 的旗手。1973 年在 BBC 电视辩论中正面抗衡莱特希尔，捍卫 AI 研究。',
   },
   schank: {
     id: 'schank',
@@ -275,7 +275,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、认知科学家',
     born: '1946',
     died: '2023',
-    bio: '提出概念依赖理论和"脚本"理论，AI 领域知识表示的重要人物。',
+    bio: '耶鲁大学 AI 实验室主任。提出概念依赖理论和"脚本"理论，试图用结构化知识单元捕捉人类常识。1980 年代后转向 AI 教育应用，是自然语言处理早期核心人物。',
   },
   colmerauer: {
     id: 'colmerauer',
@@ -285,7 +285,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1941',
     died: '2017',
-    bio: 'Prolog 语言的主要设计者和实现者，逻辑编程先驱。',
+    bio: '法国马赛大学教授，逻辑编程先驱。1972 年与同事合作设计并实现 Prolog 语言，将逻辑推理嵌入编程语言本身，成为欧洲 AI 研究的重要工具，也是日本第五代计算机计划的核心语言。',
   },
   kowalski: {
     id: 'kowalski',
@@ -294,7 +294,7 @@ export const people: Record<string, Person> = {
     nationality: '美国裔英国',
     field: '计算机科学家、逻辑学家',
     born: '1941',
-    bio: '为 Prolog 提供理论基础（Horn 子句的过程解释），逻辑编程奠基人。',
+    bio: '伦敦帝国理工学院教授。为 Prolog 提供理论基础（Horn 子句的过程解释），确立"逻辑 = 算法 + 控制"的编程范式，与科尔梅劳尔并称逻辑编程奠基人。',
   },
   mcdermott: {
     id: 'mcdermott',
@@ -303,7 +303,7 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '计算机科学家',
     born: '1942',
-    bio: '开发 R1/XCON 专家系统，为 DEC 每年节省两千五百万美元，开启专家系统商业化时代。',
+    bio: '卡内基梅隆大学（CMU）研究员。1980 年开发 R1/XCON 专家系统，用于为 DEC 自动配置 VAX 计算机，每年节省两千五百万美元。此举标志 AI 第一次大规模商业化成功，引爆专家系统时代。',
   },
   rumelhart: {
     id: 'rumelhart',
@@ -313,7 +313,7 @@ export const people: Record<string, Person> = {
     field: '心理学家、认知科学家',
     born: '1942',
     died: '2011',
-    bio: '与辛顿、威廉姆斯合作发表反向传播算法的经典论文，推动神经网络复兴。',
+    bio: '加州大学圣迭戈分校（UCSD）认知科学家，连接主义核心人物。1986 年与辛顿、威廉姆斯合著《通过反向传播误差学习表征》，让多层神经网络首次可被有效训练。晚年因进行性核上性麻痹不幸早逝。',
   },
   williams_rj: {
     id: 'williams_rj',
@@ -322,7 +322,7 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '计算机科学家',
     born: '1948',
-    bio: '反向传播算法论文合著者，REINFORCE 强化学习算法的提出者。',
+    bio: '东北大学教授。反向传播算法 1986 年经典论文第三作者。提出 REINFORCE 策略梯度算法，是现代深度强化学习方法（如 PPO、A3C）的数学起点。',
   },
   werbos: {
     id: 'werbos',
@@ -331,7 +331,7 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '数学家',
     born: '1947',
-    bio: '1974 年在哈佛大学博士论文中首次提出反向传播算法的思想。',
+    bio: '1974 年在哈佛大学博士论文中首次提出反向传播算法的完整数学思想，比 1986 年广为流传的版本早 12 年。但当时几乎无人关注，直到多年后才被学术界公认为算法的最早发现者。',
   },
   'berners-lee': {
     id: 'berners-lee',
@@ -340,7 +340,7 @@ export const people: Record<string, Person> = {
     nationality: '英国',
     field: '计算机科学家',
     born: '1955',
-    bio: '万维网发明者，1989 年在 CERN 提出 Web 概念，被誉为"互联网之父"。',
+    bio: '万维网（World Wide Web）发明者。1989 年在 CERN 提交"信息管理：一份提议"，1990 年编写第一个浏览器和 Web 服务器。他选择不为 Web 申请专利，让这项发明成为人类共同遗产，2017 年获图灵奖。',
   },
   jelinek: {
     id: 'jelinek',
@@ -350,7 +350,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、数学家',
     born: '1932',
     died: '2010',
-    bio: 'IBM 语音识别团队负责人，将统计方法引入自然语言处理，名言："每当我开除一个语言学家，系统性能就提高了。"',
+    bio: '二战后从捷克移民美国。1972 年起领导 IBM 语音识别研究组近二十年，率先用隐马尔可夫模型替代语言学规则，开启 NLP 的统计革命。留下名言："每当我开除一个语言学家，系统性能就提高了。"',
   },
 
   chervonenkis: {
@@ -361,7 +361,7 @@ export const people: Record<string, Person> = {
     field: '数学家',
     born: '1938',
     died: '2014',
-    bio: '与瓦普尼克共同创立统计学习理论，提出 VC 维概念。',
+    bio: '苏联控制问题研究所数学家。1960 年代末与瓦普尼克共同创立统计学习理论，提出以他们姓氏命名的 VC 维概念，度量模型复杂度。2014 年在莫斯科郊外徒步时因恶劣天气遇难，享年 76 岁。',
   },
   page: {
     id: 'page',
@@ -370,7 +370,7 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '计算机科学家、企业家',
     born: '1973',
-    bio: '谷歌联合创始人，发明 PageRank 算法，将统计方法应用于网页排名。',
+    bio: '斯坦福博士生期间（维诺格拉德的学生）与布林共同发明 PageRank 算法，1998 年创立谷歌。任 CEO 至 2001 年、再度出任 2011-2015 年，将谷歌打造为全球最大 AI 公司之一。',
   },
   brin: {
     id: 'brin',
@@ -379,7 +379,7 @@ export const people: Record<string, Person> = {
     nationality: '苏联裔美国',
     field: '计算机科学家、企业家',
     born: '1973',
-    bio: '谷歌联合创始人，与佩奇共同开发了 PageRank 和谷歌搜索引擎。',
+    bio: '6 岁随父母从苏联移民美国。斯坦福博士生期间与佩奇合作开发 PageRank 和谷歌搜索引擎，1998 年共同创立谷歌。长期深度参与谷歌的 AI 和登月项目（Google X）。',
   },
   breiman: {
     id: 'breiman',
@@ -389,7 +389,7 @@ export const people: Record<string, Person> = {
     field: '统计学家',
     born: '1928',
     died: '2005',
-    bio: '提出随机森林算法和 bagging 方法，倡导"两种文化"的统计学方法论。',
+    bio: '加州大学伯克利分校教授。提出分类与回归树（CART）、bagging 和随机森林算法。2001 年发表著名论文《统计建模：两种文化》，为数据驱动机器学习范式正名。',
   },
   vapnik: {
     id: 'vapnik',
@@ -398,7 +398,7 @@ export const people: Record<string, Person> = {
     nationality: '苏联裔美国',
     field: '数学家、统计学家',
     born: '1936',
-    bio: '统计学习理论奠基人，发明支持向量机（SVM），提出 VC 维理论。',
+    bio: '苏联莫斯科控制问题研究所研究员，1990 年移民美国，加入贝尔实验室。统计学习理论奠基人，1995 年与科尔特斯合作提出现代支持向量机（SVM），主导 1990 年代末到 2000 年代初机器学习竞赛。',
   },
   jordan: {
     id: 'jordan',
@@ -407,7 +407,7 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '计算机科学家、统计学家',
     born: '1956',
-    bio: '机器学习领域的核心人物，推动概率图模型和贝叶斯方法在 AI 中的应用，培养了吴恩达、本吉奥等众多学生。',
+    bio: '加州大学伯克利分校教授。推动概率图模型和贝叶斯方法在 AI 中的应用，建立了机器学习领域最具影响力的研究组之一。学生遍及学界与产业界，包括吴恩达、本吉奥（博士后）等。',
   },
   pearl: {
     id: 'pearl',
@@ -416,7 +416,7 @@ export const people: Record<string, Person> = {
     nationality: '以色列裔美国',
     field: '计算机科学家、哲学家',
     born: '1936',
-    bio: '贝叶斯网络之父，提出因果推理的数学框架，2011 年获图灵奖。',
+    bio: 'UCLA 教授。1988 年出版《智能系统中的概率推理》，提出贝叶斯网络。后发展因果推理（Causal Inference）数学框架，严格区分"相关"与"因果"，对医学和社会科学影响深远。2011 年获图灵奖。',
   },
   kasparov: {
     id: 'kasparov',
@@ -425,7 +425,7 @@ export const people: Record<string, Person> = {
     nationality: '俄罗斯（苏联出生）',
     field: '国际象棋世界冠军',
     born: '1963',
-    bio: '1997 年被 IBM 深蓝击败，成为第一位在标准赛制下输给计算机的国际象棋世界冠军。',
+    bio: '22 岁成为国际象棋最年轻世界冠军，在位 15 年。1997 年 5 月以 2.5 比 3.5 输给 IBM 深蓝，成为第一位在标准赛制下输给计算机的在任世界冠军。后转向政治活动，是俄罗斯反对派代表人物。',
   },
   cortes: {
     id: 'cortes',
@@ -434,7 +434,7 @@ export const people: Record<string, Person> = {
     nationality: '丹麦裔美国',
     field: '计算机科学家',
     born: '1961',
-    bio: '与瓦普尼克共同提出软间隔 SVM，曾任谷歌研究院负责人。',
+    bio: '丹麦物理学博士，1990 年代加入 AT&T 贝尔实验室。1995 年与瓦普尼克合作发表支持向量机（SVM）经典论文，提出软间隔（Soft-margin）SVM。2003 年起长期领导谷歌研究院纽约分部。',
   },
 
   // 深度学习前夜人物
@@ -445,7 +445,7 @@ export const people: Record<string, Person> = {
     nationality: '英国出生、华裔美国',
     field: '计算机科学家',
     born: '1976',
-    bio: '斯坦福大学教授，谷歌大脑联合创始人，Coursera 联合创始人，推动深度学习的教育普及。',
+    bio: '乔丹（Michael I. Jordan）的博士生，斯坦福大学教授。2011 年创立谷歌大脑，2012 年联合创立 Coursera，通过《机器学习》课程为数百万人启蒙深度学习。曾任百度首席科学家，后创立 Landing AI 推动 AI 工业落地。',
   },
   huang: {
     id: 'huang',
@@ -454,7 +454,7 @@ export const people: Record<string, Person> = {
     nationality: '美籍华人（台湾出生）',
     field: '企业家、电气工程师',
     born: '1963',
-    bio: 'NVIDIA 联合创始人兼 CEO，推动 GPU 从游戏显卡转型为 AI 计算核心，CUDA 平台缔造者。',
+    bio: '9 岁从台湾移民美国，斯坦福硕士。1993 年联合创立 NVIDIA 并长期任 CEO。2006 年推出 CUDA 平台，把 GPU 从游戏硬件打造为通用并行计算平台，意外成为深度学习时代最关键的基础设施缔造者。',
   },
 
   winograd: {
@@ -464,7 +464,7 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '计算机科学家',
     born: '1946',
-    bio: '开发 SHRDLU 积木世界系统，后转向人机交互研究，斯坦福大学教授，拉里·佩奇的导师。',
+    bio: 'MIT 博士期间（1971）开发 SHRDLU 积木世界系统，成为符号 AI 黄金时代的代表作。后转向人机交互研究，任斯坦福教授，是拉里·佩奇的导师，深度参与谷歌早期思想形成。',
   },
 
   // 深度学习三巨头
@@ -475,7 +475,7 @@ export const people: Record<string, Person> = {
     nationality: '英国裔加拿大',
     field: '计算机科学家、认知心理学家',
     born: '1947',
-    bio: '深度学习之父，提出反向传播和深度信念网络，2024 年获诺贝尔物理学奖。',
+    bio: '英国出生，移居加拿大任多伦多大学教授，人称"深度学习之父"。1986 年推动反向传播，2006 年发表深度信念网络论文，2012 年带领学生以 AlexNet 点燃深度学习革命。2018 年获图灵奖，2023 年离开谷歌以便自由警告 AI 风险，2024 年获诺贝尔物理学奖。',
   },
   lecun: {
     id: 'lecun',
@@ -484,7 +484,7 @@ export const people: Record<string, Person> = {
     nationality: '法国裔美国',
     field: '计算机科学家',
     born: '1960',
-    bio: '卷积神经网络先驱，开发 LeNet，现任 Meta 首席 AI 科学家。',
+    bio: '1987 年在辛顿指导下完成博士后。1989 年在贝尔实验室开发 LeNet 卷积神经网络，在银行支票手写数字识别中实现商用。2013 年加入 Facebook 创建 FAIR，现任 Meta 首席 AI 科学家，2018 年与辛顿、本吉奥共获图灵奖。',
   },
   bengio: {
     id: 'bengio',
@@ -493,7 +493,7 @@ export const people: Record<string, Person> = {
     nationality: '加拿大',
     field: '计算机科学家',
     born: '1964',
-    bio: '深度学习三巨头之一，注意力机制先驱，MILA 创始人。',
+    bio: '蒙特利尔大学教授，MILA 实验室创始人。2000 年代神经网络最寒冷的时期坚持研究，2014 年团队提出注意力机制，为 Transformer 铺路。2018 年与辛顿、杨立昆共获图灵奖，深度学习三巨头中唯一未加入大型科技公司的学者，坚守学术独立。',
   },
 
   // 视觉革命时代人物
@@ -504,7 +504,7 @@ export const people: Record<string, Person> = {
     nationality: '乌克兰裔加拿大',
     field: '计算机科学家',
     born: '1986',
-    bio: '辛顿的学生，AlexNet 主要开发者，用 GPU 训练深度 CNN 赢得 ILSVRC 2012。',
+    bio: '辛顿的博士生。2012 年主导开发 AlexNet，用两块 GTX 580 GPU 训练的八层卷积网络在 ILSVRC 比赛中比第二名低 11 个百分点，引爆深度学习革命。2013 年随辛顿加入谷歌，2017 年后淡出学界。',
   },
   silver: {
     id: 'silver',
@@ -513,7 +513,7 @@ export const people: Record<string, Person> = {
     nationality: '英国',
     field: '计算机科学家',
     born: '1976',
-    bio: 'DeepMind 首席研究员，AlphaGo 项目负责人，深度强化学习领域核心人物。',
+    bio: '哈萨比斯的剑桥同学。DeepMind 首席研究员，领导 AlphaGo、AlphaGo Zero、AlphaZero、MuZero 系列工作，将深度强化学习推向极致。2016 年 AlphaGo 击败李世石，2019 年获 IJCAI 计算机与思维奖。',
   },
   sedol: {
     id: 'sedol',
@@ -522,7 +522,7 @@ export const people: Record<string, Person> = {
     nationality: '韩国',
     field: '围棋九段',
     born: '1983',
-    bio: '韩国传奇围棋手，2016 年与 AlphaGo 的对弈成为 AI 历史标志性事件。',
+    bio: '韩国传奇围棋九段，16 岁入段，国际赛事冠军 18 次。2016 年与 AlphaGo 五番棋以 1 比 4 告负，但第四盘第 78 手"神之一手"成为围棋史上最著名的妙手之一。2019 年退役，称"AI 的出现让我感到无法战胜"。',
   },
   batchnorm_ioffe: {
     id: 'batchnorm_ioffe',
@@ -531,7 +531,7 @@ export const people: Record<string, Person> = {
     nationality: '俄裔美国',
     field: '计算机科学家',
     born: '1968',
-    bio: '与塞格迪共同提出批归一化（Batch Normalization），大幅加速深度网络训练。',
+    bio: '谷歌研究员。2015 年与塞格迪（Christian Szegedy）共同提出批归一化（Batch Normalization），解决深层网络训练不稳定问题，与 ResNet 的跳跃连接一起构成现代深度网络的两大基础设施。',
   },
 
   // 当代关键人物
@@ -542,7 +542,7 @@ export const people: Record<string, Person> = {
     nationality: '华裔美国',
     field: '计算机科学家',
     born: '1976',
-    bio: '构建 ImageNet 数据集，为深度学习革命奠定数据基础。',
+    bio: '16 岁随父母移民美国，曾一边读书一边在父母的干洗店打工。2007 年在普林斯顿启动 ImageNet 项目，历时三年通过众包标注了上千万张图像，为深度学习革命奠定数据基础。斯坦福以人为本 AI 研究院（HAI）联合主任。',
   },
   hassabis: {
     id: 'hassabis',
@@ -551,7 +551,7 @@ export const people: Record<string, Person> = {
     nationality: '英国',
     field: '神经科学家、企业家',
     born: '1976',
-    bio: 'DeepMind 创始人，AlphaGo 和 AlphaFold 的缔造者，2024 年获诺贝尔化学奖。',
+    bio: '少年国际象棋大师，曾参与《主题医院》等经典游戏开发。剑桥计算机科学本科，伦敦大学学院（UCL）神经科学博士。2010 年创立 DeepMind，2014 年被谷歌收购。主导 AlphaGo、AlphaFold 等里程碑工作，2024 年因 AlphaFold 获诺贝尔化学奖。',
   },
   altman: {
     id: 'altman',
@@ -560,7 +560,7 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '企业家',
     born: '1985',
-    bio: 'OpenAI CEO，推动 ChatGPT 发布，引领生成式 AI 浪潮。',
+    bio: '19 岁从斯坦福辍学创业。2014-2019 年任 Y Combinator 总裁，2015 年与马斯克等人共同创立 OpenAI。2022 年 11 月推动 ChatGPT 发布，引领生成式 AI 浪潮。2023 年 11 月经历戏剧性的 OpenAI 董事会"政变"后五天内复职。',
   },
   sutskever: {
     id: 'sutskever',
@@ -569,7 +569,7 @@ export const people: Record<string, Person> = {
     nationality: '以色列裔加拿大',
     field: '计算机科学家',
     born: '1986',
-    bio: '辛顿的学生，AlexNet 合作者，OpenAI 联合创始人兼前首席科学家。',
+    bio: '辛顿的博士生，AlexNet 合作者。2014 年提出 Seq2Seq 模型奠定现代机器翻译基础。2015 年联合创立 OpenAI 任首席科学家，主导 GPT 系列研发。2023 年 11 月 OpenAI 内部风波后淡出，2024 年创立 Safe Superintelligence Inc.。',
   },
   he: {
     id: 'he',
@@ -578,7 +578,7 @@ export const people: Record<string, Person> = {
     nationality: '中国',
     field: '计算机科学家',
     born: '1984',
-    bio: '清华大学毕业，在微软亚洲研究院提出残差网络（ResNet）和 Mask R-CNN，现任 MIT 教授。',
+    bio: '广州执信中学毕业，2003 年清华大学基础科学班入学，2011 年香港中文大学博士。在微软亚洲研究院（MSRA）提出残差网络（ResNet，2015）和 Mask R-CNN（2017），分别获 CVPR 2016 和 ICCV 2017 最佳论文奖。后加入 Facebook AI Research，2024 年任 MIT 教授。',
   },
 
   // Transformer 纪元与生成式 AI 人物
@@ -589,7 +589,7 @@ export const people: Record<string, Person> = {
     nationality: '印度裔美国',
     field: '计算机科学家',
     born: '1986',
-    bio: 'Transformer 论文第一作者，提出自注意力架构，彻底改变了 NLP 和 AI 的面貌。',
+    bio: '南加州大学博士，后加入谷歌大脑。2017 年领导发表《Attention Is All You Need》，提出 Transformer 架构，彻底重塑 NLP 与 AI 版图。2021 年离开谷歌，联合创立 Essential AI 继续大模型研究。',
   },
   devlin: {
     id: 'devlin',
@@ -598,7 +598,7 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '计算机科学家',
     born: '1985',
-    bio: 'BERT 模型主要作者，提出双向预训练范式，推动 NLP 进入预训练时代。',
+    bio: '马里兰大学博士。2018 年 10 月在谷歌发表 BERT 论文，提出双向预训练范式，11 项 NLP 基准全面刷新，定义了此后数年的 "预训练 + 微调" 范式。后曾短暂加入 OpenAI，又回到谷歌。',
   },
   radford: {
     id: 'radford',
@@ -607,7 +607,7 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '计算机科学家',
     born: '1991',
-    bio: 'OpenAI 研究员，GPT 系列和 DALL-E 的核心开发者。',
+    bio: '未取得传统博士学位，大学期间即加入 OpenAI。GPT-1/2、CLIP、Whisper 的核心作者，是 OpenAI 最早期、最关键的研究员之一。论文《Improving Language Understanding by Generative Pre-Training》启动了 GPT 系列。',
   },
   brown: {
     id: 'brown',
@@ -616,7 +616,7 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '计算机科学家',
     born: '1990',
-    bio: 'GPT-3 论文第一作者，展示了大语言模型的少样本学习能力。',
+    bio: 'OpenAI 研究员。2020 年领导发表《Language Models are Few-Shot Learners》（GPT-3 论文），首次系统展示大语言模型的少样本学习能力。2021 年与阿莫代等人离开 OpenAI，共同创立 Anthropic。',
   },
   amodei: {
     id: 'amodei',
@@ -625,7 +625,7 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '物理学家、企业家',
     born: '1983',
-    bio: 'Anthropic 联合创始人兼 CEO，前 OpenAI 研究副总裁，专注 AI 安全与对齐研究。',
+    bio: '普林斯顿物理学博士。先后任职百度、OpenAI，2017 年起任 OpenAI 研究副总裁。2021 年与妹妹 Daniela 等同事离开 OpenAI，创立 Anthropic 任 CEO，专注 AI 安全与对齐研究，Claude 系列模型的主导者。',
   },
   kaplan: {
     id: 'kaplan',
@@ -634,7 +634,7 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '物理学家',
     born: '1986',
-    bio: '规模定律（Scaling Laws）论文核心作者，揭示了模型规模与性能之间的幂律关系。',
+    bio: '约翰斯·霍普金斯大学理论物理学教授。2020 年在 OpenAI 领导发表《Scaling Laws for Neural Language Models》，揭示模型性能与规模之间可预测的幂律关系，为大模型时代的"大力出奇迹"提供理论依据。现为 Anthropic 联合创始人。',
   },
   touvron: {
     id: 'touvron',
@@ -643,7 +643,7 @@ export const people: Record<string, Person> = {
     nationality: '法国',
     field: '计算机科学家',
     born: '1995',
-    bio: 'Meta LLaMA 系列开源大模型的第一作者，推动开源大模型运动。',
+    bio: 'Meta 巴黎 AI 研究院年轻研究员。2023 年作为第一作者发表 LLaMA 系列论文，以相对较小的参数规模追平 GPT-3 级别性能，点燃开源大模型运动，直接改变了大模型的竞争格局。',
   },
 
   goodfellow: {
@@ -653,6 +653,6 @@ export const people: Record<string, Person> = {
     nationality: '美国',
     field: '计算机科学家',
     born: '1985',
-    bio: '生成对抗网络（GAN）发明者，深度学习教材合著者。',
+    bio: '本吉奥的博士生。2014 年在蒙特利尔酒吧与朋友争论中灵光乍现，当晚写出生成对抗网络（GAN）的第一版代码。与本吉奥、库尔维尔合著《深度学习》教材。曾任谷歌大脑、苹果机器学习主管，现于 DeepMind。',
   },
 }

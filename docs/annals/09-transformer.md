@@ -50,7 +50,7 @@ BERT 和 GPT 的分歧不仅是技术选择的差异，更反映了对 AI 未来
 
 ### 1750 亿参数
 
-2020 年 5 月，OpenAI 发表了 GPT-3 的论文——<Person id="brown" />等人的《Language Models are Few-Shot Learners》。GPT-3 拥有 1750 亿个参数，训练数据集包含约 5000 亿个词元（token），训练成本据估计超过 400 万美元。
+2020 年 5 月，OpenAI 发表了 GPT-3 的论文——<Person id="brown" />等人的《Language Models are Few-Shot Learners》。GPT-3 拥有 1750 亿个参数，训练数据集包含约 5000 亿个词元（token，过滤后），加权采样后训练实际见到约 3000 亿个词元；训练成本据估计超过 400 万美元。
 
 GPT-3 展现了一种令人惊讶的能力：**少样本学习**（Few-Shot Learning）。你不需要对模型进行微调，只需要在提示词（Prompt）中给出几个示例，模型就能"理解"任务并执行——翻译、摘要、问答、编程、写诗、甚至做算术。这种能力在此前的任何模型中都没有观察到。
 
@@ -107,7 +107,7 @@ AlphaFold 是 AI 在基础科学中最具说服力的胜利。它不是在游戏
 | 2020 | GPT-3 发布（1750 亿参数），展现少样本学习能力 | <Person id="brown" /> |
 | 2020 | 规模定律论文发表，揭示模型性能与规模的幂律关系 | <Person id="kaplan" /> |
 | 2020 | AlphaFold 2 在 CASP14 中突破蛋白质折叠预测 | <Person id="hassabis" /> |
-| 2021 | DALL-E 发布，AI 学会根据文字生成图像 | <Person id="radford" /> |
+| 2021 | DALL-E 发布，AI 学会根据文字生成图像 | 拉梅什（Aditya Ramesh）等 |
 | 2021 | GitHub Copilot 发布，AI 编程助手进入开发者工作流 | — |
 | 2021 | 阿莫代离开 OpenAI，创办 Anthropic | <Person id="amodei" /> |
 | 2022 | Stable Diffusion 开源，AI 图像生成全面普及 | — |

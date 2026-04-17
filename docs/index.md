@@ -27,31 +27,31 @@ features:
   - icon:
       src: /icons/annals.svg
     title: 本纪
-    details: 十篇编年史，以思想冲突为主线，记录 AI 十个时代的核心辩论与转折。
+    details: 十篇编年史——从 1943 年芝加哥的一间办公室到 2026 年每个人的口袋，十个时代、十次转折。
     link: /annals/01-dawn
   - icon:
       src: /icons/houses.svg
     title: 世家
-    details: 十四篇机构史，从 MIT AI 实验室到 OpenAI 到清华，记录塑造 AI 历史的关键组织。
+    details: 十四篇机构史——从黄金时代的 MIT AI 实验室到大模型时代的 OpenAI，看组织如何塑造技术走向。
     link: /houses/mit-ai-lab
   - icon:
       src: /icons/biographies.svg
     title: 列传
-    details: 二十三篇人物传记，从图灵、香农到辛顿、奥特曼，记录关键人物的命运与抉择。
+    details: 二十三篇人物传记——图灵、香农、辛顿、奥特曼……每一个名字背后都是一次艰难的抉择。
     link: /biographies/turing
   - icon:
       src: /icons/treatises.svg
     title: 书
-    details: 二十五篇专题论述，覆盖神经网络、大语言模型、具身智能、AGI、AI 安全等技术与社会议题。
+    details: 二十五篇专题论述——神经网络、Transformer、AGI、AI 安全，梳理每条技术路线的起承转合。
     link: /treatises/neural-networks
   - icon:
       src: /icons/globe.svg
     title: 国别史
-    details: 五篇国别 AI 发展史，从美国、中国到欧洲、加拿大、日本，比较各国的路线与得失。
+    details: 五篇国别发展史——美国、中国、欧洲、加拿大、日本，比较不同土壤培育出的不同 AI。
     link: /treatises/ai-in-china
   - icon:
       src: /icons/contribute.svg
     title: 参与贡献
-    details: 历史不应由一个人书写。纠正错误、补充内容、分享亲历，每一份贡献都让这本书更好。
+    details: 历史不应由一个人书写。纠正一处错误、补充一段细节、分享一段亲历——每一份贡献都让这本书更好。
     link: /guide/how-to-contribute
 ---
