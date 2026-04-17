@@ -124,22 +124,69 @@ export default defineConfig({
           ],
           '/houses/': [
             {
-              text: '世家',
+              text: '世家 · 奠基学术',
               items: [
                 { text: 'MIT AI 实验室', link: '/houses/mit-ai-lab' },
                 { text: '卡内基梅隆大学', link: '/houses/cmu' },
                 { text: '斯坦福 AI 实验室', link: '/houses/stanford-ai-lab' },
-                { text: 'Bell Labs', link: '/houses/bell-labs' },
+                { text: '加州大学伯克利分校 / BAIR', link: '/houses/uc-berkeley' },
+                { text: '多伦多大学 / Vector', link: '/houses/toronto-vector' },
+                { text: '蒙特利尔学习算法研究所（MILA）', link: '/houses/mila' },
+              ],
+            },
+            {
+              text: '世家 · 企业研究院',
+              items: [
+                { text: '贝尔实验室（Bell Labs）', link: '/houses/bell-labs' },
                 { text: 'IBM 研究院', link: '/houses/ibm-research' },
-                { text: 'MILA 蒙特利尔', link: '/houses/mila' },
-                { text: 'DeepMind', link: '/houses/deepmind' },
-                { text: 'OpenAI', link: '/houses/openai' },
+                { text: '微软研究院', link: '/houses/microsoft-research' },
+              ],
+            },
+            {
+              text: '世家 · 国家项目',
+              items: [
+                { text: 'ICOT（日本第五代）', link: '/houses/icot' },
+              ],
+            },
+            {
+              text: '世家 · 科技巨头 AI 部门',
+              items: [
                 { text: 'Google Brain', link: '/houses/google-brain' },
-                { text: 'Anthropic', link: '/houses/anthropic' },
+                { text: 'Google DeepMind', link: '/houses/deepmind' },
                 { text: 'Meta AI (FAIR)', link: '/houses/meta-ai' },
+                { text: '苹果（Apple Intelligence）', link: '/houses/apple-intelligence' },
+                { text: '亚马逊（AWS AI / Bedrock）', link: '/houses/amazon-aws-ai' },
+              ],
+            },
+            {
+              text: '世家 · AI 基础设施',
+              items: [
+                { text: '英伟达（NVIDIA）', link: '/houses/nvidia' },
+                { text: '台积电（TSMC）', link: '/houses/tsmc' },
+                { text: 'Hugging Face', link: '/houses/huggingface' },
+              ],
+            },
+            {
+              text: '世家 · 独立 AI 公司',
+              items: [
+                { text: 'OpenAI', link: '/houses/openai' },
+                { text: 'Anthropic', link: '/houses/anthropic' },
                 { text: 'xAI', link: '/houses/xai' },
-                { text: '百度 AI', link: '/houses/baidu-ai' },
+                { text: 'Cohere', link: '/houses/cohere' },
+                { text: 'Mistral AI', link: '/houses/mistral-ai' },
+              ],
+            },
+            {
+              text: '世家 · 中国机构',
+              items: [
                 { text: '清华大学 AI', link: '/houses/tsinghua-ai' },
+                { text: '百度 AI', link: '/houses/baidu-ai' },
+                { text: '阿里达摩院', link: '/houses/alibaba-damo' },
+                { text: '字节跳动 / Seed', link: '/houses/bytedance-seed' },
+                { text: '智谱 AI（GLM）', link: '/houses/zhipu-ai' },
+                { text: 'MiniMax（海螺 / Talkie）', link: '/houses/minimax' },
+                { text: '月之暗面（Kimi）', link: '/houses/moonshot-kimi' },
+                { text: 'DeepSeek', link: '/houses/deepseek' },
               ],
             },
           ],

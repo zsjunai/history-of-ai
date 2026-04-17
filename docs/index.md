@@ -32,7 +32,7 @@ features:
   - icon:
       src: /icons/houses.svg
     title: 世家
-    details: 十四篇机构史——从黄金时代的 MIT AI 实验室到大模型时代的 OpenAI，看组织如何塑造技术走向。
+    details: 三十一篇机构史——从黄金时代的 MIT AI 实验室、到大模型时代的 OpenAI、再到 2026 年港股上市的"AI 双雄"智谱与 MiniMax，以及英伟达、台积电、苹果、亚马逊这样的基础设施与消费巨头，覆盖美、加、中、日、欧五大板块。
     link: /houses/mit-ai-lab
   - icon:
       src: /icons/biographies.svg

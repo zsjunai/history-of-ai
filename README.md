@@ -15,11 +15,11 @@
 | 体例 | 数量 | 说明 |
 |------|------|------|
 | 本纪 | 10 篇 | 编年史，按时代记录 AI 发展的核心辩论与转折 |
-| 世家 | 14 篇 | 机构史，从 MIT AI 实验室到 OpenAI 到清华 |
+| 世家 | 31 篇 | 机构史，从 MIT AI 实验室、OpenAI 到 DeepSeek，覆盖美、加、中、日、欧 |
 | 列传 | 23 篇 | 人物传记，从图灵、香农到辛顿、奥特曼 |
 | 书 | 25 篇 | 技术专题 + 国别史，覆盖神经网络到 AGI |
 | 表 | 1 篇 | 大事年表，AI 83 年关键事件一览 |
-| **合计** | **73 篇** | |
+| **合计** | **90 篇** | |
 
 ## 五体结构
 
@@ -41,9 +41,21 @@
 
 ### 世家 Houses
 
-塑造 AI 历史的 14 家关键机构：
+塑造 AI 历史的 31 家关键机构，分七类：
 
-MIT AI 实验室 · CMU · 斯坦福 AI 实验室 · Bell Labs · IBM 研究院 · MILA · DeepMind · OpenAI · Google Brain · Anthropic · Meta AI (FAIR) · xAI · 百度 AI · 清华大学 AI
+**奠基学术**：MIT AI 实验室 · 卡内基梅隆大学（CMU） · 斯坦福 AI 实验室 · 加州大学伯克利分校 / BAIR · 多伦多大学 / Vector · 蒙特利尔学习算法研究所（MILA）
+
+**企业研究院**：贝尔实验室（Bell Labs） · IBM 研究院 · 微软研究院
+
+**国家项目**：ICOT（日本第五代）
+
+**科技巨头 AI 部门**：Google Brain · Google DeepMind · Meta AI (FAIR) · 苹果（Apple Intelligence） · 亚马逊（AWS AI / Bedrock）
+
+**AI 基础设施**：英伟达（NVIDIA） · 台积电（TSMC） · Hugging Face
+
+**独立 AI 公司**：OpenAI · Anthropic · xAI · Cohere · Mistral AI
+
+**中国机构**：清华大学 AI · 百度 AI · 阿里达摩院 · 字节跳动 / Seed · 智谱 AI · MiniMax · 月之暗面（Kimi） · DeepSeek
 
 ### 列传 Biographies
 
