@@ -1,10 +1,10 @@
 import { defineConfig } from 'vitepress'
 
 // 部署目标：
-//   默认（GitHub Pages）：base=/history-of-ai/
-//   ECS（ai.puliot.com）：VITEPRESS_BASE=/ 时 base=/
-const base = process.env.VITEPRESS_BASE ?? '/history-of-ai/'
-const siteHostname = process.env.VITEPRESS_HOSTNAME ?? 'https://zsjunai.github.io/history-of-ai/'
+//   默认（本地开发 / ECS ai.puliot.com）：base=/
+//   GitHub Pages：workflow 里指定 VITEPRESS_BASE=/history-of-ai/
+const base = process.env.VITEPRESS_BASE ?? '/'
+const siteHostname = process.env.VITEPRESS_HOSTNAME ?? 'https://ai.puliot.com/'
 
 export default defineConfig({
   title: 'AI 史记',

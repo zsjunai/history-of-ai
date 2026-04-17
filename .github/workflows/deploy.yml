@@ -33,6 +33,9 @@ jobs:
         run: npm ci
       - name: Build with VitePress
         run: npm run docs:build
+        env:
+          VITEPRESS_BASE: /history-of-ai/
+          VITEPRESS_HOSTNAME: https://zsjunai.github.io/history-of-ai/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
