@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "description": "AI 史记 - 一本开源的人工智能历史书籍 | An open-source book on the history of Artificial Intelligence",
   "scripts": {
-    "docs:dev": "vitepress dev docs --port 1001",
+    "docs:dev": "vitepress dev docs --port 10001",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs --port 1001"
+    "docs:preview": "vitepress preview docs --port 10001"
   },
   "keywords": ["ai", "history", "book", "open-source"],
   "author": "",
