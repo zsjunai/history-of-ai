@@ -276,3 +276,17 @@
     margin: 1em auto !important;
   }
 }
+
+/* Biography portraits — float-right photos must cover the H2 border-top
+   that would otherwise slice across the image vertically. */
+.vp-doc img[src*="/images/people/"] {
+  position: relative;
+  z-index: 2;
+  background-color: var(--vp-c-bg);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.dark .vp-doc img[src*="/images/people/"] {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
