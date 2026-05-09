@@ -13,6 +13,9 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
 
+  // 排除项目内部文档（图片版权清单等），不渲染为页面、不进 sitemap
+  srcExclude: ['**/README.md', '**/CREDITS.md', '**/_*.md'],
+
   sitemap: {
     hostname: siteHostname,
   },

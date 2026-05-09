@@ -93,7 +93,8 @@ npm run docs:preview  # 预览构建结果
 
 - 修改导航或侧边栏后运行 `npm run docs:build` 验证
 - 新增章节需同时更新 `config.ts` 侧边栏配置
-- 新增时间线事件需更新 `timeline.ts`，首页动画和年表自动同步
+- 新增时间线事件需更新 `timeline.ts`，首页动画和年表自动同步。每条事件除 `year/event/link` 外，必填 `type`（`paper`/`product`/`company`/`policy`/`person`/`event`/`milestone`）与 `importance`（`milestone`/`major`/`minor`），可选 `month`（1–12）。每个时代里 `milestone` 控制在 1–2 条
+- 项目内部文档（`README.md`、`CREDITS.md`、以 `_` 开头的文件）已在 `config.ts` 的 `srcExclude` 排除，不会被渲染为页面也不进 sitemap
 - 图片需符合版权要求（Public Domain 或 CC 许可），放在 `docs/public/images/`
 - GitHub Pages 部署地址带 `/history-of-ai/` 子路径，StatsBar 等组件的链接需包含此前缀
 - **篇数同步**：新增或删除文章后，必须同步更新以下所有记录篇数的位置：
