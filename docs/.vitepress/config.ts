@@ -201,46 +201,61 @@ export default defineConfig({
           ],
           '/biographies/': [
             {
-              text: '列传 · 奠基者',
+              text: '列传 · 远古先知',
               items: [
                 { text: '图灵（Alan Turing）', link: '/biographies/turing' },
                 { text: '香农（Claude Shannon）', link: '/biographies/shannon' },
                 { text: '维纳（Norbert Wiener）', link: '/biographies/wiener' },
+              ],
+            },
+            {
+              text: '列传 · 达特茅斯一代',
+              items: [
                 { text: '麦卡锡（John McCarthy）', link: '/biographies/mccarthy' },
                 { text: '明斯基（Marvin Minsky）', link: '/biographies/minsky' },
                 { text: '西蒙（Herbert Simon）', link: '/biographies/herbert-simon' },
                 { text: '纽厄尔（Allen Newell）', link: '/biographies/allen-newell' },
+              ],
+            },
+            {
+              text: '列传 · 连接主义与因果',
+              items: [
                 { text: '罗森布拉特（Frank Rosenblatt）', link: '/biographies/rosenblatt' },
+                { text: '霍普菲尔德（John Hopfield）', link: '/biographies/hopfield' },
                 { text: '珀尔（Judea Pearl）', link: '/biographies/judea-pearl' },
               ],
             },
             {
-              text: '列传 · 深度学习先驱',
+              text: '列传 · 深度学习开创者',
               items: [
-                { text: '霍普菲尔德（John Hopfield）', link: '/biographies/hopfield' },
                 { text: '辛顿（Geoffrey Hinton）', link: '/biographies/hinton' },
-                { text: '施密德胡贝（Jürgen Schmidhuber）', link: '/biographies/schmidhuber' },
                 { text: '杨立昆（Yann LeCun）', link: '/biographies/lecun' },
                 { text: '本吉奥（Yoshua Bengio）', link: '/biographies/bengio' },
+                { text: '施密德胡贝（Jürgen Schmidhuber）', link: '/biographies/schmidhuber' },
               ],
             },
             {
-              text: '列传 · 当代风云',
+              text: '列传 · LLM 时代研究者',
               items: [
                 { text: '李飞飞（Fei-Fei Li）', link: '/biographies/fei-fei-li' },
-                { text: '吴恩达（Andrew Ng）', link: '/biographies/andrew-ng' },
                 { text: '苏茨克维（Ilya Sutskever）', link: '/biographies/ilya-sutskever' },
                 { text: '哈萨比斯（Demis Hassabis）', link: '/biographies/demis-hassabis' },
-                { text: '奥特曼（Sam Altman）', link: '/biographies/sam-altman' },
                 { text: '卡帕西（Andrej Karpathy）', link: '/biographies/karpathy' },
-                { text: '马斯克（Elon Musk）', link: '/biographies/elon-musk' },
               ],
             },
             {
-              text: '列传 · 中国人物',
+              text: '列传 · 教育与传承',
               items: [
+                { text: '吴恩达（Andrew Ng）', link: '/biographies/andrew-ng' },
+                { text: '周志华（Zhihua Zhou）', link: '/biographies/zhou-zhihua' },
+              ],
+            },
+            {
+              text: '列传 · 产业掌门',
+              items: [
+                { text: '奥特曼（Sam Altman）', link: '/biographies/sam-altman' },
+                { text: '马斯克（Elon Musk）', link: '/biographies/elon-musk' },
                 { text: '李开复（Kai-Fu Lee）', link: '/biographies/kai-fu-lee' },
-                { text: '周志华', link: '/biographies/zhou-zhihua' },
               ],
             },
           ],
