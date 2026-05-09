@@ -2,6 +2,8 @@
 
 > 他给世界写下"反馈"两字，自己却终生与人际反馈失之交臂。
 
+![维纳（Norbert Wiener），1963 年](/images/people/wiener.png){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 神童的代价
 
 1894 年 11 月，诺伯特·维纳（Norbert Wiener）生于密苏里州哥伦比亚（Columbia, Missouri）。父亲利奥·维纳（Leo Wiener）是哈佛斯拉夫语教授，一个意志极强的语言学家。利奥决定，要把儿子培养成神童。

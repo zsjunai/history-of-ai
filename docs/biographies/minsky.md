@@ -2,6 +2,8 @@
 
 > 他要把心智拆解成无数个小机器，最终却用一本书冻结了另一条通向心智的路。
 
+![明斯基（Marvin Minsky），2012 年](/images/people/minsky.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 一台不会思考的神经网络
 
 1951 年的普林斯顿（Princeton），一个二十四岁的研究生与同学埃德蒙兹（Dean Edmonds）一起，把三千个真空管、四十个 B-24 轰炸机的废旧自动驾驶仪和大量电缆装进一个房间。这台机器叫 SNARC（Stochastic Neural Analog Reinforcement Calculator），是历史上第一台用硬件模拟神经网络学习过程的装置。它能模拟一只老鼠在迷宫中寻路：跑对了，正确突触的权重被强化；跑错了，权重被削弱。

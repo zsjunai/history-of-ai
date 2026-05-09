@@ -2,6 +2,8 @@
 
 > 一个物理学家走进神经网络的冷宫，用能量函数把它从坟墓里请了回来——四十二年后，瑞典人把诺贝尔奖颁给了这次救援。
 
+![霍普菲尔德（John Hopfield），2024 年诺贝尔物理学奖发布会](/images/people/hopfield.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 从凝聚态物理到生命科学的徘徊
 
 1933 年，约翰·霍普菲尔德（John Hopfield）生于芝加哥的一个物理学家家庭——父母都是物理博士。

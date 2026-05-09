@@ -2,6 +2,8 @@
 
 > 当符号 AI 已死、深度学习未起，他在窄缝里点起一盏理性主义的灯——而当深度学习独大时，他冷冷指出："相关，并不是因果。"
 
+![珀尔（Judea Pearl），2013 年 NeurIPS 大会](/images/people/judea-pearl.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 从特拉维夫到布鲁克林
 
 1936 年 9 月 4 日，朱迪亚·珀尔（Judea Pearl）生于英属巴勒斯坦托管地的特拉维夫（Tel Aviv），一个犹太家庭。少年时代经历了 1948 年以色列建国战争。1960 年从特拉维夫郊外的以色列理工学院（Technion – Israel Institute of Technology）取得电子工程学士，然后辗转来到美国——先在新泽西州的纽瓦克工程学院（Newark College of Engineering，今 NJIT）读硕士，再到布鲁克林理工学院（Polytechnic Institute of Brooklyn，今 NYU Tandon）读博士，1965 年以一篇关于电磁存储的论文取得电气工程博士学位。

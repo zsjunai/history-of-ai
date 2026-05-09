@@ -2,6 +2,8 @@
 
 > 他造出了第一台会"看"的机器，却没活到机器真正学会看的那一天。
 
+![罗森布拉特（Frank Rosenblatt），约 1950 年](/images/people/rosenblatt.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 一个心理学家闯进了机器世界
 
 1928 年，弗兰克·罗森布拉特（Frank Rosenblatt）生于纽约新罗谢尔（New Rochelle）。他不是数学家，也不是工程师——而是心理学家。

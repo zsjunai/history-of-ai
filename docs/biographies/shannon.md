@@ -2,6 +2,8 @@
 
 > 他用一篇硕士论文重塑了电路，又用一篇论文创造了一个时代——信息时代。
 
+![香农（Claude Shannon），Oberwolfach 数学研究所留影](/images/people/shannon.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 一篇硕士论文
 
 1937 年的剑桥（Cambridge, Massachusetts），麻省理工学院（MIT）。一个二十一岁的青年正在写他的硕士论文。他叫克劳德·埃尔伍德·香农（Claude Elwood Shannon），来自密歇根州（Michigan）一个小镇盖洛德（Gaylord），父亲是法官，母亲是中学校长。他在密歇根大学（University of Michigan）读了两个本科——电气工程与数学。后来他自己说：这两门学科的结合，决定了他一生的方向。

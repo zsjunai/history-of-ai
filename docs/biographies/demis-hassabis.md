@@ -2,6 +2,8 @@
 
 > 棋盘上的少年、神经科学的博士、诺贝尔化学奖得主——同一个人。
 
+![哈萨比斯（Demis Hassabis），2018 年伦敦皇家学会](/images/people/demis-hassabis.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 棋盘少年
 
 1976 年，<Person id="hassabis" />（Demis Hassabis）生于英国伦敦，父亲希腊裔塞浦路斯人，母亲新加坡华裔。家中并无学术背景，父亲是玩具店店主、业余作曲家。

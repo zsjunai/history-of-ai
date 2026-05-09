@@ -2,6 +2,8 @@
 
 > 他没有发明大模型，却把高墙降成了大众的台阶。
 
+![吴恩达（Andrew Ng），2017 年 WSJ CIO Network 演讲](/images/people/andrew-ng.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 一个少年的三段地图
 
 1976 年，吴恩达（Andrew Ng）出生于英国伦敦。父亲是香港人，母亲来自香港的医生家庭。童年随父母辗转香港、新加坡，最终落脚北美。少年吴恩达坐在新加坡莱佛士书院（Raffles Institution）的教室里，已经显露出对算法与几何的痴迷。

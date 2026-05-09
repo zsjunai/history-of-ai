@@ -2,6 +2,8 @@
 
 > 别人在追学界的潮汐，他独自守了一块没人看好的滩涂——四十年后，潮水从他脚下涨起来。
 
+![辛顿（Geoffrey Hinton），2013 年在不列颠哥伦比亚大学讲解深度神经网络](/images/people/hinton.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 一个数学家族的孩子
 
 杰弗里·辛顿（Geoffrey Hinton）1947 年生于英国温布尔登，家族里有一长串令人侧目的名字。他的高曾祖父是逻辑学奠基人之一乔治·布尔（George Boole）——今天每一行代码里的"true / false"都还回响着这位维多利亚时代数学家的名字。他的曾叔祖是 19 世纪发明"超立方体"（tesseract）一词的查尔斯·霍华德·辛顿（Charles Howard Hinton）。他的堂姑琼·辛顿（Joan Hinton）是参与曼哈顿计划的核物理学家，后来到中国饲养奶牛。父亲霍华德·辛顿是研究甲虫的昆虫学家。

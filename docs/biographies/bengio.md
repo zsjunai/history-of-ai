@@ -2,6 +2,8 @@
 
 > 他奠定了大语言模型脚下的两块基石，又在大语言模型如日中天时，转身去研究如何不让它毁掉我们。
 
+![本吉奥（Yoshua Bengio），2019 年](/images/people/bengio.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 蒙特利尔的法语少年
 
 约书亚·本吉奥（Yoshua Bengio）1964 年生于巴黎，但他真正的故乡是蒙特利尔。父母是塞法迪犹太裔知识分子，从摩洛哥移居法国，又在 1970 年代初带着两个儿子越过大西洋落脚魁北克。法语是家里的母语，反主流文化是父母的精神底色——他们关心民权、社会公义、教育平等，给两个孩子取了希伯来文圣经里的名字：约书亚（Yoshua）和山缪（Samy）。山缪即本吉奥的弟弟 Samy Bengio，后来也成为机器学习领域的著名学者，先后任职 Google Brain 和 Apple AI/ML 研究主管。

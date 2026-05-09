@@ -2,6 +2,8 @@
 
 > 他真的早于多数人想到了那些关键的想法，但他坚持告诉所有人这件事，于是世界与他保持了距离。
 
+![施密德胡贝（Jürgen Schmidhuber），2017 年 AI for Good 全球峰会](/images/people/schmidhuber.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 慕尼黑少年的星辰大海
 
 1963 年 1 月 17 日，于尔根·施密德胡贝（Jürgen Schmidhuber）出生于慕尼黑。少年时代，他迷恋的不是足球与啤酒，而是宇宙。

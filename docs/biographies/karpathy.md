@@ -2,6 +2,8 @@
 
 > 一流的研究、一流的工程、一流的教学，他在三件事上各做了一遍。然后他写下六十行 Python，让一代人第一次真正看清 GPT 的样子。
 
+![卡帕西（Andrej Karpathy），OpenAI 时期访谈截图](/images/people/karpathy.png){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 从布拉迪斯拉发到多伦多
 
 1986 年，安德烈·卡帕西（Andrej Karpathy）出生于斯洛伐克布拉迪斯拉发。十五岁那年，他随家人移居加拿大多伦多。

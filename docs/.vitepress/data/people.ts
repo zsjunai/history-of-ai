@@ -21,6 +21,7 @@ export const people: Record<string, Person> = {
     born: '1912',
     died: '1954',
     bio: '24 岁时提出图灵机模型，奠定可计算性理论基础。二战期间在布莱切利园领导团队破解德军 Enigma 密码。1950 年发表《计算机器与智能》提出图灵测试，被誉为"计算机科学与人工智能之父"。',
+    avatar: '/images/people/turing.jpg',
   },
   church: {
     id: 'church',
@@ -61,6 +62,7 @@ export const people: Record<string, Person> = {
     born: '1894',
     died: '1964',
     bio: '11 岁上大学、18 岁取得哈佛博士学位的神童。二战研究防空火控反馈系统，1948 年出版《控制论》，建立生物与机器的统一行为框架。发起梅西会议，与麦卡洛克并肩推动跨学科运动。',
+    avatar: '/images/people/wiener.png',
   },
   shannon: {
     id: 'shannon',
@@ -71,6 +73,7 @@ export const people: Record<string, Person> = {
     born: '1916',
     died: '2001',
     bio: '贝尔实验室研究员，1948 年发表《通信的数学理论》创立信息论，定义"比特"概念。达特茅斯会议四位发起人之一，1950 年发表计算机下棋论文，制造会走迷宫的电子鼠"忒修斯"。喜欢独轮车和杂耍。',
+    avatar: '/images/people/shannon.jpg',
   },
   vonneumann: {
     id: 'vonneumann',
@@ -101,6 +104,7 @@ export const people: Record<string, Person> = {
     born: '1927',
     died: '2011',
     bio: '1956 年在达特茅斯会议上创造"人工智能"一词，定义了整个领域。1958 年发明 LISP 语言，此后统治 AI 研究三十年。共同创建 MIT 和斯坦福 AI 实验室，1971 年获图灵奖。',
+    avatar: '/images/people/mccarthy.jpg',
   },
   minsky: {
     id: 'minsky',
@@ -111,6 +115,7 @@ export const people: Record<string, Person> = {
     born: '1927',
     died: '2016',
     bio: '1951 年与埃德蒙兹建造第一台神经网络计算机 SNARC。1959 年与麦卡锡共同创建 MIT AI 实验室，提出"框架"理论。1969 年与帕珀特合著《感知机》，间接导致神经网络研究进入寒冬。1969 年获图灵奖。',
+    avatar: '/images/people/minsky.jpg',
   },
   newell: {
     id: 'newell',
@@ -121,6 +126,7 @@ export const people: Record<string, Person> = {
     born: '1927',
     died: '1992',
     bio: '与西蒙、肖合作开发"逻辑理论家"——人工智能史上第一个 AI 程序。后共同提出"物理符号系统假说"，长期任教 CMU，奠定符号主义 AI 研究范式。1975 年与西蒙共获图灵奖。',
+    avatar: '/images/people/allen-newell.jpg',
   },
   simon: {
     id: 'simon',
@@ -131,6 +137,7 @@ export const people: Record<string, Person> = {
     born: '1916',
     died: '2001',
     bio: '跨越多个学科的思想家。与纽厄尔合作开创符号 AI，提出"有限理性"理论。1978 年获诺贝尔经济学奖，1975 年与纽厄尔共获图灵奖——史上罕见的同获两大奖者。',
+    avatar: '/images/people/herbert-simon.jpg',
   },
   samuel: {
     id: 'samuel',
@@ -204,6 +211,7 @@ export const people: Record<string, Person> = {
     born: '1928',
     died: '1971',
     bio: '康奈尔大学心理学教授。1957 年发明感知机（Perceptron），次年实现 Mark I 硬件版本，是首个可学习的神经网络。1969 年被明斯基与帕珀特的《感知机》一书重创研究前景，43 岁生日当天因划船事故溺亡于切萨皮克湾。',
+    avatar: '/images/people/rosenblatt.jpg',
   },
   weizenbaum: {
     id: 'weizenbaum',
@@ -417,6 +425,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、哲学家',
     born: '1936',
     bio: 'UCLA 教授。1988 年出版《智能系统中的概率推理》，提出贝叶斯网络。后发展因果推理（Causal Inference）数学框架，严格区分"相关"与"因果"，对医学和社会科学影响深远。2011 年获图灵奖。',
+    avatar: '/images/people/judea-pearl.jpg',
   },
   kasparov: {
     id: 'kasparov',
@@ -446,6 +455,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1976',
     bio: '乔丹（Michael I. Jordan）的博士生，斯坦福大学教授。2011 年创立谷歌大脑，2012 年联合创立 Coursera，通过《机器学习》课程为数百万人启蒙深度学习。曾任百度首席科学家，后创立 Landing AI 推动 AI 工业落地。',
+    avatar: '/images/people/andrew-ng.jpg',
   },
   huang: {
     id: 'huang',
@@ -476,6 +486,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、认知心理学家',
     born: '1947',
     bio: '英国出生，移居加拿大任多伦多大学教授，人称"深度学习之父"。1986 年推动反向传播，2006 年发表深度信念网络论文，2012 年带领学生以 AlexNet 点燃深度学习革命。2018 年获图灵奖，2023 年离开谷歌以便自由警告 AI 风险，2024 年获诺贝尔物理学奖。',
+    avatar: '/images/people/hinton.jpg',
   },
   lecun: {
     id: 'lecun',
@@ -485,6 +496,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1960',
     bio: '1987 年在辛顿指导下完成博士后。1989 年在贝尔实验室开发 LeNet 卷积神经网络，在银行支票手写数字识别中实现商用。2013 年加入 Facebook 创建 FAIR，现任 Meta 首席 AI 科学家，2018 年与辛顿、本吉奥共获图灵奖。',
+    avatar: '/images/people/lecun.jpg',
   },
   bengio: {
     id: 'bengio',
@@ -494,6 +506,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1964',
     bio: '蒙特利尔大学教授，MILA 实验室创始人。2000 年代神经网络最寒冷的时期坚持研究，2014 年团队提出注意力机制，为 Transformer 铺路。2018 年与辛顿、杨立昆共获图灵奖，深度学习三巨头中唯一未加入大型科技公司的学者，坚守学术独立。',
+    avatar: '/images/people/bengio.jpg',
   },
 
   // 视觉革命时代人物
@@ -543,6 +556,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1976',
     bio: '16 岁随父母移民美国，曾一边读书一边在父母的干洗店打工。2007 年在普林斯顿启动 ImageNet 项目，历时三年通过众包标注了上千万张图像，为深度学习革命奠定数据基础。斯坦福以人为本 AI 研究院（HAI）联合主任。',
+    avatar: '/images/people/fei-fei-li.jpg',
   },
   hassabis: {
     id: 'hassabis',
@@ -552,6 +566,7 @@ export const people: Record<string, Person> = {
     field: '神经科学家、企业家',
     born: '1976',
     bio: '少年国际象棋大师，曾参与《主题医院》等经典游戏开发。剑桥计算机科学本科，伦敦大学学院（UCL）神经科学博士。2010 年创立 DeepMind，2014 年被谷歌收购。主导 AlphaGo、AlphaFold 等里程碑工作，2024 年因 AlphaFold 获诺贝尔化学奖。',
+    avatar: '/images/people/demis-hassabis.jpg',
   },
   altman: {
     id: 'altman',
@@ -561,6 +576,7 @@ export const people: Record<string, Person> = {
     field: '企业家',
     born: '1985',
     bio: '19 岁从斯坦福辍学创业。2014-2019 年任 Y Combinator 总裁，2015 年与马斯克等人共同创立 OpenAI。2022 年 11 月推动 ChatGPT 发布，引领生成式 AI 浪潮。2023 年 11 月经历戏剧性的 OpenAI 董事会"政变"后五天内复职。',
+    avatar: '/images/people/sam-altman.jpg',
   },
   sutskever: {
     id: 'sutskever',
@@ -702,6 +718,7 @@ export const people: Record<string, Person> = {
     field: '物理学家、神经网络先驱',
     born: '1933',
     bio: '理论物理出身，长期任教于贝尔实验室、加州理工与普林斯顿。1982 年发表《具有涌现集体计算能力的神经网络与物理系统》，把统计物理的能量函数引入神经网络，提出 Hopfield 网络，为连接主义在第二次寒冬中续命。2024 年与辛顿共获诺贝尔物理学奖。',
+    avatar: '/images/people/hopfield.jpg',
   },
   schmidhuber: {
     id: 'schmidhuber',
@@ -711,6 +728,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1963',
     bio: '瑞士人工智能研究所（IDSIA）核心人物。1997 年与博士生 Sepp Hochreiter 合作提出长短期记忆网络（LSTM），是循环神经网络时代的奠基性工作。长年宣称 GAN、ResNet、Transformer 注意力等想法在他更早论文中已出现，与深度学习三巨头长期不和。2021 起任沙特 KAUST AI 倡议主任。',
+    avatar: '/images/people/schmidhuber.jpg',
   },
   karpathy: {
     id: 'karpathy',
@@ -720,6 +738,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、AI 教育者',
     born: '1986',
     bio: '多伦多本硕、斯坦福博士（导师李飞飞）。OpenAI 创始团队研究员，2017–2022 年任特斯拉 AI 总监主导 Autopilot 与 FSD 视觉栈。2023 短暂回归 OpenAI，2024 年创办 Eureka Labs 专攻 AI 教育。CS231n、nanoGPT、"Let\'s build GPT from scratch" 等公开课让一代人理解了 LLM 内部结构。',
+    avatar: '/images/people/karpathy.png',
   },
   musk: {
     id: 'musk',
@@ -729,6 +748,7 @@ export const people: Record<string, Person> = {
     field: '企业家',
     born: '1971',
     bio: '南非比勒陀利亚出生，宾夕法尼亚大学双学位。Zip2、X.com / PayPal、SpaceX、Tesla、SolarCity、Neuralink、The Boring Company 多家公司创始人。2015 年与奥特曼等共同创立 OpenAI，2018 年退出董事会，2023 年创办 xAI 并起诉 OpenAI 违背非营利使命。2025 年 xAI 收购 X，合并实体估值千亿美元级，同期出任白宫 DOGE 顾问。',
+    avatar: '/images/people/elon-musk.jpg',
   },
   'kai-fu-lee': {
     id: 'kai-fu-lee',
@@ -738,6 +758,7 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、企业家',
     born: '1961',
     bio: '台北出生，11 岁赴美。哥伦比亚大学本科、卡内基梅隆大学博士（师从 Raj Reddy）。1988 年博士论文 Sphinx 是史上第一个说话人无关连续大词汇语音识别系统。先后任职苹果、SGI、微软中国研究院（创院院长）、Google 中国总裁。2009 年创办创新工场，2018 年罹患淋巴瘤后写下《AI Superpowers》。2023 年创办 01.AI（零一万物）。',
+    avatar: '/images/people/kai-fu-lee.jpg',
   },
   'zhou-zhihua': {
     id: 'zhou-zhihua',

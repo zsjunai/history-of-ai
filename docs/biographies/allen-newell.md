@@ -2,6 +2,8 @@
 
 > 他与西蒙合作三十五年从未公开争吵，他用最后一口气讲完一套统一的心智理论。光芒不耀，但 AI 这门学问没有他就站不起来。
 
+![纽厄尔（Allen Newell，右）与西蒙下棋，约 1958 年](/images/people/allen-newell.jpg){width=240 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 从物理学到 RAND
 
 艾伦·纽厄尔（Allen Newell）1927 年生于旧金山，父亲是斯坦福医学院的放射学教授。他本想做物理学家，1949 年从斯坦福大学（Stanford University）毕业，又到普林斯顿（Princeton）数学系读研。但他很快发现，自己更感兴趣的不是物理或纯数学，而是**人在做决策时究竟在做什么**。

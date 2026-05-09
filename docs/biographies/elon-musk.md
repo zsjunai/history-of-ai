@@ -2,6 +2,8 @@
 
 > 他既是 AI 末日先知，也是 AI 军备竞赛的发起者；他是<Person id="altman" />的伯乐，也是<Person id="altman" />的诉讼方——AI 史中没有比他更矛盾的角色。
 
+![马斯克（Elon Musk），2015 年 Tesla 年度股东大会](/images/people/elon-musk.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 比勒陀利亚的少年
 
 1971 年 6 月 28 日，埃隆·里夫·马斯克（Elon Reeve Musk）出生在南非比勒陀利亚（Pretoria）。父亲埃罗尔（Errol Musk）是工程师，母亲梅耶（Maye Musk）是模特与营养师。父母在他八岁时离婚，他选择跟随父亲——这是他后来反复后悔的决定。多年后他在传记中描述父亲为"我所认识的最坏的人"。

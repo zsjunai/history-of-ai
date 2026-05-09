@@ -2,6 +2,8 @@
 
 > 他不写代码，也不发论文，但他把整个 AGI 时代抬上了王座，又把自己烧在了那张王座上。
 
+![奥特曼（Sam Altman），2025 年 TED 大会演讲](/images/people/sam-altman.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 圣路易斯的少年与第一台 Mac
 
 1985 年 4 月 22 日，萨缪尔·哈里斯·奥特曼（Samuel Harris Altman）出生在伊利诺伊州芝加哥，几个月后随家人迁往密苏里州圣路易斯（St. Louis）。父亲是房地产开发商，母亲是皮肤科医生。家里四个孩子，他是老大。

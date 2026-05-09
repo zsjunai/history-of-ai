@@ -2,6 +2,8 @@
 
 > 她没有发明算法，却造了一个数据集——那个数据集让世界第一次相信深度学习。
 
+![李飞飞（Fei-Fei Li），2017 年 AI for Good 全球峰会](/images/people/fei-fei-li.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 北京、新泽西与一间干洗店
 
 1976 年，李飞飞（<Person id="fei-fei-li" />）出生于北京，在四川成都度过童年。父亲是工程师，母亲是中学教师，家境普通而书香。她从小爱读书，少年时期已熟读中国古典与西方科幻。

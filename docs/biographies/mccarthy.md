@@ -2,6 +2,8 @@
 
 > 他给一个尚不存在的领域取了名字，又用一种至今未老的语言为它立庙，却终生在追一个未到来的"常识机器"。
 
+![麦卡锡（John McCarthy），2006 年摄于斯坦福](/images/people/mccarthy.jpg){width=200 style="float:right; margin-left:1em; margin-bottom:1em;"}
+
 ## 一个名字的发明
 
 1955 年的夏天，约翰·麦卡锡（John McCarthy）二十八岁，在达特茅斯学院（Dartmouth College）数学系任助理教授。他正在写一份资助申请书。
