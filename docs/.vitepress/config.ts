@@ -340,18 +340,18 @@ export default defineConfig({
     },
 
     en: {
-      label: 'English',
+      label: 'English (WIP)',
       lang: 'en-US',
       title: 'History of AI',
-      description: 'An open-source book on the history of Artificial Intelligence',
+      description: 'An open-source book on the history of Artificial Intelligence (English edition is work-in-progress; full content available in Chinese).',
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
           { text: 'Preface', link: '/en/guide/introduction' },
-          { text: 'Annals', link: '/en/annals/01-dawn', activeMatch: '/en/annals/' },
-          { text: 'Houses', link: '/en/houses/mit-ai-lab', activeMatch: '/en/houses/' },
-          { text: 'Biographies', link: '/en/biographies/turing', activeMatch: '/en/biographies/' },
-          { text: 'Treatises', link: '/en/treatises/neural-networks', activeMatch: '/en/treatises/' },
+          { text: 'Annals (1/10)', link: '/en/annals/01-dawn', activeMatch: '/en/annals/' },
+          { text: 'Houses (1/31)', link: '/en/houses/mit-ai-lab', activeMatch: '/en/houses/' },
+          { text: 'Biographies (1/23)', link: '/en/biographies/turing', activeMatch: '/en/biographies/' },
+          { text: 'Treatises (1/25)', link: '/en/treatises/neural-networks', activeMatch: '/en/treatises/' },
           { text: 'Timeline', link: '/en/timeline/' },
         ],
         sidebar: {

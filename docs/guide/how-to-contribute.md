@@ -2,43 +2,148 @@
 
 我们欢迎所有形式的贡献。无论是修正一个错别字，还是撰写一整篇传记，每一份贡献都让这本书变得更好。
 
+## 贡献门槛
+
+| 类型 | 工作量 | 难度 |
+|------|--------|------|
+| 修订错别字 / 链接失效 | 5 分钟 | ⭐ |
+| 补充一条大事年表（含 link） | 15 分钟 | ⭐ |
+| 给已有人物补充字典条目（avatar/bio） | 30 分钟 | ⭐⭐ |
+| 撰写一篇人物传记 / 机构传记 | 2–4 小时 | ⭐⭐⭐ |
+| 翻译一篇章到英文版 | 2–6 小时 | ⭐⭐⭐ |
+
 ## 贡献方式
 
 ### 1. 报告问题
 
-发现事实错误或遗漏？请在 GitHub 上提交 Issue：
+发现事实错误、遗漏或链接失效？请在 GitHub 上提交 Issue：
 
-- **纠错**：使用「内容纠错」模板，说明错误位置和正确信息
-- **建议**：使用「内容建议」模板，描述你想添加的内容
+- **纠错**：用「内容纠错」模板，说明错误位置（路径或链接）和正确信息（请附引用来源）
+- **建议**：用「内容建议」模板，描述你想新增的章节或事件
 
 ### 2. 提交修改
 
-1. Fork 本仓库
-2. 创建分支：`git checkout -b feat/your-topic`
-3. 编写或修改内容
-4. 本地预览确认：`npm run docs:dev`
-5. 提交 Pull Request
+```bash
+# 1. Fork 仓库后克隆到本地
+git clone https://github.com/<你的用户名>/history-of-ai.git
+cd history-of-ai
+
+# 2. 安装依赖
+npm install
+
+# 3. 启动本地预览（http://localhost:10001）
+npm run docs:dev
+
+# 4. 创建分支
+git checkout -b feat/your-topic
+
+# 5. 修改后构建验证（确保无报错）
+npm run docs:build
+
+# 6. 提交并推送
+git commit -m "docs: 你的简短说明"
+git push origin feat/your-topic
+
+# 7. 在 GitHub 上发起 Pull Request
+```
 
 ### 3. 参与讨论
 
-在 Issue 或 Discussion 中参与内容讨论，分享你对 AI 历史的见解。
+在 Issue 或 Discussion 中分享你对 AI 历史的见解，提出新的章节方向。
 
 ## 写作规范
 
-请参阅项目根目录的 [CONTRIBUTING.md](https://github.com/zsjunai/history-of-ai/blob/main/CONTRIBUTING.md) 了解详细的写作规范。
+### 真实性最高优先级
 
-## 本地开发
+- **事实优先于文采**：所有人名、年份、事件、数字必须经得起核查；不确定时宁可不写也绝不编造
+- **区分事实与传说**：AI 史上不少故事（如皮茨写信给罗素的细节）有多个版本——采主流共识，对争议细节注明"据传"或给出出处
+- **数字精确**：真空管数量、论文发表年份、人物年龄等容易出错的细节，写入前须交叉验证（至少两个独立来源）
+- **优先一手文献**：原始论文、亲历者回忆 > 二手转述
 
-```bash
-# 克隆仓库
-git clone https://github.com/zsjunai/history-of-ai.git
-cd history-of-ai
+### 语言风格
 
-# 安装依赖
-npm install
+- **叙事感优先**：像讲故事一样写历史，用具体场景和人物行动推进，避免教科书式的干燥罗列
+- **长短句交错**：长句展开因果，短句制造节奏，避免通篇长句
+- **庄重不刻板**：整体严肃、有文学色彩，允许比喻和画面感，不追求华丽辞藻
+- **细节见真章**：用一篇论文、一次会议、一个决定撑起观点，而非空泛概括
 
-# 启动本地预览（支持热更新）
-npm run docs:dev
+### 格式约定
+
+#### 中英文混写
+
+```markdown
+中文为主，关键术语保留英文：中文（English Term）
 ```
 
-修改 Markdown 文件后，浏览器会自动刷新预览。
+#### 人物组件 `<Person id="xxx" />`
+
+每篇文章中人物**首次出现**时必须使用 `<Person>` 组件——它会以悬浮卡片形式显示英文名、国籍、学科、生卒年、简介；后续出现写中文名即可。
+
+```markdown
+<Person id="turing" /> 1936 年发表《论可计算数》……图灵后来（不再用组件）证明了……
+```
+
+如果人物未在 `docs/.vitepress/data/people.ts` 字典中：
+
+1. **优先**：将人物补充到字典中再使用组件
+2. **临时**：用 `中文名（English Name）` 格式
+
+新增人物到字典时需包含 `id`、`name`、`englishName`、`nationality`、`field`、`born`、`died`（可选）、`bio`、`avatar`（可选）。
+
+#### 末尾必备三块
+
+每篇正文末尾必须有：
+
+```markdown
+::: tip 太史公曰
+仿《史记》笔法的史评，6–12 行，提炼这一篇主旨与历史地位。
+:::
+
+## 亲历者说
+
+::: info 征集中
+如果你曾参与/见证 XXX，欢迎[提交贡献](https://github.com/zsjunai/history-of-ai)。
+:::
+
+## 参考资料
+
+1. 真实可查的论文/书籍/报道，含作者、年份、出处。
+2. ...
+```
+
+列传额外需要 `## 代表性著作`（markdown 表格）；其它体例可省。
+
+### 篇数同步（重要）
+
+新增或删除文章后，必须同步更新以下所有记录篇数的位置：
+
+1. `CLAUDE.md` — 五体结构表格
+2. `README.md` — 五体结构表格 + 各体清单
+3. `docs/guide/introduction.md` — 前言中的篇数描述
+4. `docs/index.md` — 首页 features 中的篇数描述
+5. `docs/.vitepress/theme/components/StatsBar.vue` — 统计数字栏的 number 值
+
+## 图片版权要求
+
+仅接受以下来源的图片，**不接受**新闻媒体、Twitter/X 抓图、来源不明的图片：
+
+| 来源 | 接受 | 备注 |
+|------|------|------|
+| Public Domain | ✅ | 版权过期或作者放弃版权 |
+| CC0 / CC-BY / CC-BY-SA | ✅ | 注明作者 + 原链接 |
+| 官方 Press Kit | ✅ | 公司/机构提供的可自由使用素材 |
+| Getty Images / 新闻图 | ❌ | 即使做学术也不接受 |
+
+每张图必须在 `docs/public/images/people/CREDITS.md` 中记录：文件名 + 人物 + 来源 URL + 上传者 + 许可证 + 拍摄年份。
+
+## Pull Request 检查清单
+
+提交 PR 前请自查：
+
+- [ ] 内容真实，关键事实有引用
+- [ ] 人名首次出现使用 `<Person id="xxx" />` 或 `中文名（English Name）`
+- [ ] 末尾有"太史公曰"+"亲历者说"+"参考资料"
+- [ ] `npm run docs:build` 无报错、无警告（除 chunk size 警告外）
+- [ ] 篇数同步（如有新增/删除章节）
+- [ ] 图片来源已记入 CREDITS.md（如新增图片）
+- [ ] commit message 用 `feat: / fix: / docs: / refactor:` 等约定式前缀
