@@ -20,6 +20,7 @@ const stats = [
   { number: 31, unit: '家', label: '世家', link: withBase('/houses/mit-ai-lab') },
   { number: 23, unit: '传', label: '列传', link: withBase('/biographies/turing') },
   { number: 25, unit: '卷', label: '书', link: withBase('/treatises/neural-networks') },
+  { number: 134, unit: '事', label: '大事年表', link: withBase('/timeline/') },
 ]
 
 const numberRefs = ref<(HTMLElement | null)[]>([])

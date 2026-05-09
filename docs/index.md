@@ -32,7 +32,7 @@ features:
   - icon:
       src: /icons/houses.svg
     title: 世家
-    details: 三十一篇机构史——从黄金时代的 MIT AI 实验室、到大模型时代的 OpenAI、再到 2026 年港股上市的"AI 双雄"智谱与 MiniMax，以及英伟达、台积电、苹果、亚马逊这样的基础设施与消费巨头，覆盖美、加、中、日、欧五大板块。
+    details: 三十一篇机构史——从黄金时代的 MIT AI 实验室、到大模型时代的 OpenAI 与 Anthropic，再到冲刺港股的智谱与 MiniMax，以及英伟达、台积电、苹果、亚马逊这样的基础设施与消费巨头，覆盖美、加、中、日、欧五大板块。
     link: /houses/mit-ai-lab
   - icon:
       src: /icons/biographies.svg
@@ -45,10 +45,10 @@ features:
     details: 二十五篇专题论述——神经网络、Transformer、AGI、AI 安全，梳理每条技术路线的起承转合。
     link: /treatises/neural-networks
   - icon:
-      src: /icons/globe.svg
-    title: 国别史
-    details: 五篇国别发展史——美国、中国、欧洲、加拿大、日本，比较不同土壤培育出的不同 AI。
-    link: /treatises/ai-in-china
+      src: /icons/timeline.svg
+    title: 大事年表
+    details: 一百三十四件大事——从 1936 年图灵的纸带机器，到 2025 年 DeepSeek 的开源震撼。按时代分十段，里程碑高亮，每条可跳转到对应章节。
+    link: /timeline/
   - icon:
       src: /icons/contribute.svg
     title: 参与贡献

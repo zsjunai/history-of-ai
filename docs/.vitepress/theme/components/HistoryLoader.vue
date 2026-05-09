@@ -63,9 +63,35 @@ import { useData } from 'vitepress'
 
 const { isDark } = useData()
 
-import { allEvents, type TimelineEvent } from '../../data/timeline'
+import { allEvents, timeline, type TimelineEvent } from '../../data/timeline'
 
-const allItems = allEvents
+// 只精选 ~28 条高亮事件用于首页打字动画——完整 134 条会让动画跑近 80 秒。
+// 选取规则：所有 milestone（章节级转折）+ 每个时代取最早 2 条 major，按时间排序去重。
+function selectHighlights(): TimelineEvent[] {
+  const seen = new Set<TimelineEvent>()
+  const picked: TimelineEvent[] = []
+  for (const e of allEvents) {
+    if (e.importance === 'milestone') {
+      seen.add(e)
+      picked.push(e)
+    }
+  }
+  for (const era of timeline) {
+    const majors = era.events.filter((e) => e.importance === 'major' && !seen.has(e))
+    for (const e of majors.slice(0, 2)) {
+      seen.add(e)
+      picked.push(e)
+    }
+  }
+  return picked.sort((a, b) => {
+    const ya = parseInt(a.year)
+    const yb = parseInt(b.year)
+    if (ya !== yb) return ya - yb
+    return (a.month ?? 0) - (b.month ?? 0)
+  })
+}
+
+const allItems = selectHighlights()
 
 const completedItems = ref<TimelineEvent[]>([])
 const typingLine = ref<TimelineEvent | null>(null)
@@ -129,7 +155,7 @@ function startAnimation() {
         typingText.value = fullText.slice(0, charIndex + 1)
         charIndex++
         scrollToBottom()
-        const charDelay = lineIndex < 3 ? 15 : lineIndex < 8 ? 10 : 6
+        const charDelay = lineIndex < 3 ? 8 : lineIndex < 8 ? 5 : 3
         timer = setTimeout(typeChar, charDelay)
       } else {
         // Line done, move to completed
@@ -138,7 +164,7 @@ function startAnimation() {
         typingText.value = ''
         lineIndex++
         scrollToBottom()
-        const lineDelay = lineIndex < 4 ? 60 : lineIndex < 10 ? 40 : 20
+        const lineDelay = lineIndex < 4 ? 40 : lineIndex < 10 ? 25 : 15
         timer = setTimeout(typeLine, lineDelay)
       }
     }
