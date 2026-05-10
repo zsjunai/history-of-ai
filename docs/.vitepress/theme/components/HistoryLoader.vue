@@ -4,7 +4,7 @@
       <polyline points="4 17 10 11 4 5"/>
       <line x1="12" y1="19" x2="20" y2="19"/>
     </svg>
-    <span>显示终端</span>
+    <span>{{ isEn ? 'Show terminal' : '显示终端' }}</span>
   </div>
   <div class="history-loader" ref="container" v-show="!hidden">
     <div class="terminal" :class="{ 'dark-mode': isDark }">
@@ -32,7 +32,7 @@
           <span class="year">{{ item.year }}</span>
           <span class="separator">│</span>
           <a v-if="item.link" :href="item.link" class="event event-link">{{ item.event }}</a>
-          <span v-else class="event">{{ item.event }}</span>
+          <span v-else class="event">{{ eventTextOf(item) }}</span>
         </div>
         <!-- Currently typing line -->
         <div v-if="typingLine" class="log-line">
@@ -58,12 +58,17 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { useData } from 'vitepress'
 
-const { isDark } = useData()
+const { isDark, lang } = useData()
+const isEn = computed(() => lang.value === 'en-US')
 
 import { allEvents, timeline, type TimelineEvent } from '../../data/timeline'
+
+function eventTextOf(item: TimelineEvent): string {
+  return isEn.value ? item.event_en ?? item.event : item.event
+}
 
 // 只精选 ~28 条高亮事件用于首页打字动画——完整 134 条会让动画跑近 80 秒。
 // 选取规则：所有 milestone（章节级转折）+ 每个时代取最早 2 条 major，按时间排序去重。
@@ -147,7 +152,7 @@ function startAnimation() {
     const item = allItems[lineIndex]
     typingLine.value = item
     typingText.value = ''
-    const fullText = item.event
+    const fullText = eventTextOf(item)
     let charIndex = 0
 
     function typeChar() {

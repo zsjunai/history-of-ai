@@ -7,7 +7,7 @@
       </span>
       <span class="legend-divider"></span>
       <span class="legend-item">
-        <span class="dot-sample milestone-sample"></span>里程碑
+        <span class="dot-sample milestone-sample"></span>{{ MILESTONE_LABEL }}
       </span>
     </div>
 
@@ -19,8 +19,8 @@
     >
       <div class="era-header">
         <h2>
-          <a :href="withBaseUrl(era.link)">
-            <span class="era-name">{{ era.name }}</span>
+          <a :href="withBaseUrl(localizeLink(era.link))">
+            <span class="era-name">{{ eraName(era) }}</span>
             <span class="era-period">{{ era.period }}</span>
           </a>
         </h2>
@@ -33,7 +33,7 @@
           :class="['event-item', `imp-${item.importance || 'minor'}`]"
         >
           <span class="event-year">
-            {{ item.year }}<span v-if="item.month" class="event-month">·{{ item.month }}月</span>
+            {{ item.year }}<span v-if="item.month" class="event-month">·{{ monthSuffix(item.month) }}</span>
           </span>
           <span
             class="event-dot"
@@ -42,8 +42,8 @@
           ></span>
           <span class="event-icon">{{ iconFor(item.type) }}</span>
           <span class="event-text">
-            <a v-if="item.link" :href="withBaseUrl(item.link)">{{ item.event }}</a>
-            <span v-else>{{ item.event }}</span>
+            <a v-if="item.link" :href="withBaseUrl(localizeLink(item.link))">{{ eventText(item) }}</a>
+            <span v-else>{{ eventText(item) }}</span>
           </span>
         </li>
       </ol>
@@ -52,8 +52,12 @@
 </template>
 
 <script setup lang="ts">
-import { withBase } from 'vitepress'
-import { timeline, type EventType } from '../../data/timeline'
+import { computed } from 'vue'
+import { withBase, useData } from 'vitepress'
+import { timeline, type EventType, type TimelineEvent, type TimelineEra } from '../../data/timeline'
+
+const { lang } = useData()
+const isEn = computed(() => lang.value === 'en-US')
 
 const ICONS: Record<EventType, string> = {
   paper: '📄',
@@ -65,7 +69,7 @@ const ICONS: Record<EventType, string> = {
   milestone: '⭐',
 }
 
-const TYPE_LABELS: Record<EventType, string> = {
+const TYPE_LABELS_ZH: Record<EventType, string> = {
   paper: '论文',
   product: '产品',
   company: '机构',
@@ -74,12 +78,47 @@ const TYPE_LABELS: Record<EventType, string> = {
   event: '事件',
   milestone: '里程碑',
 }
+const TYPE_LABELS_EN: Record<EventType, string> = {
+  paper: 'Paper',
+  product: 'Product',
+  company: 'Org',
+  policy: 'Policy',
+  person: 'Person',
+  event: 'Event',
+  milestone: 'Milestone',
+}
+const TYPE_LABELS = computed(() => (isEn.value ? TYPE_LABELS_EN : TYPE_LABELS_ZH))
+
+const MILESTONE_LABEL = computed(() => (isEn.value ? 'Milestone' : '里程碑'))
+
+function eventText(item: TimelineEvent): string {
+  return isEn.value ? item.event_en ?? item.event : item.event
+}
+
+function eraName(era: TimelineEra): string {
+  return isEn.value ? era.name_en ?? era.name : era.name
+}
+
+function monthSuffix(m: number): string {
+  if (isEn.value) {
+    const months = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    return months[m] ?? ''
+  }
+  return `${m}月`
+}
 
 // 10 个时代的色相（覆盖整个色环）
 const HUES = [200, 180, 220, 30, 0, 260, 280, 145, 320, 15]
 
 function iconFor(type?: EventType): string {
   return type ? ICONS[type] : '·'
+}
+
+// 在英文版下，把 /annals/... 自动改写为 /en/annals/...
+function localizeLink(link: string): string {
+  if (!isEn.value || !link.startsWith('/')) return link
+  if (link.startsWith('/en/')) return link
+  return `/en${link}`
 }
 
 function hueFor(idx: number): number {

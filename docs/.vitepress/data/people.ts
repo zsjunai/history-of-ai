@@ -7,6 +7,12 @@ export interface Person {
   born: string
   died?: string
   bio: string
+  /** 英文简介（可选；缺失时英文版 fallback 到 bio） */
+  bio_en?: string
+  /** 英文专业（可选） */
+  field_en?: string
+  /** 英文国籍（可选） */
+  nationality_en?: string
   avatar?: string
 }
 
@@ -21,6 +27,9 @@ export const people: Record<string, Person> = {
     born: '1912',
     died: '1954',
     bio: '24 岁时提出图灵机模型，奠定可计算性理论基础。二战期间在布莱切利园领导团队破解德军 Enigma 密码。1950 年发表《计算机器与智能》提出图灵测试，被誉为"计算机科学与人工智能之父"。',
+    bio_en: 'At twenty-four he proposed the Turing machine, laying the formal foundation of computability theory. During World War II he led the team at Bletchley Park that broke the German Enigma cipher. His 1950 paper *Computing Machinery and Intelligence* introduced the Turing test, earning him recognition as the father of computer science and artificial intelligence.',
+    field_en: 'Mathematician, Logician',
+    nationality_en: 'United Kingdom',
     avatar: '/images/people/turing.jpg',
   },
   church: {
@@ -32,6 +41,9 @@ export const people: Record<string, Person> = {
     born: '1903',
     died: '1995',
     bio: '普林斯顿大学教授，1936 年发明 lambda 演算，与图灵独立定义了可计算性边界，共同提出"邱奇-图灵论题"。培养了图灵、克林、罗瑟等一批奠基性逻辑学家。',
+    bio_en: 'A Princeton professor who invented the lambda calculus in 1936 and, independently of Turing, mapped the limits of what is computable, jointly framing what became the Church–Turing thesis. He trained a generation of foundational logicians, among them Turing, Kleene, and Rosser.',
+    field_en: 'Mathematician, Logician',
+    nationality_en: 'United States',
   },
   mcculloch: {
     id: 'mcculloch',
@@ -42,6 +54,9 @@ export const people: Record<string, Person> = {
     born: '1898',
     died: '1969',
     bio: '兼具诗人气质的神经生理学家。1943 年与皮茨合作发表《神经活动中内在观念的逻辑演算》，提出第一个神经元数学模型，开创计算神经科学。后领导 MIT 电子学研究实验室，深度参与梅西控制论会议。',
+    bio_en: 'A neurophysiologist with the temperament of a poet. In 1943 he and Walter Pitts published *A Logical Calculus of the Ideas Immanent in Nervous Activity*, the first mathematical model of the neuron and the seed of computational neuroscience. He later led the Research Laboratory of Electronics at MIT and was a central figure at the Macy Conferences on cybernetics.',
+    field_en: 'Neurophysiologist',
+    nationality_en: 'United States',
   },
   pitts: {
     id: 'pitts',
@@ -52,6 +67,9 @@ export const people: Record<string, Person> = {
     born: '1923',
     died: '1969',
     bio: '自学成才的天才少年，少年时期在芝加哥大学图书馆流浪自学。20 岁与麦卡洛克合作发表神经元逻辑模型论文，被视为连接主义源头。后因学术挫折酗酒，46 岁英年早逝。',
+    bio_en: 'A self-taught prodigy who, as a runaway teenager, educated himself in the stacks of the University of Chicago library. At twenty he co-authored with McCulloch the logical model of the neuron now regarded as the wellspring of connectionism. Later academic disappointments drove him to drink, and he died at forty-six.',
+    field_en: 'Mathematician, Logician',
+    nationality_en: 'United States',
   },
   wiener: {
     id: 'wiener',
@@ -62,6 +80,9 @@ export const people: Record<string, Person> = {
     born: '1894',
     died: '1964',
     bio: '11 岁上大学、18 岁取得哈佛博士学位的神童。二战研究防空火控反馈系统，1948 年出版《控制论》，建立生物与机器的统一行为框架。发起梅西会议，与麦卡洛克并肩推动跨学科运动。',
+    bio_en: 'A child prodigy who entered college at eleven and earned a Harvard PhD by eighteen. During the Second World War he worked on feedback systems for anti-aircraft fire control, and in 1948 his book *Cybernetics* offered a unified framework for behavior in animals and machines. He helped launch the Macy Conferences and, alongside McCulloch, drove the interdisciplinary cybernetic movement.',
+    field_en: 'Mathematician',
+    nationality_en: 'United States',
     avatar: '/images/people/wiener.png',
   },
   shannon: {
@@ -73,6 +94,9 @@ export const people: Record<string, Person> = {
     born: '1916',
     died: '2001',
     bio: '贝尔实验室研究员，1948 年发表《通信的数学理论》创立信息论，定义"比特"概念。达特茅斯会议四位发起人之一，1950 年发表计算机下棋论文，制造会走迷宫的电子鼠"忒修斯"。喜欢独轮车和杂耍。',
+    bio_en: 'A Bell Labs researcher whose 1948 paper *A Mathematical Theory of Communication* founded information theory and gave the world the bit. One of the four organizers of the Dartmouth workshop, he published a seminal 1950 paper on computer chess and built Theseus, a maze-solving electronic mouse. Off the clock he was famous for his unicycles and juggling routines.',
+    field_en: 'Mathematician, Electrical Engineer',
+    nationality_en: 'United States',
     avatar: '/images/people/shannon.jpg',
   },
   vonneumann: {
@@ -84,6 +108,9 @@ export const people: Record<string, Person> = {
     born: '1903',
     died: '1957',
     bio: '被誉为 20 世纪最聪明的头脑之一，参与曼哈顿计划。1945 年起草 EDVAC 报告，确立存储程序计算机体系结构，几乎所有现代计算机都是"冯·诺伊曼机器"。晚年专注大脑与计算机的类比，遗著《计算机与大脑》身后出版。',
+    bio_en: 'Often called one of the most brilliant minds of the twentieth century and a contributor to the Manhattan Project. His 1945 *First Draft of a Report on the EDVAC* defined the stored-program architecture; nearly every modern computer is a "von Neumann machine". In his final years he turned to analogies between brain and machine, and his unfinished *The Computer and the Brain* appeared posthumously.',
+    field_en: 'Mathematician',
+    nationality_en: 'Hungarian-American',
   },
   hebb: {
     id: 'hebb',
@@ -94,6 +121,9 @@ export const people: Record<string, Person> = {
     born: '1904',
     died: '1985',
     bio: '麦吉尔大学心理学教授。1949 年在《行为的组织》中提出赫布学习规则——"一起激活的神经元会连接在一起"，奠定连接主义和神经网络学习算法的生物学基础。',
+    bio_en: 'A professor of psychology at McGill University. His 1949 book *The Organization of Behavior* introduced what is now known as Hebbian learning — the idea that "neurons that fire together wire together" — providing the biological foundation for connectionism and modern neural network learning rules.',
+    field_en: 'Psychologist',
+    nationality_en: 'Canada',
   },
   mccarthy: {
     id: 'mccarthy',
@@ -104,6 +134,9 @@ export const people: Record<string, Person> = {
     born: '1927',
     died: '2011',
     bio: '1956 年在达特茅斯会议上创造"人工智能"一词，定义了整个领域。1958 年发明 LISP 语言，此后统治 AI 研究三十年。共同创建 MIT 和斯坦福 AI 实验室，1971 年获图灵奖。',
+    bio_en: 'At the 1956 Dartmouth workshop he coined the term "artificial intelligence", giving the field its name. In 1958 he invented LISP, which would dominate AI research for the next three decades. He co-founded the AI labs at MIT and Stanford and received the Turing Award in 1971.',
+    field_en: 'Mathematician, Computer Scientist',
+    nationality_en: 'United States',
     avatar: '/images/people/mccarthy.jpg',
   },
   minsky: {
@@ -115,6 +148,9 @@ export const people: Record<string, Person> = {
     born: '1927',
     died: '2016',
     bio: '1951 年与埃德蒙兹建造第一台神经网络计算机 SNARC。1959 年与麦卡锡共同创建 MIT AI 实验室，提出"框架"理论。1969 年与帕珀特合著《感知机》，间接导致神经网络研究进入寒冬。1969 年获图灵奖。',
+    bio_en: 'In 1951, with Dean Edmonds, he built SNARC, the first neural-network computer. In 1959 he co-founded the MIT AI Lab with John McCarthy and later proposed the influential theory of "frames". His 1969 book *Perceptrons*, written with Seymour Papert, helped trigger the first neural-network winter. He received the Turing Award the same year.',
+    field_en: 'Mathematician, Cognitive Scientist',
+    nationality_en: 'United States',
     avatar: '/images/people/minsky.jpg',
   },
   newell: {
@@ -126,6 +162,9 @@ export const people: Record<string, Person> = {
     born: '1927',
     died: '1992',
     bio: '与西蒙、肖合作开发"逻辑理论家"——人工智能史上第一个 AI 程序。后共同提出"物理符号系统假说"，长期任教 CMU，奠定符号主义 AI 研究范式。1975 年与西蒙共获图灵奖。',
+    bio_en: 'Together with Herbert Simon and Cliff Shaw he built the Logic Theorist, generally regarded as the first AI program ever written. He and Simon went on to formulate the Physical Symbol System Hypothesis, and his long career at Carnegie Mellon did much to define the symbolic paradigm of AI. He shared the 1975 Turing Award with Simon.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United States',
     avatar: '/images/people/allen-newell.jpg',
   },
   simon: {
@@ -137,6 +176,9 @@ export const people: Record<string, Person> = {
     born: '1916',
     died: '2001',
     bio: '跨越多个学科的思想家。与纽厄尔合作开创符号 AI，提出"有限理性"理论。1978 年获诺贝尔经济学奖，1975 年与纽厄尔共获图灵奖——史上罕见的同获两大奖者。',
+    bio_en: 'A thinker who moved freely across disciplines. With Allen Newell he opened up symbolic AI, and his theory of "bounded rationality" reshaped economics and decision science. He received the Nobel Prize in Economics in 1978 and shared the 1975 Turing Award with Newell — a rare double in two of the most prestigious awards in their respective fields.',
+    field_en: 'Cognitive Scientist, Economist',
+    nationality_en: 'United States',
     avatar: '/images/people/herbert-simon.jpg',
   },
   samuel: {
@@ -148,6 +190,9 @@ export const people: Record<string, Person> = {
     born: '1901',
     died: '1990',
     bio: 'IBM 工程师。1952 年开始开发可自我学习的跳棋程序，程序最终棋力超过他本人。1959 年在论文中首次使用"机器学习"一词，定义了一整个子领域。',
+    bio_en: 'An IBM engineer who in 1952 began work on a self-improving checkers program; over time it came to play the game better than its creator. His 1959 paper coined the term "machine learning" and gave a name to an entire subfield.',
+    field_en: 'Engineer, Computer Scientist',
+    nationality_en: 'United States',
   },
   russell: {
     id: 'russell',
@@ -158,6 +203,9 @@ export const people: Record<string, Person> = {
     born: '1872',
     died: '1970',
     bio: '20 世纪最重要的哲学家之一。与怀特海合著《数学原理》（1910-1913），对数理逻辑和分析哲学产生深远影响。1950 年获诺贝尔文学奖，终生投身反战与社会运动。',
+    bio_en: 'One of the most important philosophers of the twentieth century. With Alfred North Whitehead he co-authored *Principia Mathematica* (1910–1913), a work of profound influence on mathematical logic and analytic philosophy. He received the Nobel Prize in Literature in 1950 and devoted his long life to anti-war and social causes.',
+    field_en: 'Philosopher, Mathematician',
+    nationality_en: 'United Kingdom',
   },
   rochester: {
     id: 'rochester',
@@ -168,6 +216,9 @@ export const people: Record<string, Person> = {
     born: '1919',
     died: '2001',
     bio: 'IBM 701 计算机首席架构师——这是 IBM 第一款商用科学计算机。达特茅斯会议四位发起人之一，在 IBM 内部最早推动机器学习和神经网络模拟研究。',
+    bio_en: 'Chief architect of the IBM 701, the company\'s first commercial scientific computer. One of the four organizers of the Dartmouth workshop, he was the earliest internal champion at IBM for machine learning and neural-network simulation research.',
+    field_en: 'Engineer',
+    nationality_en: 'United States',
   },
 
   whitehead: {
@@ -179,6 +230,9 @@ export const people: Record<string, Person> = {
     born: '1861',
     died: '1947',
     bio: '曾任剑桥大学和哈佛大学教授。与学生罗素合著《数学原理》，晚年转向形而上学研究，创立"过程哲学"，对 20 世纪逻辑学、数学基础和哲学产生深远影响。',
+    bio_en: 'A professor at Cambridge and later at Harvard. With his student Bertrand Russell he co-authored *Principia Mathematica*; in his later years he turned to metaphysics and founded "process philosophy", leaving a deep mark on twentieth-century logic, the foundations of mathematics, and philosophy.',
+    field_en: 'Mathematician, Philosopher',
+    nationality_en: 'United Kingdom',
   },
   edmonds: {
     id: 'edmonds',
@@ -189,6 +243,9 @@ export const people: Record<string, Person> = {
     born: '1924',
     died: '2009',
     bio: '普林斯顿大学物理专业学生。1951 年与明斯基合作，用真空管和战争剩余零件建造世界上第一台硬件神经网络计算机 SNARC，模拟 40 个神经元的学习过程。',
+    bio_en: 'A physics student at Princeton who, in 1951, teamed up with Marvin Minsky to build SNARC, the world\'s first hardware neural-network computer. Cobbled together from vacuum tubes and war-surplus parts, it simulated the learning of forty neurons.',
+    field_en: 'Engineer',
+    nationality_en: 'United States',
   },
   shaw: {
     id: 'shaw',
@@ -199,6 +256,9 @@ export const people: Record<string, Person> = {
     born: '1922',
     died: '1991',
     bio: 'RAND 公司资深程序员，与纽厄尔、西蒙合作开发"逻辑理论家"。设计 IPL（Information Processing Language），是最早的表处理语言之一，直接启发了 LISP 的诞生。',
+    bio_en: 'A senior programmer at RAND who worked with Newell and Simon to build the Logic Theorist. He designed the Information Processing Language (IPL), one of the first list-processing languages, which directly inspired the creation of LISP.',
+    field_en: 'Programmer',
+    nationality_en: 'United States',
   },
 
   // 黄金时代人物
@@ -211,6 +271,9 @@ export const people: Record<string, Person> = {
     born: '1928',
     died: '1971',
     bio: '康奈尔大学心理学教授。1957 年发明感知机（Perceptron），次年实现 Mark I 硬件版本，是首个可学习的神经网络。1969 年被明斯基与帕珀特的《感知机》一书重创研究前景，43 岁生日当天因划船事故溺亡于切萨皮克湾。',
+    bio_en: 'A professor of psychology at Cornell. In 1957 he invented the Perceptron, and the following year built the Mark I hardware version — the first neural network capable of learning. The 1969 book *Perceptrons* by Minsky and Papert dealt his research a heavy blow. He drowned in a boating accident on Chesapeake Bay on his forty-third birthday.',
+    field_en: 'Psychologist',
+    nationality_en: 'United States',
     avatar: '/images/people/rosenblatt.jpg',
   },
   weizenbaum: {
@@ -222,6 +285,9 @@ export const people: Record<string, Person> = {
     born: '1923',
     died: '2008',
     bio: 'MIT 教授，犹太裔难民，青少年随家人逃离纳粹德国。1966 年创造 ELIZA 聊天程序，目睹人们对简单程序投射真实情感后震惊。1976 年出版《计算机的力量与人类的理性》，成为 AI 最著名的批评者之一。',
+    bio_en: 'An MIT professor and Jewish refugee whose family fled Nazi Germany when he was a teenager. In 1966 he created the chatbot ELIZA, and was shaken to see how readily users projected genuine emotion onto so simple a program. His 1976 book *Computer Power and Human Reason* established him as one of AI\'s most prominent critics.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'German-American',
   },
   nilsson: {
     id: 'nilsson',
@@ -232,6 +298,9 @@ export const people: Record<string, Person> = {
     born: '1933',
     died: '2019',
     bio: '斯坦福研究院（SRI）研究员、后任斯坦福大学教授。1966 年起领导 Shakey 机器人项目，1968 年共同提出 A* 搜索算法，至今仍是路径规划标准。著有《人工智能探索》等权威 AI 史著作。',
+    bio_en: 'A researcher at SRI and later a professor at Stanford. From 1966 he led the Shakey mobile-robot project, and in 1968 co-introduced the A* search algorithm, which remains the standard for path planning. He is also the author of *The Quest for Artificial Intelligence*, a definitive history of the field.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United States',
   },
   feigenbaum: {
     id: 'feigenbaum',
@@ -241,6 +310,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1936',
     bio: '西蒙的学生，斯坦福大学教授。1965 年启动 DENDRAL 项目，被誉为"专家系统之父"。1977 年提出"知识工程"概念，将 AI 研究方向从通用推理转向特定领域知识。1994 年获图灵奖。',
+    bio_en: 'A student of Herbert Simon and a longtime Stanford professor. He launched the DENDRAL project in 1965, earning the title "father of expert systems". In 1977 he coined the term "knowledge engineering", shifting AI\'s emphasis from general reasoning to domain-specific knowledge. He received the Turing Award in 1994.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United States',
   },
   lighthill: {
     id: 'lighthill',
@@ -251,6 +323,9 @@ export const people: Record<string, Person> = {
     born: '1924',
     died: '1998',
     bio: '杰出的应用数学家和流体力学专家，在 AI 领域无直接研究经验。1973 年受英国科学研究委员会委托撰写莱特希尔报告，严厉批评 AI "组合爆炸"问题，直接导致英国大幅削减 AI 资助，触发第一次 AI 寒冬。',
+    bio_en: 'A distinguished applied mathematician and fluid-dynamics expert with no direct experience in AI research. Commissioned in 1973 by the British Science Research Council, his Lighthill Report attacked AI for its "combinatorial explosion" problem, prompting sharp cuts to UK funding and setting off the first AI winter.',
+    field_en: 'Mathematician',
+    nationality_en: 'United Kingdom',
   },
   papert: {
     id: 'papert',
@@ -261,6 +336,9 @@ export const people: Record<string, Person> = {
     born: '1928',
     died: '2016',
     bio: '南非出身，曾与皮亚杰在日内瓦合作研究儿童认知。1969 年与明斯基合著《感知机》，严格论证单层感知机的局限。创造 Logo 编程语言让儿童学编程，成为建构主义学习理论的先驱。',
+    bio_en: 'Born in South Africa, he worked with Jean Piaget in Geneva on children\'s cognition. With Marvin Minsky he co-authored *Perceptrons* in 1969, rigorously proving the limits of single-layer perceptrons. He created the Logo programming language to teach programming to children, becoming a pioneer of constructionist learning theory.',
+    field_en: 'Mathematician, Educator',
+    nationality_en: 'South African-American',
   },
 
   // 统计学习时代人物
@@ -274,6 +352,9 @@ export const people: Record<string, Person> = {
     born: '1923',
     died: '2007',
     bio: '二战期间在布莱切利园与图灵、古德共事，破解德军密码。战后创立爱丁堡大学机器智能系，是英国 AI 的旗手。1973 年在 BBC 电视辩论中正面抗衡莱特希尔，捍卫 AI 研究。',
+    bio_en: 'During the Second World War he worked alongside Turing and I. J. Good at Bletchley Park, breaking German codes. After the war he founded the Department of Machine Intelligence at the University of Edinburgh and became the standard-bearer of British AI. In a 1973 BBC television debate he stood face to face with Lighthill in defense of the field.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United Kingdom',
   },
   schank: {
     id: 'schank',
@@ -284,6 +365,9 @@ export const people: Record<string, Person> = {
     born: '1946',
     died: '2023',
     bio: '耶鲁大学 AI 实验室主任。提出概念依赖理论和"脚本"理论，试图用结构化知识单元捕捉人类常识。1980 年代后转向 AI 教育应用，是自然语言处理早期核心人物。',
+    bio_en: 'Director of the Yale AI Lab and a central figure of early natural-language processing. He developed Conceptual Dependency theory and the theory of "scripts", attempts to capture human common sense in structured units of knowledge. From the 1980s on he turned increasingly to AI applications in education.',
+    field_en: 'Computer Scientist, Cognitive Scientist',
+    nationality_en: 'United States',
   },
   colmerauer: {
     id: 'colmerauer',
@@ -294,6 +378,9 @@ export const people: Record<string, Person> = {
     born: '1941',
     died: '2017',
     bio: '法国马赛大学教授，逻辑编程先驱。1972 年与同事合作设计并实现 Prolog 语言，将逻辑推理嵌入编程语言本身，成为欧洲 AI 研究的重要工具，也是日本第五代计算机计划的核心语言。',
+    bio_en: 'A professor at Aix-Marseille University and a pioneer of logic programming. In 1972 he and colleagues designed and implemented Prolog, embedding logical inference into the programming language itself. Prolog became a key tool of European AI research and the core language of Japan\'s Fifth Generation Computer Systems project.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'France',
   },
   kowalski: {
     id: 'kowalski',
@@ -303,6 +390,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、逻辑学家',
     born: '1941',
     bio: '伦敦帝国理工学院教授。为 Prolog 提供理论基础（Horn 子句的过程解释），确立"逻辑 = 算法 + 控制"的编程范式，与科尔梅劳尔并称逻辑编程奠基人。',
+    bio_en: 'A professor at Imperial College London who gave Prolog its theoretical foundation through the procedural interpretation of Horn clauses, and articulated the "Algorithm = Logic + Control" view of programming. He is regarded, together with Alain Colmerauer, as a founder of logic programming.',
+    field_en: 'Computer Scientist, Logician',
+    nationality_en: 'American-British',
   },
   mcdermott: {
     id: 'mcdermott',
@@ -312,6 +402,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1942',
     bio: '卡内基梅隆大学（CMU）研究员。1980 年开发 R1/XCON 专家系统，用于为 DEC 自动配置 VAX 计算机，每年节省两千五百万美元。此举标志 AI 第一次大规模商业化成功，引爆专家系统时代。',
+    bio_en: 'A researcher at Carnegie Mellon University. In 1980 he built the R1/XCON expert system, which automatically configured DEC\'s VAX computers and saved the company about $25 million a year. It marked AI\'s first large-scale commercial success and set off the expert-systems boom.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United States',
   },
   rumelhart: {
     id: 'rumelhart',
@@ -322,6 +415,9 @@ export const people: Record<string, Person> = {
     born: '1942',
     died: '2011',
     bio: '加州大学圣迭戈分校（UCSD）认知科学家，连接主义核心人物。1986 年与辛顿、威廉姆斯合著《通过反向传播误差学习表征》，让多层神经网络首次可被有效训练。晚年因进行性核上性麻痹不幸早逝。',
+    bio_en: 'A cognitive scientist at UC San Diego and a central figure in connectionism. In 1986, with Geoffrey Hinton and Ronald Williams, he co-authored *Learning Representations by Back-Propagating Errors*, the paper that first made multilayer neural networks effectively trainable. He died young, suffering from progressive supranuclear palsy.',
+    field_en: 'Psychologist, Cognitive Scientist',
+    nationality_en: 'United States',
   },
   williams_rj: {
     id: 'williams_rj',
@@ -331,6 +427,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1948',
     bio: '东北大学教授。反向传播算法 1986 年经典论文第三作者。提出 REINFORCE 策略梯度算法，是现代深度强化学习方法（如 PPO、A3C）的数学起点。',
+    bio_en: 'A professor at Northeastern University and the third author of the classic 1986 backpropagation paper. He introduced the REINFORCE policy-gradient algorithm, the mathematical starting point for modern deep reinforcement learning methods such as PPO and A3C.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United States',
   },
   werbos: {
     id: 'werbos',
@@ -340,6 +439,9 @@ export const people: Record<string, Person> = {
     field: '数学家',
     born: '1947',
     bio: '1974 年在哈佛大学博士论文中首次提出反向传播算法的完整数学思想，比 1986 年广为流传的版本早 12 年。但当时几乎无人关注，直到多年后才被学术界公认为算法的最早发现者。',
+    bio_en: 'In his 1974 Harvard PhD thesis he set out the full mathematical idea of backpropagation, twelve years before the famous 1986 paper. The work attracted almost no attention at the time; only years later was he widely acknowledged as the algorithm\'s earliest discoverer.',
+    field_en: 'Mathematician',
+    nationality_en: 'United States',
   },
   'berners-lee': {
     id: 'berners-lee',
@@ -349,6 +451,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1955',
     bio: '万维网（World Wide Web）发明者。1989 年在 CERN 提交"信息管理：一份提议"，1990 年编写第一个浏览器和 Web 服务器。他选择不为 Web 申请专利，让这项发明成为人类共同遗产，2017 年获图灵奖。',
+    bio_en: 'Inventor of the World Wide Web. In 1989 he submitted *Information Management: A Proposal* at CERN, and in 1990 wrote the first web browser and web server. He chose not to patent the Web, making it a shared inheritance of humanity, and received the Turing Award in 2017.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United Kingdom',
   },
   jelinek: {
     id: 'jelinek',
@@ -359,6 +464,9 @@ export const people: Record<string, Person> = {
     born: '1932',
     died: '2010',
     bio: '二战后从捷克移民美国。1972 年起领导 IBM 语音识别研究组近二十年，率先用隐马尔可夫模型替代语言学规则，开启 NLP 的统计革命。留下名言："每当我开除一个语言学家，系统性能就提高了。"',
+    bio_en: 'After the Second World War he emigrated from Czechoslovakia to the United States. From 1972 he led IBM\'s speech-recognition group for nearly two decades, replacing linguistic rules with hidden Markov models and launching the statistical revolution in NLP. He is remembered for the line, "Every time I fire a linguist, the performance of the system goes up."',
+    field_en: 'Computer Scientist, Mathematician',
+    nationality_en: 'Czech-American',
   },
 
   chervonenkis: {
@@ -370,6 +478,9 @@ export const people: Record<string, Person> = {
     born: '1938',
     died: '2014',
     bio: '苏联控制问题研究所数学家。1960 年代末与瓦普尼克共同创立统计学习理论，提出以他们姓氏命名的 VC 维概念，度量模型复杂度。2014 年在莫斯科郊外徒步时因恶劣天气遇难，享年 76 岁。',
+    bio_en: 'A mathematician at the Soviet Institute of Control Sciences. In the late 1960s, together with Vladimir Vapnik, he founded statistical learning theory and introduced the VC dimension — named after the two of them — as a measure of model complexity. He died in 2014 at the age of 76, caught in severe weather while hiking outside Moscow.',
+    field_en: 'Mathematician',
+    nationality_en: 'Soviet/Russian',
   },
   page: {
     id: 'page',
@@ -379,6 +490,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、企业家',
     born: '1973',
     bio: '斯坦福博士生期间（维诺格拉德的学生）与布林共同发明 PageRank 算法，1998 年创立谷歌。任 CEO 至 2001 年、再度出任 2011-2015 年，将谷歌打造为全球最大 AI 公司之一。',
+    bio_en: 'As a PhD student at Stanford under Terry Winograd, he and Sergey Brin invented the PageRank algorithm, then founded Google in 1998. He served as CEO until 2001 and returned in the role from 2011 to 2015, building Google into one of the world\'s largest AI companies.',
+    field_en: 'Computer Scientist, Entrepreneur',
+    nationality_en: 'United States',
   },
   brin: {
     id: 'brin',
@@ -388,6 +502,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、企业家',
     born: '1973',
     bio: '6 岁随父母从苏联移民美国。斯坦福博士生期间与佩奇合作开发 PageRank 和谷歌搜索引擎，1998 年共同创立谷歌。长期深度参与谷歌的 AI 和登月项目（Google X）。',
+    bio_en: 'He emigrated with his parents from the Soviet Union to the United States at the age of six. As a PhD student at Stanford he worked with Larry Page on PageRank and the Google search engine, co-founding Google in 1998. He has remained deeply involved in Google\'s AI work and its moonshot lab, Google X.',
+    field_en: 'Computer Scientist, Entrepreneur',
+    nationality_en: 'Soviet-American',
   },
   breiman: {
     id: 'breiman',
@@ -398,6 +515,9 @@ export const people: Record<string, Person> = {
     born: '1928',
     died: '2005',
     bio: '加州大学伯克利分校教授。提出分类与回归树（CART）、bagging 和随机森林算法。2001 年发表著名论文《统计建模：两种文化》，为数据驱动机器学习范式正名。',
+    bio_en: 'A professor at UC Berkeley who introduced classification and regression trees (CART), bagging, and the random-forests algorithm. His landmark 2001 essay *Statistical Modeling: The Two Cultures* gave intellectual legitimacy to the data-driven, algorithmic style of machine learning.',
+    field_en: 'Statistician',
+    nationality_en: 'United States',
   },
   vapnik: {
     id: 'vapnik',
@@ -407,6 +527,9 @@ export const people: Record<string, Person> = {
     field: '数学家、统计学家',
     born: '1936',
     bio: '苏联莫斯科控制问题研究所研究员，1990 年移民美国，加入贝尔实验室。统计学习理论奠基人，1995 年与科尔特斯合作提出现代支持向量机（SVM），主导 1990 年代末到 2000 年代初机器学习竞赛。',
+    bio_en: 'A researcher at the Moscow Institute of Control Sciences who emigrated to the United States in 1990 and joined Bell Labs. The founder of statistical learning theory, in 1995 he and Corinna Cortes introduced the modern support vector machine (SVM), the dominant model in machine-learning benchmarks from the late 1990s into the early 2000s.',
+    field_en: 'Mathematician, Statistician',
+    nationality_en: 'Soviet-American',
   },
   jordan: {
     id: 'jordan',
@@ -416,6 +539,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、统计学家',
     born: '1956',
     bio: '加州大学伯克利分校教授。推动概率图模型和贝叶斯方法在 AI 中的应用，建立了机器学习领域最具影响力的研究组之一。学生遍及学界与产业界，包括吴恩达、本吉奥（博士后）等。',
+    bio_en: 'A professor at UC Berkeley who championed probabilistic graphical models and Bayesian methods in AI and built one of the most influential research groups in machine learning. His students and postdocs are scattered across academia and industry, among them Andrew Ng and Yoshua Bengio.',
+    field_en: 'Computer Scientist, Statistician',
+    nationality_en: 'United States',
   },
   pearl: {
     id: 'pearl',
@@ -425,6 +551,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、哲学家',
     born: '1936',
     bio: 'UCLA 教授。1988 年出版《智能系统中的概率推理》，提出贝叶斯网络。后发展因果推理（Causal Inference）数学框架，严格区分"相关"与"因果"，对医学和社会科学影响深远。2011 年获图灵奖。',
+    bio_en: 'A professor at UCLA. His 1988 book *Probabilistic Reasoning in Intelligent Systems* introduced Bayesian networks. He later developed a mathematical framework for causal inference that rigorously separates correlation from causation, profoundly influencing medicine and the social sciences. He received the Turing Award in 2011.',
+    field_en: 'Computer Scientist, Philosopher',
+    nationality_en: 'Israeli-American',
     avatar: '/images/people/judea-pearl.jpg',
   },
   kasparov: {
@@ -435,6 +564,9 @@ export const people: Record<string, Person> = {
     field: '国际象棋世界冠军',
     born: '1963',
     bio: '22 岁成为国际象棋最年轻世界冠军，在位 15 年。1997 年 5 月以 2.5 比 3.5 输给 IBM 深蓝，成为第一位在标准赛制下输给计算机的在任世界冠军。后转向政治活动，是俄罗斯反对派代表人物。',
+    bio_en: 'At twenty-two he became the youngest world chess champion in history and held the title for fifteen years. In May 1997 he lost a six-game match to IBM\'s Deep Blue by 2½–3½, becoming the first reigning world champion ever to lose to a computer under standard tournament conditions. He later moved into politics and emerged as a leading figure of the Russian opposition.',
+    field_en: 'World Chess Champion',
+    nationality_en: 'Russian (born in the Soviet Union)',
   },
   cortes: {
     id: 'cortes',
@@ -444,6 +576,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1961',
     bio: '丹麦物理学博士，1990 年代加入 AT&T 贝尔实验室。1995 年与瓦普尼克合作发表支持向量机（SVM）经典论文，提出软间隔（Soft-margin）SVM。2003 年起长期领导谷歌研究院纽约分部。',
+    bio_en: 'A Danish physics PhD who joined AT&T Bell Labs in the 1990s. In 1995 she and Vladimir Vapnik published the classic SVM paper, introducing the soft-margin support vector machine. Since 2003 she has led Google Research\'s New York office.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'Danish-American',
   },
 
   // 深度学习前夜人物
@@ -455,6 +590,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1976',
     bio: '乔丹（Michael I. Jordan）的博士生，斯坦福大学教授。2011 年创立谷歌大脑，2012 年联合创立 Coursera，通过《机器学习》课程为数百万人启蒙深度学习。曾任百度首席科学家，后创立 Landing AI 推动 AI 工业落地。',
+    bio_en: 'A doctoral student of Michael I. Jordan and a professor at Stanford. In 2011 he founded Google Brain, and in 2012 co-founded Coursera, where his *Machine Learning* course became the gateway to deep learning for millions of learners. He later served as chief scientist at Baidu, then founded Landing AI to bring AI into industrial practice.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'British-born Chinese-American',
     avatar: '/images/people/andrew-ng.jpg',
   },
   huang: {
@@ -465,6 +603,9 @@ export const people: Record<string, Person> = {
     field: '企业家、电气工程师',
     born: '1963',
     bio: '9 岁从台湾移民美国，斯坦福硕士。1993 年联合创立 NVIDIA 并长期任 CEO。2006 年推出 CUDA 平台，把 GPU 从游戏硬件打造为通用并行计算平台，意外成为深度学习时代最关键的基础设施缔造者。',
+    bio_en: 'He emigrated from Taiwan to the United States at the age of nine and earned a master\'s degree from Stanford. In 1993 he co-founded NVIDIA, and has been its long-serving CEO ever since. In 2006 he launched CUDA, turning the GPU from gaming hardware into a general-purpose parallel computing platform — and, almost by accident, into the most important piece of infrastructure of the deep-learning era.',
+    field_en: 'Entrepreneur, Electrical Engineer',
+    nationality_en: 'Taiwanese-American',
   },
 
   winograd: {
@@ -475,6 +616,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1946',
     bio: 'MIT 博士期间（1971）开发 SHRDLU 积木世界系统，成为符号 AI 黄金时代的代表作。后转向人机交互研究，任斯坦福教授，是拉里·佩奇的导师，深度参与谷歌早期思想形成。',
+    bio_en: 'In 1971, while a PhD student at MIT, he built SHRDLU, the blocks-world system widely seen as a high point of symbolic AI\'s golden age. He later turned to human-computer interaction at Stanford, where as Larry Page\'s adviser he had a deep influence on the early intellectual shaping of Google.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United States',
   },
 
   // 深度学习三巨头
@@ -486,6 +630,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、认知心理学家',
     born: '1947',
     bio: '英国出生，移居加拿大任多伦多大学教授，人称"深度学习之父"。1986 年推动反向传播，2006 年发表深度信念网络论文，2012 年带领学生以 AlexNet 点燃深度学习革命。2018 年获图灵奖，2023 年离开谷歌以便自由警告 AI 风险，2024 年获诺贝尔物理学奖。',
+    bio_en: 'Born in Britain and later a professor at the University of Toronto, often called the "godfather of deep learning". He helped popularize backpropagation in 1986, published the deep-belief-network paper in 2006, and in 2012 led the students whose AlexNet ignited the deep-learning revolution. He won the Turing Award in 2018, left Google in 2023 to speak freely about AI risk, and was awarded the Nobel Prize in Physics in 2024.',
+    field_en: 'Computer Scientist, Cognitive Psychologist',
+    nationality_en: 'British-Canadian',
     avatar: '/images/people/hinton.jpg',
   },
   lecun: {
@@ -496,6 +643,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1960',
     bio: '1987 年在辛顿指导下完成博士后。1989 年在贝尔实验室开发 LeNet 卷积神经网络，在银行支票手写数字识别中实现商用。2013 年加入 Facebook 创建 FAIR，现任 Meta 首席 AI 科学家，2018 年与辛顿、本吉奥共获图灵奖。',
+    bio_en: 'He completed his postdoctoral work in 1987 under Geoffrey Hinton. At Bell Labs in 1989 he developed the LeNet convolutional neural network, which went into commercial use reading handwritten digits on bank checks. In 2013 he joined Facebook to found FAIR, and now serves as Meta\'s chief AI scientist. He shared the 2018 Turing Award with Hinton and Bengio.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'French-American',
     avatar: '/images/people/lecun.jpg',
   },
   bengio: {
@@ -506,6 +656,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1964',
     bio: '蒙特利尔大学教授，MILA 实验室创始人。2000 年代神经网络最寒冷的时期坚持研究，2014 年团队提出注意力机制，为 Transformer 铺路。2018 年与辛顿、杨立昆共获图灵奖，深度学习三巨头中唯一未加入大型科技公司的学者，坚守学术独立。',
+    bio_en: 'A professor at the University of Montreal and founder of the Mila lab. He kept neural-network research alive through the chilliest stretch of the 2000s, and in 2014 his group introduced the attention mechanism that paved the way for the Transformer. He shared the 2018 Turing Award with Hinton and LeCun, and is the only one of the three deep-learning pioneers who has remained outside big tech, holding to academic independence.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'Canada',
     avatar: '/images/people/bengio.jpg',
   },
 
@@ -518,6 +671,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1986',
     bio: '辛顿的博士生。2012 年主导开发 AlexNet，用两块 GTX 580 GPU 训练的八层卷积网络在 ILSVRC 比赛中比第二名低 11 个百分点，引爆深度学习革命。2013 年随辛顿加入谷歌，2017 年后淡出学界。',
+    bio_en: 'A doctoral student of Geoffrey Hinton. In 2012 he led the development of AlexNet, an eight-layer convolutional network trained on two GTX 580 GPUs that beat the second-place ILSVRC entry by eleven percentage points and ignited the deep-learning revolution. He joined Google with Hinton in 2013 and gradually stepped away from academic research after 2017.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'Ukrainian-Canadian',
   },
   silver: {
     id: 'silver',
@@ -527,6 +683,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1976',
     bio: '哈萨比斯的剑桥同学。DeepMind 首席研究员，领导 AlphaGo、AlphaGo Zero、AlphaZero、MuZero 系列工作，将深度强化学习推向极致。2016 年 AlphaGo 击败李世石，2019 年获 IJCAI 计算机与思维奖。',
+    bio_en: 'A Cambridge classmate of Demis Hassabis and now a principal researcher at DeepMind. He has led the AlphaGo, AlphaGo Zero, AlphaZero, and MuZero programs, pushing deep reinforcement learning to its limits. In 2016 AlphaGo defeated Lee Sedol, and in 2019 he received the IJCAI Computers and Thought Award.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United Kingdom',
   },
   sedol: {
     id: 'sedol',
@@ -536,6 +695,9 @@ export const people: Record<string, Person> = {
     field: '围棋九段',
     born: '1983',
     bio: '韩国传奇围棋九段，16 岁入段，国际赛事冠军 18 次。2016 年与 AlphaGo 五番棋以 1 比 4 告负，但第四盘第 78 手"神之一手"成为围棋史上最著名的妙手之一。2019 年退役，称"AI 的出现让我感到无法战胜"。',
+    bio_en: 'A legendary Korean 9-dan Go player who turned professional at sixteen and won eighteen international titles. In 2016 he lost a five-game match against AlphaGo by 1–4, yet his Move 78 in Game 4 — the "hand of God" — became one of the most celebrated moves in the history of the game. He retired in 2019, saying that with AI he could no longer be the top player even if he tried.',
+    field_en: 'Go 9-dan Player',
+    nationality_en: 'South Korea',
   },
   batchnorm_ioffe: {
     id: 'batchnorm_ioffe',
@@ -545,6 +707,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1968',
     bio: '谷歌研究员。2015 年与塞格迪（Christian Szegedy）共同提出批归一化（Batch Normalization），解决深层网络训练不稳定问题，与 ResNet 的跳跃连接一起构成现代深度网络的两大基础设施。',
+    bio_en: 'A Google researcher. In 2015, with Christian Szegedy, he introduced Batch Normalization, which addressed the training instability of very deep networks. Together with ResNet\'s skip connections, BatchNorm forms one of the two pillars of modern deep-network design.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'Russian-American',
   },
 
   // 当代关键人物
@@ -556,6 +721,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1976',
     bio: '16 岁随父母移民美国，曾一边读书一边在父母的干洗店打工。2007 年在普林斯顿启动 ImageNet 项目，历时三年通过众包标注了上千万张图像，为深度学习革命奠定数据基础。斯坦福以人为本 AI 研究院（HAI）联合主任。',
+    bio_en: 'She emigrated with her parents to the United States at sixteen, working in their dry-cleaning shop while finishing school. In 2007 at Princeton she launched the ImageNet project, spending three years to crowdsource the labeling of more than ten million images and laying the data foundation for the deep-learning revolution. She is a co-director of the Stanford Institute for Human-Centered Artificial Intelligence (HAI).',
+    field_en: 'Computer Scientist',
+    nationality_en: 'Chinese-American',
     avatar: '/images/people/fei-fei-li.jpg',
   },
   hassabis: {
@@ -566,6 +734,9 @@ export const people: Record<string, Person> = {
     field: '神经科学家、企业家',
     born: '1976',
     bio: '少年国际象棋大师，曾参与《主题医院》等经典游戏开发。剑桥计算机科学本科，伦敦大学学院（UCL）神经科学博士。2010 年创立 DeepMind，2014 年被谷歌收购。主导 AlphaGo、AlphaFold 等里程碑工作，2024 年因 AlphaFold 获诺贝尔化学奖。',
+    bio_en: 'A child chess prodigy and former game designer who worked on classics such as *Theme Hospital*. He read computer science at Cambridge and earned a PhD in neuroscience from University College London. In 2010 he founded DeepMind, acquired by Google in 2014. He has led milestone projects from AlphaGo to AlphaFold and received the 2024 Nobel Prize in Chemistry for AlphaFold.',
+    field_en: 'Neuroscientist, Entrepreneur',
+    nationality_en: 'United Kingdom',
     avatar: '/images/people/demis-hassabis.jpg',
   },
   altman: {
@@ -576,6 +747,9 @@ export const people: Record<string, Person> = {
     field: '企业家',
     born: '1985',
     bio: '19 岁从斯坦福辍学创业。2014-2019 年任 Y Combinator 总裁，2015 年与马斯克等人共同创立 OpenAI。2022 年 11 月推动 ChatGPT 发布，引领生成式 AI 浪潮。2023 年 11 月经历戏剧性的 OpenAI 董事会"政变"后五天内复职。',
+    bio_en: 'He dropped out of Stanford at nineteen to start his first company. From 2014 to 2019 he served as president of Y Combinator, and in 2015 co-founded OpenAI alongside Elon Musk and others. In November 2022 he led the launch of ChatGPT, kicking off the generative-AI wave. He was reinstated within five days after the dramatic OpenAI boardroom coup of November 2023.',
+    field_en: 'Entrepreneur',
+    nationality_en: 'United States',
     avatar: '/images/people/sam-altman.jpg',
   },
   sutskever: {
@@ -586,6 +760,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1986',
     bio: '辛顿的博士生，AlexNet 合作者。2014 年提出 Seq2Seq 模型奠定现代机器翻译基础。2015 年联合创立 OpenAI 任首席科学家，主导 GPT 系列研发。2023 年 11 月 OpenAI 内部风波后淡出，2024 年创立 Safe Superintelligence Inc.。',
+    bio_en: 'A doctoral student of Geoffrey Hinton and a co-author of AlexNet. In 2014 he introduced the Seq2Seq model that underpins modern neural machine translation. He co-founded OpenAI in 2015 as chief scientist, leading the GPT line of research. After the OpenAI upheaval of November 2023 he stepped back, and in 2024 founded Safe Superintelligence Inc.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'Israeli-Canadian',
   },
   he: {
     id: 'he',
@@ -595,6 +772,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1984',
     bio: '广州执信中学毕业，2003 年清华大学基础科学班入学，2011 年香港中文大学博士。在微软亚洲研究院（MSRA）提出残差网络（ResNet，2015）和 Mask R-CNN（2017），分别获 CVPR 2016 和 ICCV 2017 最佳论文奖。后加入 Facebook AI Research，2024 年任 MIT 教授。',
+    bio_en: 'A graduate of Guangzhou\'s Zhixin High School, he entered Tsinghua University\'s fundamental sciences program in 2003 and earned his PhD from the Chinese University of Hong Kong in 2011. At Microsoft Research Asia he introduced ResNet (2015) and Mask R-CNN (2017), winning best-paper awards at CVPR 2016 and ICCV 2017. He later joined Facebook AI Research and became a professor at MIT in 2024.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'China',
   },
 
   // Transformer 纪元与生成式 AI 人物
@@ -606,6 +786,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1986',
     bio: '南加州大学博士，后加入谷歌大脑。2017 年领导发表《Attention Is All You Need》，提出 Transformer 架构，彻底重塑 NLP 与 AI 版图。2021 年离开谷歌，联合创立 Essential AI 继续大模型研究。',
+    bio_en: 'A USC PhD who later joined Google Brain. In 2017 he led the team behind *Attention Is All You Need*, which introduced the Transformer architecture and remade the landscape of NLP and AI. He left Google in 2021 to co-found Essential AI and continue working on large models.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'Indian-American',
   },
   devlin: {
     id: 'devlin',
@@ -615,6 +798,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1985',
     bio: '马里兰大学博士。2018 年 10 月在谷歌发表 BERT 论文，提出双向预训练范式，11 项 NLP 基准全面刷新，定义了此后数年的 "预训练 + 微调" 范式。后曾短暂加入 OpenAI，又回到谷歌。',
+    bio_en: 'A University of Maryland PhD. In October 2018 he and colleagues at Google released the BERT paper, introducing bidirectional pretraining and resetting eleven NLP benchmarks. The paper defined the "pretrain then fine-tune" paradigm that dominated the next several years. He later spent a short stint at OpenAI before returning to Google.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United States',
   },
   radford: {
     id: 'radford',
@@ -624,6 +810,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1991',
     bio: '未取得传统博士学位，大学期间即加入 OpenAI。GPT-1/2、CLIP、Whisper 的核心作者，是 OpenAI 最早期、最关键的研究员之一。论文《Improving Language Understanding by Generative Pre-Training》启动了 GPT 系列。',
+    bio_en: 'He never pursued a traditional PhD, joining OpenAI while still in college. A core author of GPT-1, GPT-2, CLIP, and Whisper, he is among the earliest and most pivotal researchers at OpenAI. His paper *Improving Language Understanding by Generative Pre-Training* launched the GPT line.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United States',
   },
   brown: {
     id: 'brown',
@@ -633,6 +822,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1990',
     bio: 'OpenAI 研究员。2020 年领导发表《Language Models are Few-Shot Learners》（GPT-3 论文），首次系统展示大语言模型的少样本学习能力。2021 年与阿莫代等人离开 OpenAI，共同创立 Anthropic。',
+    bio_en: 'An OpenAI researcher who in 2020 led the publication of *Language Models are Few-Shot Learners*, the GPT-3 paper that first systematically demonstrated the few-shot learning abilities of large language models. In 2021 he left OpenAI with Dario Amodei and others to co-found Anthropic.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United States',
   },
   amodei: {
     id: 'amodei',
@@ -642,6 +834,9 @@ export const people: Record<string, Person> = {
     field: '物理学家、企业家',
     born: '1983',
     bio: '普林斯顿物理学博士。先后任职百度、OpenAI，2017 年起任 OpenAI 研究副总裁。2021 年与妹妹 Daniela 等同事离开 OpenAI，创立 Anthropic 任 CEO，专注 AI 安全与对齐研究，Claude 系列模型的主导者。',
+    bio_en: 'A Princeton physics PhD who worked at Baidu and then OpenAI, where from 2017 he served as VP of research. In 2021 he left, together with his sister Daniela and other colleagues, to found Anthropic, where he serves as CEO. He focuses on AI safety and alignment research and leads work on the Claude family of models.',
+    field_en: 'Physicist, Entrepreneur',
+    nationality_en: 'United States',
   },
   kaplan: {
     id: 'kaplan',
@@ -651,6 +846,9 @@ export const people: Record<string, Person> = {
     field: '物理学家',
     born: '1986',
     bio: '约翰斯·霍普金斯大学理论物理学教授。2020 年在 OpenAI 领导发表《Scaling Laws for Neural Language Models》，揭示模型性能与规模之间可预测的幂律关系，为大模型时代的"大力出奇迹"提供理论依据。现为 Anthropic 联合创始人。',
+    bio_en: 'A theoretical physicist and professor at Johns Hopkins. In 2020 at OpenAI he led the publication of *Scaling Laws for Neural Language Models*, revealing predictable power-law relationships between model performance and scale and giving theoretical grounding to the "scale is all you need" ethos of the large-model era. He is a co-founder of Anthropic.',
+    field_en: 'Physicist',
+    nationality_en: 'United States',
   },
   touvron: {
     id: 'touvron',
@@ -660,6 +858,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1995',
     bio: 'Meta 巴黎 AI 研究院年轻研究员。2023 年作为第一作者发表 LLaMA 系列论文，以相对较小的参数规模追平 GPT-3 级别性能，点燃开源大模型运动，直接改变了大模型的竞争格局。',
+    bio_en: 'A young researcher at Meta\'s Paris AI lab. As first author of the 2023 LLaMA papers he reached GPT-3-level performance at a markedly smaller parameter scale, igniting the open-source large-model movement and reshaping the competitive landscape of LLMs.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'France',
   },
 
   goodfellow: {
@@ -670,6 +871,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1985',
     bio: '本吉奥的博士生。2014 年在蒙特利尔酒吧与朋友争论中灵光乍现，当晚写出生成对抗网络（GAN）的第一版代码。与本吉奥、库尔维尔合著《深度学习》教材。曾任谷歌大脑、苹果机器学习主管，现于 DeepMind。',
+    bio_en: 'A doctoral student of Yoshua Bengio. In 2014, in the middle of a Montreal bar argument with friends, the idea of generative adversarial networks (GANs) struck him, and he wrote the first version of the code that same night. He co-authored the *Deep Learning* textbook with Bengio and Aaron Courville. He has led machine-learning teams at Google Brain and Apple, and is now at DeepMind.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United States',
   },
 
   fuchi: {
@@ -681,6 +885,9 @@ export const people: Record<string, Person> = {
     born: '1936',
     died: '2007',
     bio: '日本电子技术综合研究所（ETL）出身。1982 年起任 ICOT（新世代计算机技术开发机构）首任所长，主持十年期"第五代计算机系统"国家计划，推动并行推理机 PIM 与逻辑编程语言 KL1 的研发，是日本 AI 国家工程的灵魂人物。',
+    bio_en: 'Trained at Japan\'s Electrotechnical Laboratory (ETL). From 1982 he served as the first director of ICOT, the Institute for New Generation Computer Technology, leading the decade-long Fifth Generation Computer Systems national project. He drove the development of the parallel inference machine (PIM) and the logic-programming language KL1, becoming the soul of Japan\'s national AI effort.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'Japan',
   },
   jgiannandrea: {
     id: 'jgiannandrea',
@@ -690,6 +897,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1965',
     bio: '苏格兰出生，曾任 Netscape 工程师、Metaweb 创始人。Metaweb 2010 年被谷歌收购后，主管谷歌搜索与 AI，2016 年起任谷歌 AI 高级副总裁。2018 年加入苹果，担任机器学习与 AI 战略高级副总裁，主导 Apple Intelligence 的整体研发与策略。',
+    bio_en: 'Born in Scotland, he was an engineer at Netscape and the founder of Metaweb. After Google acquired Metaweb in 2010, he ran search and AI at Google, becoming SVP of AI in 2016. In 2018 he joined Apple as senior vice president of machine learning and AI strategy, where he leads the development and strategy of Apple Intelligence.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'British-American',
   },
   cook: {
     id: 'cook',
@@ -699,6 +909,9 @@ export const people: Record<string, Person> = {
     field: '企业家',
     born: '1960',
     bio: '杜克大学富奎商学院 MBA。1998 年加入苹果，长期主管供应链与运营。2011 年接任苹果 CEO，带领公司走向万亿乃至三万亿美元市值。2024 年 WWDC 主导发布 Apple Intelligence，定调苹果"隐私优先、端侧 + 私有云"的 AI 战略路线。',
+    bio_en: 'A Duke Fuqua MBA who joined Apple in 1998 and ran its supply chain and operations for years. He became Apple\'s CEO in 2011, taking the company past one trillion and on to three trillion dollars in market value. At WWDC 2024 he unveiled Apple Intelligence, anchoring the company\'s AI strategy on a privacy-first mix of on-device computation and private cloud compute.',
+    field_en: 'Entrepreneur',
+    nationality_en: 'United States',
   },
   federighi: {
     id: 'federighi',
@@ -708,6 +921,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1969',
     bio: '加州大学伯克利分校计算机硕士。曾任 NeXT 与 Ariba 工程主管。2009 年回到苹果主管 Mac OS X 工程，2012 年起任软件工程高级副总裁，统管 iOS、macOS、iPadOS。WWDC 主题演讲常驻主讲人，2024 年代表苹果发布 Apple Intelligence。',
+    bio_en: 'A UC Berkeley computer-science master\'s graduate who led engineering at NeXT and Ariba. He returned to Apple in 2009 to run Mac OS X engineering, and since 2012 has served as senior vice president of software engineering, overseeing iOS, macOS, and iPadOS. A regular WWDC keynote presenter, he led the public unveiling of Apple Intelligence in 2024.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'United States',
   },
 
   hopfield: {
@@ -718,6 +934,9 @@ export const people: Record<string, Person> = {
     field: '物理学家、神经网络先驱',
     born: '1933',
     bio: '理论物理出身，长期任教于贝尔实验室、加州理工与普林斯顿。1982 年发表《具有涌现集体计算能力的神经网络与物理系统》，把统计物理的能量函数引入神经网络，提出 Hopfield 网络，为连接主义在第二次寒冬中续命。2024 年与辛顿共获诺贝尔物理学奖。',
+    bio_en: 'Trained as a theoretical physicist, he held appointments at Bell Labs, Caltech, and Princeton. His 1982 paper *Neural Networks and Physical Systems with Emergent Collective Computational Abilities* brought the energy functions of statistical physics into neural networks and introduced the Hopfield network, keeping connectionism alive through the second AI winter. He shared the 2024 Nobel Prize in Physics with Geoffrey Hinton.',
+    field_en: 'Physicist, Neural Network Pioneer',
+    nationality_en: 'United States',
     avatar: '/images/people/hopfield.jpg',
   },
   schmidhuber: {
@@ -728,6 +947,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1963',
     bio: '瑞士人工智能研究所（IDSIA）核心人物。1997 年与博士生 Sepp Hochreiter 合作提出长短期记忆网络（LSTM），是循环神经网络时代的奠基性工作。长年宣称 GAN、ResNet、Transformer 注意力等想法在他更早论文中已出现，与深度学习三巨头长期不和。2021 起任沙特 KAUST AI 倡议主任。',
+    bio_en: 'A central figure at IDSIA, the Dalle Molle Institute for Artificial Intelligence in Switzerland. In 1997, with his student Sepp Hochreiter, he introduced Long Short-Term Memory (LSTM), the foundational work of the recurrent-network era. He has long maintained that ideas behind GANs, ResNets, and the attention mechanism appeared first in his earlier papers, and has been at odds with the three deep-learning pioneers for years. Since 2021 he has directed the AI initiative at Saudi Arabia\'s KAUST.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'Germany',
     avatar: '/images/people/schmidhuber.jpg',
   },
   karpathy: {
@@ -738,6 +960,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、AI 教育者',
     born: '1986',
     bio: '多伦多本硕、斯坦福博士（导师李飞飞）。OpenAI 创始团队研究员，2017–2022 年任特斯拉 AI 总监主导 Autopilot 与 FSD 视觉栈。2023 短暂回归 OpenAI，2024 年创办 Eureka Labs 专攻 AI 教育。CS231n、nanoGPT、"Let\'s build GPT from scratch" 等公开课让一代人理解了 LLM 内部结构。',
+    bio_en: 'Bachelor\'s and master\'s from Toronto, PhD from Stanford under Fei-Fei Li. A founding-team researcher at OpenAI, from 2017 to 2022 he served as director of AI at Tesla, leading the vision stack for Autopilot and FSD. He briefly rejoined OpenAI in 2023 before founding Eureka Labs in 2024 to focus on AI education. Through CS231n, nanoGPT, and the "Let\'s build GPT from scratch" lectures, he taught a generation what is actually happening inside an LLM.',
+    field_en: 'Computer Scientist, AI Educator',
+    nationality_en: 'Slovak-American',
     avatar: '/images/people/karpathy.png',
   },
   musk: {
@@ -748,6 +973,9 @@ export const people: Record<string, Person> = {
     field: '企业家',
     born: '1971',
     bio: '南非比勒陀利亚出生，宾夕法尼亚大学双学位。Zip2、X.com / PayPal、SpaceX、Tesla、SolarCity、Neuralink、The Boring Company 多家公司创始人。2015 年与奥特曼等共同创立 OpenAI，2018 年退出董事会，2023 年创办 xAI 并起诉 OpenAI 违背非营利使命。2025 年 xAI 收购 X，合并实体估值千亿美元级，同期出任白宫 DOGE 顾问。',
+    bio_en: 'Born in Pretoria, South Africa, with dual degrees from the University of Pennsylvania. He is the founder of Zip2, X.com/PayPal, SpaceX, Tesla, SolarCity, Neuralink, and The Boring Company. In 2015 he co-founded OpenAI alongside Sam Altman and others, leaving the board in 2018. In 2023 he launched xAI and sued OpenAI over its departure from its non-profit mission. In 2025 xAI acquired X, with the merged entity valued at over a hundred billion dollars; around the same time he became an adviser to the White House DOGE initiative.',
+    field_en: 'Entrepreneur',
+    nationality_en: 'South African-American',
     avatar: '/images/people/elon-musk.jpg',
   },
   'kai-fu-lee': {
@@ -758,6 +986,9 @@ export const people: Record<string, Person> = {
     field: '计算机科学家、企业家',
     born: '1961',
     bio: '台北出生，11 岁赴美。哥伦比亚大学本科、卡内基梅隆大学博士（师从 Raj Reddy）。1988 年博士论文 Sphinx 是史上第一个说话人无关连续大词汇语音识别系统。先后任职苹果、SGI、微软中国研究院（创院院长）、Google 中国总裁。2009 年创办创新工场，2018 年罹患淋巴瘤后写下《AI Superpowers》。2023 年创办 01.AI（零一万物）。',
+    bio_en: 'Born in Taipei, he moved to the United States at eleven. Bachelor\'s from Columbia, PhD from Carnegie Mellon under Raj Reddy. His 1988 dissertation system Sphinx was the first speaker-independent, continuous, large-vocabulary speech-recognition system. He held senior roles at Apple, SGI, the founding directorship of Microsoft Research Asia, and the presidency of Google China. In 2009 he founded Sinovation Ventures, and after a 2018 lymphoma diagnosis wrote *AI Superpowers*. In 2023 he founded the LLM startup 01.AI.',
+    field_en: 'Computer Scientist, Entrepreneur',
+    nationality_en: 'Taiwanese-American',
     avatar: '/images/people/kai-fu-lee.jpg',
   },
   'zhou-zhihua': {
@@ -768,5 +999,8 @@ export const people: Record<string, Person> = {
     field: '计算机科学家',
     born: '1973',
     bio: '南京大学本硕博，留校任教。集成学习与多示例学习领域系统性贡献者，2017 年提出 Deep Forest（gcForest）非神经网络深度学习路线。2018 年起任南京大学人工智能学院首任院长。所著《机器学习》（西瓜书，2016）是中国机器学习教育最广泛使用的中文教材。ACM/AAAS/AAAI/IEEE Fellow。',
+    bio_en: 'He earned all three of his degrees at Nanjing University and stayed on as a faculty member. A systematic contributor to ensemble learning and multi-instance learning, he introduced Deep Forest (gcForest) in 2017 as a non-neural alternative for deep learning. Since 2018 he has served as founding dean of Nanjing University\'s School of Artificial Intelligence. His textbook *Machine Learning* (the "watermelon book", 2016) is the most widely used Chinese-language ML textbook. He is a Fellow of ACM, AAAS, AAAI, and IEEE.',
+    field_en: 'Computer Scientist',
+    nationality_en: 'China',
   },
 }

@@ -1,12 +1,45 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import { useData } from 'vitepress'
 import { people } from '../../data/people'
 
 const props = defineProps<{
   id: string
 }>()
 
+const { lang } = useData()
+const isEn = computed(() => lang.value === 'en-US')
+
 const person = computed(() => people[props.id])
+
+// 行内显示名：英文版用 englishName，中文版用 name
+const inlineName = computed(() =>
+  isEn.value ? person.value?.englishName ?? person.value?.name : person.value?.name
+)
+
+// 卡片标题（大号）与副标题（小号）：英文版反转
+const cardPrimary = computed(() =>
+  isEn.value ? person.value?.englishName : person.value?.name
+)
+const cardSecondary = computed(() =>
+  isEn.value ? person.value?.name : person.value?.englishName
+)
+
+const cardNationality = computed(() =>
+  isEn.value
+    ? person.value?.nationality_en ?? person.value?.nationality
+    : person.value?.nationality
+)
+const cardField = computed(() =>
+  isEn.value
+    ? person.value?.field_en ?? person.value?.field
+    : person.value?.field
+)
+const cardBio = computed(() =>
+  isEn.value
+    ? person.value?.bio_en ?? person.value?.bio
+    : person.value?.bio
+)
 
 const lifespan = computed(() => {
   if (!person.value) return ''
@@ -79,22 +112,22 @@ function onLeave() {
 
 <template>
   <span v-if="person" class="person-wrapper" @mouseenter="onEnter" @mouseleave="onLeave">
-    <span ref="nameRef" class="person-name">{{ person.name }}</span>
+    <span ref="nameRef" class="person-name">{{ inlineName }}</span>
     <Teleport to="body">
       <span v-show="showCard" ref="cardRef" class="person-card" :style="cardStyle">
         <span class="person-card-arrow" :style="arrowStyle"></span>
         <span class="person-card-header">
           <span v-if="person.avatar" class="person-avatar">
-            <img :src="person.avatar" :alt="person.name" />
+            <img :src="person.avatar" :alt="inlineName" />
           </span>
           <span class="person-card-info">
-            <span class="person-card-name">{{ person.name }}</span>
-            <span class="person-card-english">{{ person.englishName }}</span>
-            <span class="person-card-meta">{{ person.nationality }} · {{ person.field }}</span>
+            <span class="person-card-name">{{ cardPrimary }}</span>
+            <span class="person-card-english">{{ cardSecondary }}</span>
+            <span class="person-card-meta">{{ cardNationality }} · {{ cardField }}</span>
             <span class="person-card-life">{{ lifespan }}</span>
           </span>
         </span>
-        <span class="person-card-bio">{{ person.bio }}</span>
+        <span class="person-card-bio">{{ cardBio }}</span>
       </span>
     </Teleport>
   </span>

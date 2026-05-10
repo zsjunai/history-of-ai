@@ -11,10 +11,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
-import { withBase } from 'vitepress'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { withBase, useData } from 'vitepress'
 
-const stats = [
+const { lang } = useData()
+const isEn = computed(() => lang.value === 'en-US')
+
+const statsZh = [
   { number: 83, unit: '年', label: '历史跨度', link: withBase('/timeline/') },
   { number: 10, unit: '纪', label: '本纪', link: withBase('/annals/01-dawn') },
   { number: 31, unit: '家', label: '世家', link: withBase('/houses/mit-ai-lab') },
@@ -22,6 +25,15 @@ const stats = [
   { number: 25, unit: '卷', label: '书', link: withBase('/treatises/neural-networks') },
   { number: 134, unit: '事', label: '大事年表', link: withBase('/timeline/') },
 ]
+const statsEn = [
+  { number: 83, unit: 'yr', label: 'Span', link: withBase('/en/timeline/') },
+  { number: 10, unit: '', label: 'Annals', link: withBase('/en/annals/01-dawn') },
+  { number: 31, unit: '', label: 'Houses', link: withBase('/en/houses/mit-ai-lab') },
+  { number: 23, unit: '', label: 'Biographies', link: withBase('/en/biographies/turing') },
+  { number: 25, unit: '', label: 'Treatises', link: withBase('/en/treatises/neural-networks') },
+  { number: 134, unit: '', label: 'Timeline', link: withBase('/en/timeline/') },
+]
+const stats = computed(() => (isEn.value ? statsEn : statsZh))
 
 const numberRefs = ref<(HTMLElement | null)[]>([])
 let observer: IntersectionObserver | null = null
@@ -46,7 +58,7 @@ onMounted(() => {
     (entries) => {
       if (entries[0].isIntersecting && !animated) {
         animated = true
-        stats.forEach((stat, i) => {
+        stats.value.forEach((stat, i) => {
           const el = numberRefs.value[i]
           if (el) {
             setTimeout(() => animateNumber(el, stat.number), i * 100)
