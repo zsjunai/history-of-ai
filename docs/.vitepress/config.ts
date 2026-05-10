@@ -343,18 +343,18 @@ export default defineConfig({
     },
 
     en: {
-      label: 'English (WIP)',
+      label: 'English',
       lang: 'en-US',
       title: 'History of AI',
-      description: 'An open-source book on the history of Artificial Intelligence (English edition is work-in-progress; full content available in Chinese).',
+      description: 'An open-source book on the history of Artificial Intelligence (1936–2026), structured in the style of Records of the Grand Historian. 90+ chapters, 134 timeline events.',
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
           { text: 'Preface', link: '/en/guide/introduction' },
-          { text: 'Annals (1/10)', link: '/en/annals/01-dawn', activeMatch: '/en/annals/' },
-          { text: 'Houses (1/31)', link: '/en/houses/mit-ai-lab', activeMatch: '/en/houses/' },
-          { text: 'Biographies (1/23)', link: '/en/biographies/turing', activeMatch: '/en/biographies/' },
-          { text: 'Treatises (1/25)', link: '/en/treatises/neural-networks', activeMatch: '/en/treatises/' },
+          { text: 'Annals', link: '/en/annals/01-dawn', activeMatch: '/en/annals/' },
+          { text: 'Houses', link: '/en/houses/mit-ai-lab', activeMatch: '/en/houses/' },
+          { text: 'Biographies', link: '/en/biographies/turing', activeMatch: '/en/biographies/' },
+          { text: 'Treatises', link: '/en/treatises/neural-networks', activeMatch: '/en/treatises/' },
           { text: 'Timeline', link: '/en/timeline/' },
         ],
         sidebar: {
@@ -372,14 +372,195 @@ export default defineConfig({
               text: 'Annals',
               items: [
                 { text: 'The Dawn (1943-1956)', link: '/en/annals/01-dawn' },
+                { text: 'The Golden Age (1956-1973)', link: '/en/annals/02-golden-age' },
+                { text: 'The First Winter (1973-1980)', link: '/en/annals/03-first-winter' },
+                { text: 'The Era of Expert Systems (1980-1987)', link: '/en/annals/04-expert-systems' },
+                { text: 'The Second Winter (1987-1993)', link: '/en/annals/05-second-winter' },
+                { text: 'The Rise of Statistical Learning (1993-2006)', link: '/en/annals/06-statistical-learning' },
+                { text: 'Prelude to Deep Learning (2006-2012)', link: '/en/annals/07-prelude-to-deep-learning' },
+                { text: 'The Vision Revolution (2012-2017)', link: '/en/annals/08-cnn-era' },
+                { text: 'The Transformer Era (2017-2022)', link: '/en/annals/09-transformer' },
+                { text: 'The Generative AI Wave (2022-2026)', link: '/en/annals/10-generative-ai' },
+              ],
+            },
+          ],
+          '/en/houses/': [
+            {
+              text: 'Houses · Foundational Academia',
+              items: [
+                { text: 'MIT AI Lab', link: '/en/houses/mit-ai-lab' },
+                { text: 'Carnegie Mellon University', link: '/en/houses/cmu' },
+                { text: 'Stanford AI Lab', link: '/en/houses/stanford-ai-lab' },
+                { text: 'UC Berkeley / BAIR', link: '/en/houses/uc-berkeley' },
+                { text: 'University of Toronto / Vector', link: '/en/houses/toronto-vector' },
+                { text: 'Mila — Quebec AI Institute', link: '/en/houses/mila' },
+              ],
+            },
+            {
+              text: 'Houses · Corporate Research Labs',
+              items: [
+                { text: 'Bell Labs', link: '/en/houses/bell-labs' },
+                { text: 'IBM Research', link: '/en/houses/ibm-research' },
+                { text: 'Microsoft Research', link: '/en/houses/microsoft-research' },
+              ],
+            },
+            {
+              text: 'Houses · National Programs',
+              items: [
+                { text: 'ICOT (Japan, Fifth Generation)', link: '/en/houses/icot' },
+              ],
+            },
+            {
+              text: 'Houses · AI Divisions of Tech Giants',
+              items: [
+                { text: 'Google Brain', link: '/en/houses/google-brain' },
+                { text: 'Google DeepMind', link: '/en/houses/deepmind' },
+                { text: 'Meta AI (FAIR)', link: '/en/houses/meta-ai' },
+                { text: 'Apple (Apple Intelligence)', link: '/en/houses/apple-intelligence' },
+                { text: 'Amazon (AWS AI / Bedrock)', link: '/en/houses/amazon-aws-ai' },
+              ],
+            },
+            {
+              text: 'Houses · AI Infrastructure',
+              items: [
+                { text: 'NVIDIA', link: '/en/houses/nvidia' },
+                { text: 'TSMC', link: '/en/houses/tsmc' },
+                { text: 'Hugging Face', link: '/en/houses/huggingface' },
+              ],
+            },
+            {
+              text: 'Houses · Independent AI Companies',
+              items: [
+                { text: 'OpenAI', link: '/en/houses/openai' },
+                { text: 'Anthropic', link: '/en/houses/anthropic' },
+                { text: 'xAI', link: '/en/houses/xai' },
+                { text: 'Cohere', link: '/en/houses/cohere' },
+                { text: 'Mistral AI', link: '/en/houses/mistral-ai' },
+              ],
+            },
+            {
+              text: 'Houses · Chinese Institutions',
+              items: [
+                { text: 'Tsinghua University AI', link: '/en/houses/tsinghua-ai' },
+                { text: 'Baidu AI', link: '/en/houses/baidu-ai' },
+                { text: 'Alibaba DAMO Academy', link: '/en/houses/alibaba-damo' },
+                { text: 'ByteDance / Seed', link: '/en/houses/bytedance-seed' },
+                { text: 'Zhipu AI (GLM)', link: '/en/houses/zhipu-ai' },
+                { text: 'MiniMax (Hailuo / Talkie)', link: '/en/houses/minimax' },
+                { text: 'Moonshot AI (Kimi)', link: '/en/houses/moonshot-kimi' },
+                { text: 'DeepSeek', link: '/en/houses/deepseek' },
               ],
             },
           ],
           '/en/biographies/': [
             {
-              text: 'Biographies',
+              text: 'Biographies · Ancient Prophets',
               items: [
                 { text: 'Alan Turing', link: '/en/biographies/turing' },
+                { text: 'Claude Shannon', link: '/en/biographies/shannon' },
+                { text: 'Norbert Wiener', link: '/en/biographies/wiener' },
+              ],
+            },
+            {
+              text: 'Biographies · The Dartmouth Generation',
+              items: [
+                { text: 'John McCarthy', link: '/en/biographies/mccarthy' },
+                { text: 'Marvin Minsky', link: '/en/biographies/minsky' },
+                { text: 'Herbert Simon', link: '/en/biographies/herbert-simon' },
+                { text: 'Allen Newell', link: '/en/biographies/allen-newell' },
+              ],
+            },
+            {
+              text: 'Biographies · Connectionism and Causality',
+              items: [
+                { text: 'Frank Rosenblatt', link: '/en/biographies/rosenblatt' },
+                { text: 'John Hopfield', link: '/en/biographies/hopfield' },
+                { text: 'Judea Pearl', link: '/en/biographies/judea-pearl' },
+              ],
+            },
+            {
+              text: 'Biographies · Pioneers of Deep Learning',
+              items: [
+                { text: 'Geoffrey Hinton', link: '/en/biographies/hinton' },
+                { text: 'Yann LeCun', link: '/en/biographies/lecun' },
+                { text: 'Yoshua Bengio', link: '/en/biographies/bengio' },
+                { text: 'Jürgen Schmidhuber', link: '/en/biographies/schmidhuber' },
+              ],
+            },
+            {
+              text: 'Biographies · Researchers of the LLM Era',
+              items: [
+                { text: 'Fei-Fei Li', link: '/en/biographies/fei-fei-li' },
+                { text: 'Ilya Sutskever', link: '/en/biographies/ilya-sutskever' },
+                { text: 'Demis Hassabis', link: '/en/biographies/demis-hassabis' },
+                { text: 'Andrej Karpathy', link: '/en/biographies/karpathy' },
+              ],
+            },
+            {
+              text: 'Biographies · Education and Transmission',
+              items: [
+                { text: 'Andrew Ng', link: '/en/biographies/andrew-ng' },
+                { text: 'Zhihua Zhou', link: '/en/biographies/zhou-zhihua' },
+              ],
+            },
+            {
+              text: 'Biographies · Industry Leaders',
+              items: [
+                { text: 'Sam Altman', link: '/en/biographies/sam-altman' },
+                { text: 'Elon Musk', link: '/en/biographies/elon-musk' },
+                { text: 'Kai-Fu Lee', link: '/en/biographies/kai-fu-lee' },
+              ],
+            },
+          ],
+          '/en/treatises/': [
+            {
+              text: 'Treatises · Technical Lineages',
+              items: [
+                { text: 'A History of Neural Networks', link: '/en/treatises/neural-networks' },
+                { text: 'Knowledge Representation and Reasoning', link: '/en/treatises/knowledge-representation' },
+                { text: 'A History of Natural Language Processing', link: '/en/treatises/nlp' },
+                { text: 'A History of Computer Vision', link: '/en/treatises/computer-vision' },
+                { text: 'A History of Reinforcement Learning', link: '/en/treatises/reinforcement-learning' },
+                { text: 'Large Language Models', link: '/en/treatises/llm' },
+                { text: 'World Models', link: '/en/treatises/world-models' },
+                { text: 'AGI and ASI', link: '/en/treatises/agi-asi' },
+              ],
+            },
+            {
+              text: 'Treatises · Infrastructure',
+              items: [
+                { text: 'AI Hardware and Compute', link: '/en/treatises/ai-hardware' },
+                { text: 'AI and the Open-Source Movement', link: '/en/treatises/ai-open-source' },
+              ],
+            },
+            {
+              text: 'Treatises · Application Domains',
+              items: [
+                { text: 'AI and Games', link: '/en/treatises/ai-games' },
+                { text: 'AI in Biology and Medicine', link: '/en/treatises/ai-biology' },
+                { text: 'AI in the Creative Arts', link: '/en/treatises/ai-art' },
+                { text: 'Embodied AI and Robotics', link: '/en/treatises/embodied-ai' },
+                { text: 'A History of Autonomous Driving', link: '/en/treatises/autonomous-driving' },
+                { text: 'AI Agents', link: '/en/treatises/ai-agent' },
+              ],
+            },
+            {
+              text: 'Treatises · Society and Impact',
+              items: [
+                { text: 'AI Ethics Debates', link: '/en/treatises/ai-ethics' },
+                { text: 'AI Safety and Alignment', link: '/en/treatises/ai-safety' },
+                { text: 'AI Policy and Regulation', link: '/en/treatises/ai-governance' },
+                { text: 'AI and Web3', link: '/en/treatises/ai-web3' },
+              ],
+            },
+            {
+              text: 'Treatises · National Histories',
+              items: [
+                { text: 'AI in the United States', link: '/en/treatises/ai-in-usa' },
+                { text: 'AI in China', link: '/en/treatises/ai-in-china' },
+                { text: 'AI in Europe', link: '/en/treatises/ai-in-europe' },
+                { text: 'AI in Canada', link: '/en/treatises/ai-in-canada' },
+                { text: 'AI in Japan', link: '/en/treatises/ai-in-japan' },
               ],
             },
           ],

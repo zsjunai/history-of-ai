@@ -1,9 +1,5 @@
-# Timeline
+# Timeline of Major Events
 
-> Key moments in AI history, from 1943 to 2026.
-
-::: warning Work in Progress
-The English timeline is under development. View the full Chinese version: [大事年表](/timeline/)
-:::
+> Key moments in the history of AI, from 1943 to 2026.
 
 <TimelinePage />

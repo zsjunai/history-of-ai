@@ -34,7 +34,7 @@
 
 1980 年代，耶利内克的小组率先把统计语言模型大规模用于语音识别，奠定了后来三十年 NLP 的范式。今日的 BERT 与 GPT，论血脉都要回到 IBM 这一支。
 
-紧接着是机器翻译。<Person id="brown" /> 与彼得·布朗（Peter Brown）、罗伯特·默瑟（Robert Mercer，后来成为对冲基金 Renaissance Technologies 的灵魂人物）等人组成的小组，1988 至 1993 年间陆续发表了 **IBM Model 1–5** 系列论文。
+紧接着是机器翻译。彼得·布朗（Peter F. Brown）与德拉·彼得拉兄弟（Stephen & Vincent Della Pietra）、罗伯特·默瑟（Robert Mercer，后来成为对冲基金 Renaissance Technologies 的灵魂人物）等人组成的小组，1988 至 1993 年间陆续发表了 **IBM Model 1–5** 系列论文。
 
 他们摒弃语言学规则，用一份加拿大议会双语会议记录训练统计对齐模型，把翻译当成"噪声信道"问题来解。这是统计机器翻译（SMT）的起点，二十年后才被神经机器翻译（NMT）取代——但它定义了"用数据驱动语言"的整套世界观。
 
